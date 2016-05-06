@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:mascara="clr-namespace:Hone;assembly=Hone"
+             x:Class="Hone.View.CadPNView">
+  <ContentPage.Resources>
+    <ResourceDictionary>
+      <mascara:Mask x:Key="Mask"></mascara:Mask>
+
+    </ResourceDictionary>
+  </ContentPage.Resources>
+
+
+  <StackLayout>
+    <Button Text="Salvar" Command="{Binding Salvar}"/>
+    <ScrollView Orientation="Vertical" VerticalOptions="FillAndExpand">
+      <StackLayout>
+        <Label Text="Razão Social ou Nome"/>
+        <Entry Text="{Binding Descricao}" Keyboard="Text"/>
+        <Label Text="Escolha o tipo do Parceiro"/>
+        <Picker x:Name="pckTipoParc" SelectedIndex="{Binding TipoParcID}" Title="Tipo Parceiro" HorizontalOptions="Fill"></Picker>
+        <Label Text="Escolha o Tipo de Documento"/>
+        <Picker x:Name="pckTipoDoc" SelectedIndex="{Binding TipoDocID}" Title="Tipo Documento" HorizontalOptions="Fill"> </Picker>
+        <Label Text="Documento"/>
+        <Entry Text="{Binding DocumentoCNPJ, Converter = {StaticResource Mask}, ConverterParameter=CNPJ}" Keyboard="Numeric" IsVisible="{Binding VisibleCNPJ}"/>
+        <Entry Text="{Binding DocumentoCPF, Converter = {StaticResource Mask}, ConverterParameter=CPF}" Keyboard="Numeric" IsVisible="{Binding VisibleCPF}"/>
+        <Label Text="Rua" />
+        <Entry Text="{Binding Endereco}" Keyboard="Text"/>
+        <Label Text="Nº" />
+        <Entry Text="{Binding Num}" Keyboard="Numeric"/>
+        <Label Text="Bairro" />
+        <Entry Text="{Binding Bairro}" Keyboard="Text"/>
+        <Label Text="Cidade" />
+        <Entry Text="{Binding Cidade}" Keyboard="Text"/>
+        <Label Text="Estado" />
+        <Picker x:Name="pckEstados" SelectedIndex="{Binding EstadoID}" Title="Estados"  HorizontalOptions="Fill"></Picker>
+        <Label Text="CEP" />
+        <Entry Text="{Binding CEP,Converter = {StaticResource Mask} , ConverterParameter=CEP}" Keyboard="Numeric"/>
+        <Label Text="Telefone" />
+        <Entry Text="{Binding Telefone,Converter = {StaticResource Mask} , ConverterParameter=Phone}" Keyboard="Numeric"/>
+
+      </StackLayout>
+    </ScrollView>
+  </StackLayout>
+</ContentPage>

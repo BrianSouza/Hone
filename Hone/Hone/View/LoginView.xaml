@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Hone.View.LoginView">
+  <ContentPage.Content>
+    <StackLayout>
+      <Label Text="Usuário" />
+      <Entry Text="{Binding UserName}"/>
+      <Label Text="Senha" />
+      <Entry IsPassword="True" Text="{Binding Password}"/>
+      <Button Text="Login" Command="{Binding LoginCommand}" />
+    </StackLayout>
+  </ContentPage.Content>
+</ContentPage>
