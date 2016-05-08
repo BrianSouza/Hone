@@ -18,5 +18,5 @@ c:\Users\Brian Souza\Documents\Visual Studio 2015\Projects\Hone\Hone\Hone\obj\De
 c:\Users\Brian Souza\Documents\Visual Studio 2015\Projects\Hone\Hone\Hone\obj\Debug\Hone.dll
 c:\Users\Brian Souza\Documents\Visual Studio 2015\Projects\Hone\Hone\Hone\obj\Debug\Hone.pdb
 c:\Users\Brian Souza\Documents\Visual Studio 2015\Projects\Hone\Hone\Hone\obj\Debug\Hone.csprojResolveAssemblyReference.cache
-c:\Users\Brian Souza\Documents\Visual Studio 2015\Projects\Hone\Hone\Hone\obj\Debug\Hone.dll.mdb
-c:\Users\Brian Souza\Documents\Visual Studio 2015\Projects\Hone\Hone\Hone\bin\Debug\Hone.dll.mdb
+C:\Users\Brian Souza\Documents\Visual Studio 2015\Projects\Hone\Hone\Hone\obj\Debug\Hone.dll.mdb
+C:\Users\Brian Souza\Documents\Visual Studio 2015\Projects\Hone\Hone\Hone\bin\Debug\Hone.dll.mdb

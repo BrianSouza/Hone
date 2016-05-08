@@ -2,5 +2,15 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Hone.View.PedItensView">
-  <Label Text="teste" VerticalOptions="Center" HorizontalOptions="Center" />
+  <StackLayout>
+    <Button Text="Próximo"></Button>
+    <Label Text="Selecione o item"  />
+    <Picker x:Name="pckItens"></Picker>
+    <Label Text="Quantidade"></Label>
+    <Entry ></Entry>
+    <Label Text="Valor Un."></Label>
+    <Entry ></Entry>
+    <Button Text="Add"></Button>
+    <ListView></ListView>
+  </StackLayout>
 </ContentPage>

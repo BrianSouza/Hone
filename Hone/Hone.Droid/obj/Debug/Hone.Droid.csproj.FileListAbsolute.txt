@@ -39,5 +39,5 @@ c:\Users\Brian Souza\Documents\Visual Studio 2015\Projects\Hone\Hone\Hone.Droid\
 c:\Users\Brian Souza\Documents\Visual Studio 2015\Projects\Hone\Hone\Hone.Droid\bin\Debug\Xamarin.Forms.Core.dll.mdb
 c:\Users\Brian Souza\Documents\Visual Studio 2015\Projects\Hone\Hone\Hone.Droid\bin\Debug\Xamarin.Forms.Platform.Android.dll.mdb
 c:\Users\Brian Souza\Documents\Visual Studio 2015\Projects\Hone\Hone\Hone.Droid\bin\Debug\Xamarin.Forms.Xaml.dll.mdb
-c:\Users\Brian Souza\Documents\Visual Studio 2015\Projects\Hone\Hone\Hone.Droid\obj\Debug\Hone.Droid.dll.mdb
-c:\Users\Brian Souza\Documents\Visual Studio 2015\Projects\Hone\Hone\Hone.Droid\bin\Debug\Hone.Droid.dll.mdb
+C:\Users\Brian Souza\Documents\Visual Studio 2015\Projects\Hone\Hone\Hone.Droid\obj\Debug\Hone.Droid.dll.mdb
+C:\Users\Brian Souza\Documents\Visual Studio 2015\Projects\Hone\Hone\Hone.Droid\bin\Debug\Hone.Droid.dll.mdb

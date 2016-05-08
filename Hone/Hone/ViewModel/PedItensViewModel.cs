@@ -8,13 +8,18 @@ using Hone.Entidades;
 
 namespace Hone.ViewModel
 {
-    class PedItensViewModel : BaseViewModel
+    public class PedItensViewModel : BaseViewModel
     {
         private int itemIndex;
         private Item item;
         private ObservableCollection<Item> itens;
         private double quantidade;
         private double valorUnit;
+
+        public PedItensViewModel()
+        {
+
+        }
 
         public int ItemIndex
         {
