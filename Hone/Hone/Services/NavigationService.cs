@@ -41,5 +41,10 @@ namespace Hone.Services
         {
             await App.Current.MainPage.Navigation.PushAsync(new View.PedItensView());
         }
+
+        public async Task NavigateToPedPagto()
+        {
+            await App.Current.MainPage.Navigation.PushAsync(new View.PedPagtoView());
+        }
     }
 }

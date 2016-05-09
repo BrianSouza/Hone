@@ -120,7 +120,7 @@ namespace Hone.ViewModel
                 _message.ShowAsync("Atenção", "Selecione um Parceiro.");
                 return false;
             }
-            else if (DtEntrega < DateTime.Now)
+            else if (DtEntrega <= DateTime.Now)
             {
                 _message.ShowAsync("Atenção", "Selecione uma data maior ou igual a data atual.");
                 return false;

@@ -36,6 +36,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="App.cs" />
+    <Compile Include="Controles\CustomListView.cs" />
     <Compile Include="Entidades\CondPagto.cs" />
     <Compile Include="Entidades\FormaPgto.cs" />
     <Compile Include="Entidades\Item.cs" />
@@ -69,6 +70,9 @@
     <Compile Include="ViewModel\PedCabecalhoViewModel.cs" />
     <Compile Include="View\PedItensView.xaml.cs">
       <DependentUpon>PedItensView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\PedPagtoView.xaml.cs">
+      <DependentUpon>PedPagtoView.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -120,6 +124,12 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="View\PedCabecalhoView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="View\PedPagtoView.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

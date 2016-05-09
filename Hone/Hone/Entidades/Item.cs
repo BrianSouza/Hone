@@ -10,9 +10,7 @@ namespace Hone.Entidades
     {
         public string ItemName { get; set; }
         public string ItemCode { get; set; }
-        
         public double Quantidade { get; set; }
-
         public double ValorUnit { get; set; }
     }
 }

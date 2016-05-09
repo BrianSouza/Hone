@@ -15,6 +15,15 @@ namespace Hone.View
         {
             InitializeComponent();
             this.BindingContext = pedItensVM;
+            CarregarItens();
+        }
+        private void CarregarItens()
+        {
+            pckItens.Items.Clear();
+            foreach (var item in pedItensVM.Itens)
+            {
+                pckItens.Items.Add(item.ItemName);
+            }
         }
     }
 }

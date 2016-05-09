@@ -3,14 +3,36 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Hone.View.PedItensView">
   <StackLayout>
-    <Button Text="Próximo"></Button>
+    <Button Text="Próximo" Command="{Binding IrParaPgto}"></Button>
     <Label Text="Selecione o item"  />
-    <Picker x:Name="pckItens"></Picker>
+    <Picker x:Name="pckItens" SelectedIndex="{Binding ItemIndex}"></Picker>
     <Label Text="Quantidade"></Label>
-    <Entry ></Entry>
+    <Entry Text="{Binding Quantidade}"></Entry>
     <Label Text="Valor Un."></Label>
-    <Entry ></Entry>
-    <Button Text="Add"></Button>
-    <ListView></ListView>
+    <Entry Text="{Binding ValorUnit}"></Entry>
+    <Button Text="Add" Command="{Binding SelecionarItens}"></Button>
+    <ListView ItemsSource="{Binding ItensSelecionados}">
+      <ListView.ItemTemplate>
+        <DataTemplate>
+          <ViewCell>
+            <Grid Padding="5">
+              <Grid.RowDefinitions>
+                <RowDefinition Height="20"></RowDefinition>
+                <RowDefinition Height="20"></RowDefinition>
+              </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions> 
+              <ColumnDefinition Width="*"></ColumnDefinition> 
+            <ColumnDefinition Width="40"></ColumnDefinition> 
+            </Grid.ColumnDefinitions> 
+              
+            <Label Grid.Row="0" Grid.Column="0" Text="{Binding ItemCode}" LineBreakMode="TailTruncation">
+              
+            </Label> <Label Grid.Row="1" Grid.Column="0" Text="{Binding ItemName}" Font="Small" TextColor="Gray" LineBreakMode="TailTruncation"></Label>
+            
+            </Grid>
+          </ViewCell>
+        </DataTemplate>
+      </ListView.ItemTemplate>
+    </ListView>
   </StackLayout>
 </ContentPage>

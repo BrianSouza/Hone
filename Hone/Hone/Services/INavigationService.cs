@@ -10,9 +10,9 @@ namespace Hone.Services
     {
         Task NavigateToLogin();
         Task NavigateToMain();
-        //Task NavigateToPedI();
         Task NavigateToCadPN();
         Task NavigateToPedCabecalho();
         Task NavigateToPedItens();
+        Task NavigateToPedPagto();
     }
 }
