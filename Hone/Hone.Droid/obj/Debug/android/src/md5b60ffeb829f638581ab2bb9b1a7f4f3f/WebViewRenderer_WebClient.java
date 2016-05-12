@@ -6,8 +6,7 @@ public class WebViewRenderer_WebClient
 	implements
 		mono.android.IGCUserPeer
 {
-/** @hide */
-	public static final String __md_methods;
+	static final String __md_methods;
 	static {
 		__md_methods = 
 			"n_onPageFinished:(Landroid/webkit/WebView;Ljava/lang/String;)V:GetOnPageFinished_Landroid_webkit_WebView_Ljava_lang_String_Handler\n" +
@@ -56,7 +55,7 @@ public class WebViewRenderer_WebClient
 
 	private native boolean n_shouldOverrideUrlLoading (android.webkit.WebView p0, java.lang.String p1);
 
-	private java.util.ArrayList refList;
+	java.util.ArrayList refList;
 	public void monodroidAddReference (java.lang.Object obj)
 	{
 		if (refList == null)

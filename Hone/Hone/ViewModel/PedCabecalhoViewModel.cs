@@ -109,8 +109,11 @@ namespace Hone.ViewModel
 
         private void Linhas()
         {
-            if (Validacao())
-                _navigation.NavigateToPedItens();
+            if (!Validacao())
+                return;
+
+            SalvarTxtPedido();
+            _navigation.NavigateToPedItens();
         }
 
         private bool Validacao()
@@ -120,7 +123,7 @@ namespace Hone.ViewModel
                 _message.ShowAsync("Atenção", "Selecione um Parceiro.");
                 return false;
             }
-            else if (DtEntrega <= DateTime.Now)
+            else if (DtEntrega.Date < DateTime.Now.Date)
             {
                 _message.ShowAsync("Atenção", "Selecione uma data maior ou igual a data atual.");
                 return false;
@@ -145,6 +148,7 @@ namespace Hone.ViewModel
 
         private void SalvarTxtPedido()
         {
+            this.Pedido = new Pedido();
             Pedido.Parceiro = this.SelectedParceiro;
             Pedido.DtEntrega = this.DtEntrega;
 
