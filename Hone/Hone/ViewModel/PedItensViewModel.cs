@@ -118,6 +118,7 @@ namespace Hone.ViewModel
                 this.Notify("ItensSelecionados");
             }
         }
+        
 
         public ICommand IrParaPgto
         {
@@ -146,8 +147,45 @@ namespace Hone.ViewModel
 
         private void SelecionaItem()
         {
+            if (!ValidaItemSelecionado())
+                return;
+
             var itemAdd = new Item { ItemCode = _Item.ItemCode, ItemName = _Item.ItemName, Quantidade = this.Quantidade, ValorUnit = this.ValorUnit };
-            ItensSelecionados.Add(itemAdd);
+
+            if (!ItemDuplicado(itemAdd))
+            {
+                ItensSelecionados.Add(itemAdd);
+            }
         }
+        private bool ValidaItemSelecionado()
+        {
+            bool valido = true;
+            if (_Item == null && string.IsNullOrEmpty(_Item.ItemCode))
+            {
+                _Message.ShowAsync("Atenção", "Selecione um item.");
+                valido = false;
+            }
+            else if (_Item.ValorUnit > 0)
+            {
+                _Message.ShowAsync("Atenção", "O valor unitário deve ser maior do que zero.");
+                valido = false;
+            }
+            else if (_Item.Quantidade > 0)
+            {
+                _Message.ShowAsync("Atenção", "Quantidade selecionada deve ser maior do que zaro.");
+                valido = false;
+            }
+            return valido;
+
+
+        }
+        private bool ItemDuplicado(Item item)
+        {
+            var duplicado = itensSelecionados.Where(t0 => t0.ItemCode.Equals(item.ItemCode)).SingleOrDefault();
+            if (duplicado == null) return false;
+            else return true;
+        }
+
+
     }
 }
