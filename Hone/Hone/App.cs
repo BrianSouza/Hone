@@ -13,7 +13,6 @@ namespace Hone
         {
             DependencyService.Register<IMessageServices, MessageServices>();
             DependencyService.Register<INavigationService, NavigationService>();
-            DependencyService.Register<ISaveAndLoad, SaveAndLoad>();
             // The root page of your application
             MainPage = new NavigationPage(new View.LoginView());
         }
