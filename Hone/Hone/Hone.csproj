@@ -53,6 +53,7 @@
     <Compile Include="ViewModel\CadPNViewModel.cs" />
     <Compile Include="ViewModel\LoginViewModel.cs" />
     <Compile Include="ViewModel\MainViewModel.cs" />
+    <Compile Include="ViewModel\PedConfirmViewModel.cs" />
     <Compile Include="ViewModel\PedItensViewModel.cs" />
     <Compile Include="View\CadPNView.xaml.cs">
       <DependentUpon>CadPNView.xaml</DependentUpon>
@@ -67,6 +68,9 @@
       <DependentUpon>PedCabecalhoView.xaml</DependentUpon>
     </Compile>
     <Compile Include="ViewModel\PedCabecalhoViewModel.cs" />
+    <Compile Include="View\PedConfirmView.xaml.cs">
+      <DependentUpon>PedConfirmView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View\PedItensView.xaml.cs">
       <DependentUpon>PedItensView.xaml</DependentUpon>
     </Compile>
@@ -129,6 +133,12 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="View\PedPagtoView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="View\PedConfirmView.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
