@@ -64,9 +64,6 @@ C:\Users\Brian Souza\Desktop\Hone\Hone\Hone\obj\Debug\Hone.View.PedCabecalhoView
 C:\Users\Brian Souza\Desktop\Hone\Hone\Hone\obj\Debug\Hone.View.PedPagtoView.xaml.g.cs
 C:\Users\Brian Souza\Desktop\Hone\Hone\Hone\obj\Debug\Hone.dll
 C:\Users\Brian Souza\Desktop\Hone\Hone\Hone\obj\Debug\Hone.pdb
-C:\Users\Brian Souza\Desktop\Hone\Hone\Hone\obj\Debug\Hone.dll.mdb
-C:\Users\Brian Souza\Desktop\Hone\Hone\Hone\bin\Debug\Hone.dll.mdb
-C:\Users\Brian Souza\Desktop\Hone\Hone\Hone\obj\Debug\Hone.dll.mdb
-C:\Users\Brian Souza\Desktop\Hone\Hone\Hone\bin\Debug\Hone.dll.mdb
+C:\Users\Brian Souza\Desktop\Hone\Hone\Hone\obj\Debug\Hone.View.PedConfirmView.xaml.g.cs
 C:\Users\Brian Souza\Desktop\Hone\Hone\Hone\obj\Debug\Hone.dll.mdb
 C:\Users\Brian Souza\Desktop\Hone\Hone\Hone\bin\Debug\Hone.dll.mdb

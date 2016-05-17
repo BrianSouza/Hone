@@ -160,17 +160,17 @@ namespace Hone.ViewModel
         private bool ValidaItemSelecionado()
         {
             bool valido = true;
-            if (_Item == null && string.IsNullOrEmpty(_Item.ItemCode))
+            if (_Item == null || string.IsNullOrEmpty(_Item.ItemCode))
             {
                 _Message.ShowAsync("Atenção", "Selecione um item.");
                 valido = false;
             }
-            else if (_Item.ValorUnit > 0)
+            else if (_Item.ValorUnit <= 0)
             {
                 _Message.ShowAsync("Atenção", "O valor unitário deve ser maior do que zero.");
                 valido = false;
             }
-            else if (_Item.Quantidade > 0)
+            else if (_Item.Quantidade <= 0)
             {
                 _Message.ShowAsync("Atenção", "Quantidade selecionada deve ser maior do que zaro.");
                 valido = false;

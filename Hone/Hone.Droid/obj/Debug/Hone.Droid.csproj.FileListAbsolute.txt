@@ -159,6 +159,5 @@ C:\Users\Brian Souza\Desktop\Hone\Hone\Hone.Droid\obj\Debug\res\drawable-xhdpi\i
 C:\Users\Brian Souza\Desktop\Hone\Hone\Hone.Droid\obj\Debug\res\drawable-xxhdpi\icon.png
 C:\Users\Brian Souza\Desktop\Hone\Hone\Hone.Droid\obj\Debug\R.cs.flag
 C:\Users\Brian Souza\Desktop\Hone\Hone\Hone.Droid\obj\Debug\uploadflags.txt
-C:\Users\Brian Souza\Desktop\Hone\Hone\Hone.Droid\bin\Debug\Hone.dll.mdb
 C:\Users\Brian Souza\Desktop\Hone\Hone\Hone.Droid\obj\Debug\Hone.Droid.dll.mdb
 C:\Users\Brian Souza\Desktop\Hone\Hone\Hone.Droid\bin\Debug\Hone.Droid.dll.mdb

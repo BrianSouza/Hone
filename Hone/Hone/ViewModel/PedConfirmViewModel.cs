@@ -13,17 +13,17 @@ namespace Hone.ViewModel
 {
     public class PedConfirmViewModel : BaseViewModel
     {
-        private Parceiro _PN;
+        private string _PN;
         private DateTime _DtEntrega;
-        private CondPagto _CP;
-        private FormaPgto _FP;
+        private string _CP;
+        private string _FP;
         private ObservableCollection<Item> lstItem;
         private readonly IMessageServices _Message;
         private readonly INavigationService _Navigation;
         private readonly ISaveAndLoad _SaveAndLoad;
         private Pedido _Ped;
 
-        public Parceiro PN
+        public string PN
         {
             get
             {
@@ -51,7 +51,7 @@ namespace Hone.ViewModel
             }
         }
 
-        public CondPagto CP
+        public string CP
         {
             get
             {
@@ -65,7 +65,7 @@ namespace Hone.ViewModel
             }
         }
 
-        public FormaPgto FP
+        public string FP
         {
             get
             {
@@ -123,10 +123,10 @@ namespace Hone.ViewModel
         }
         private void SetValues()
         {
-            PN = Ped.Parceiro;
+            PN = string.Format("{0} - {1}",Ped.Parceiro.CardCode,Ped.Parceiro.CardName);
             DtEntrega = Ped.DtEntrega;
-            CP = Ped.CondPagto;
-            FP = Ped.FormaPgto;
+            CP = Ped.CondPagto.PymntGroup;
+            FP = Ped.FormaPgto.Descript;
             LstItem = Ped.Itens;
         }
 

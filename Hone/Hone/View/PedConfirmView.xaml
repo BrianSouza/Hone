@@ -4,11 +4,11 @@
              x:Class="Hone.View.PedConfirmView">
   <StackLayout>
     <Label Text="Parceiro" VerticalOptions="Center" HorizontalOptions="Center" />
-    <Label Text="aqui info parceiros" VerticalOptions="Center" HorizontalOptions="Center" />
+    <Label Text="{Binding PN}" VerticalOptions="Center" HorizontalOptions="Center" />
     <Label Text="Data de Entrega" VerticalOptions="Center" HorizontalOptions="Center" />
-    <Label Text="data" VerticalOptions="Center" HorizontalOptions="Center" />
+    <Label Text="{Binding DtEntrega}" VerticalOptions="Center" HorizontalOptions="Center" />
     <Label Text="Forma de Pagto" VerticalOptions="Center" HorizontalOptions="Center" />
-    <Label Text="forma" VerticalOptions="Center" HorizontalOptions="Center" />
+    <Label Text="{Binding }" VerticalOptions="Center" HorizontalOptions="Center" />
     <Label Text="Condição de Pagamento" VerticalOptions="Center" HorizontalOptions="Center" />
     <ListView ItemsSource="{Binding ItensSelecionados}">
       <ListView.ItemTemplate>
