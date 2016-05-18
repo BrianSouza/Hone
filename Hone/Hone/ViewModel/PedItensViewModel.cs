@@ -87,6 +87,7 @@ namespace Hone.ViewModel
             set
             {
                 quantidade = value;
+                _Item.Quantidade = quantidade;
                 this.Notify("Quantidade");
             }
         }
@@ -101,6 +102,7 @@ namespace Hone.ViewModel
             set
             {
                 valorUnit = value;
+                _Item.ValorUnit = valorUnit;
                 this.Notify("ValorUnit");
             }
         }

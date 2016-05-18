@@ -14,7 +14,7 @@ namespace Hone.View
         public PedItensView()
         {
             InitializeComponent();
-            this.BindingContext = pedItensVM;
+            BindingContext = pedItensVM;
             CarregarItens();
         }
         private void CarregarItens()
