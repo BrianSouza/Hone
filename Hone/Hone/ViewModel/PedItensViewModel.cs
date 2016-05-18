@@ -45,6 +45,8 @@ namespace Hone.ViewModel
             {
                 itemIndex = value;
                 _Item = Itens[itemIndex];
+                Quantidade = 0;
+                ValorUnit = 0;
                 this.Notify("ItemIndex");
             }
         }
@@ -87,7 +89,6 @@ namespace Hone.ViewModel
             set
             {
                 quantidade = value;
-                _Item.Quantidade = quantidade;
                 this.Notify("Quantidade");
             }
         }
@@ -102,7 +103,6 @@ namespace Hone.ViewModel
             set
             {
                 valorUnit = value;
-                _Item.ValorUnit = valorUnit;
                 this.Notify("ValorUnit");
             }
         }
@@ -161,25 +161,27 @@ namespace Hone.ViewModel
         }
         private bool ValidaItemSelecionado()
         {
-            bool valido = true;
             if (_Item == null || string.IsNullOrEmpty(_Item.ItemCode))
             {
                 _Message.ShowAsync("Atenção", "Selecione um item.");
-                valido = false;
+                return  false;
             }
-            else if (_Item.ValorUnit <= 0)
+            else if (ValorUnit <= 0)
             {
                 _Message.ShowAsync("Atenção", "O valor unitário deve ser maior do que zero.");
-                valido = false;
+                return  false;
             }
-            else if (_Item.Quantidade <= 0)
+            else if (Quantidade <= 0)
             {
                 _Message.ShowAsync("Atenção", "Quantidade selecionada deve ser maior do que zaro.");
-                valido = false;
+                return  false;
             }
-            return valido;
 
+            _Item.Quantidade = Quantidade;
+            _Item.ValorUnit = ValorUnit;
 
+            return true;
+            
         }
         private bool ItemDuplicado(Item item)
         {

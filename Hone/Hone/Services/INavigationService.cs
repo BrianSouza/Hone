@@ -14,5 +14,6 @@ namespace Hone.Services
         Task NavigateToPedCabecalho();
         Task NavigateToPedItens();
         Task NavigateToPedPagto();
+        Task NavigateToConfirm();
     }
 }

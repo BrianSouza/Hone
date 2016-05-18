@@ -26,12 +26,6 @@ namespace Hone.Services
         {
             await App.Current.MainPage.Navigation.PushAsync(new View.PedCabecalhoView());
         }
-
-        //public async Task NavigateToPedI()
-        //{
-        //    await App.Current.MainPage.Navigation.PushAsync(new View.PedIView());
-        //}
-
         public async Task NavigateToCadPN()
         {
             await App.Current.MainPage.Navigation.PushAsync(new View.CadPNView());
@@ -45,6 +39,11 @@ namespace Hone.Services
         public async Task NavigateToPedPagto()
         {
             await App.Current.MainPage.Navigation.PushAsync(new View.PedPagtoView());
+        }
+
+        public async Task NavigateToConfirm()
+        {
+            await App.Current.MainPage.Navigation.PushAsync(new View.PedConfirmView());
         }
     }
 }
