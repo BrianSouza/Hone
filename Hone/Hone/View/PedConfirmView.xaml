@@ -3,15 +3,15 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Hone.View.PedConfirmView">
   <StackLayout>
-    <Button Text="Salvar"></Button>
-    <Label Text="Parceiro" VerticalOptions="Center" HorizontalOptions="Center" />
-    <Label Text="{Binding PN}" VerticalOptions="Center" HorizontalOptions="Center" />
-    <Label Text="Data de Entrega" VerticalOptions="Center" HorizontalOptions="Center" />
-    <Label Text="{Binding DtEntrega}" VerticalOptions="Center" HorizontalOptions="Center" />
-    <Label Text="Forma de Pagto" VerticalOptions="Center" HorizontalOptions="Center" />
-    <Label Text="{Binding }" VerticalOptions="Center" HorizontalOptions="Center" />
-    <Label Text="Condição de Pagamento" VerticalOptions="Center" HorizontalOptions="Center" />
-    <ListView ItemsSource="{Binding ItensSelecionados}">
+    <Button Text="Salvar" Command ="{Binding Salvar}"></Button>
+    <Label Text="Parceiro"  />
+    <Label Text="{Binding PN}" />
+    <Label Text="Data de Entrega"  />
+    <Label Text="{Binding DtEntrega}"/>
+    <Label Text="Forma de Pagto"  />
+    <Label Text="{Binding FP}" />
+    <Label Text="Condição de Pagamento" />
+    <ListView ItemsSource="{Binding LstItem}">
       <ListView.ItemTemplate>
         <DataTemplate>
           <ViewCell>

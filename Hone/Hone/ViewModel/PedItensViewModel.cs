@@ -8,30 +8,38 @@ using Hone.Entidades;
 using System.Windows.Input;
 using Xamarin.Forms;
 using Hone.Services;
+using Newtonsoft.Json;
 
 namespace Hone.ViewModel
 {
-    public class PedItensViewModel : BaseViewModel
+    public class PedItensViewModel : BaseViewModel , IPedido
     {
+        #region Variaveis
         private int itemIndex;
         private Item item;
         private ObservableCollection<Item> itens;
         private double quantidade;
         private double valorUnit;
         private ObservableCollection<Item> itensSelecionados;
-        private readonly IMessageServices _Message;
-        private readonly INavigationService _Navigation;
-        private readonly ISaveAndLoad _SaveAndLoad;
+        private Pedido _Ped;
 
-        public PedItensViewModel()
+
+        #endregion
+
+        #region Propriedades
+
+        public Pedido Ped
         {
-            this._Message = DependencyService.Get<IMessageServices>();
-            this._Navigation = DependencyService.Get<INavigationService>();
-            this._SaveAndLoad = DependencyService.Get<ISaveAndLoad>();
-            this.IrParaPgto = new Command(Pagto);
-            this.SelecionarItens = new Command(SelecionaItem);
-            ItensSelecionados = new ObservableCollection<Item>();
-            CarregarItens();
+            get
+            {
+                return _Ped;
+            }
+
+            set
+            {
+                _Ped = value;
+                this.Notify("Ped");
+            }
         }
 
         public int ItemIndex
@@ -120,16 +128,31 @@ namespace Hone.ViewModel
                 this.Notify("ItensSelecionados");
             }
         }
-        
+        #endregion
 
+        #region Commands
         public ICommand IrParaPgto
         {
             get;set;
         }
-        
-        private void Pagto()
+
+        public ICommand SelecionarItens
         {
-            this._Navigation.NavigateToPedPagto();
+            get;
+            set;
+        }
+        #endregion
+
+        #region Métodos
+
+        private void IrParaViewPagto()
+        {
+            if (ValidaListaItensSelecionados())
+            {
+                PreencherPedido();
+                SalvarTxtPedido();
+                _Navigation.NavigateToPedPagto();
+            }
         }
 
         private void CarregarItens()
@@ -141,12 +164,6 @@ namespace Hone.ViewModel
             };
         }
         
-        public ICommand SelecionarItens
-        {
-            get;
-            set;
-        }
-
         private void SelecionaItem()
         {
             if (!ValidaItemSelecionado())
@@ -159,6 +176,7 @@ namespace Hone.ViewModel
                 ItensSelecionados.Add(itemAdd);
             }
         }
+
         private bool ValidaItemSelecionado()
         {
             if (_Item == null || string.IsNullOrEmpty(_Item.ItemCode))
@@ -183,6 +201,7 @@ namespace Hone.ViewModel
             return true;
             
         }
+
         private bool ItemDuplicado(Item item)
         {
             var duplicado = itensSelecionados.Where(t0 => t0.ItemCode.Equals(item.ItemCode)).SingleOrDefault();
@@ -190,6 +209,44 @@ namespace Hone.ViewModel
             else return true;
         }
 
+        private bool ValidaListaItensSelecionados()
+        {
+            if (ItensSelecionados.Count > 0)
+                return true;
+            else
+            {
+                _Message.ShowAsync("Atenção", "Adicione ao menos 1 item ao pedido.");
+                return false;
+            }
+        }
 
+        public void PreencherPedido()
+        {
+            Ped.Itens = ItensSelecionados;
+        }
+
+        public void CarregarTxtPedido()
+        {
+            string jsonPedido = _SaveAndLoad.LoadText("Pedido.txt");
+            Ped = JsonConvert.DeserializeObject<Pedido>(jsonPedido);
+        }
+
+        public void SalvarTxtPedido()
+        {
+            string ped = JsonConvert.SerializeObject(Ped);
+            _SaveAndLoad.SaveText("Pedido.txt", ped);
+        }
+        #endregion  
+
+        public PedItensViewModel()
+        {
+            Ped = null;
+            Ped = new Pedido();
+            CarregarTxtPedido();
+            this.IrParaPgto = new Command(IrParaViewPagto);
+            this.SelecionarItens = new Command(SelecionaItem);
+            ItensSelecionados = new ObservableCollection<Item>();
+            CarregarItens();
+        }
     }
 }

@@ -9,26 +9,31 @@ using Xamarin.Forms;
 
 namespace Hone.ViewModel
 {
-    public class PedCabecalhoViewModel : BaseViewModel
+    public class PedCabecalhoViewModel : BaseViewModel , IPedido
     {
-        public PedCabecalhoViewModel()
-        {
-            _message = DependencyService.Get<IMessageServices>();
-            _navigation = DependencyService.Get<INavigationService>();
-            _saveAndLoad = DependencyService.Get<ISaveAndLoad>();
-            PreencherParceiros();
-            
-            this.IrParaLinhas = new Command(Linhas);
-        }
-        private readonly IMessageServices _message;
-        private readonly INavigationService _navigation;
-        private readonly ISaveAndLoad _saveAndLoad;
 
-        private Pedido pedido;
+        #region Variaveis
         private int parceiroIndex;
         private Parceiro selectedParceiro;
         private ObservableCollection<Parceiro> parceiros;
-        
+        private Pedido _Ped;
+        #endregion
+
+        #region Propriedades
+
+        public Pedido Ped
+        {
+            get
+            {
+                return _Ped;
+            }
+
+            set
+            {
+                _Ped = value;
+                this.Notify("Ped");
+            }
+        }
 
         public int ParceiroIndex
         {
@@ -67,7 +72,9 @@ namespace Hone.ViewModel
                 this.Notify("Parceiros");
             }
         }
-        
+        #endregion
+
+        #region Métodos
         private void PreencherParceiros()
         {
             Parceiros = new ObservableCollection<Parceiro>();
@@ -75,57 +82,59 @@ namespace Hone.ViewModel
             Parceiros.Add(new Parceiro { CardCode = "00002", CardName = "Parceiro 2" });
         }
 
+        private bool Validacao()
+        {
+            if (SelectedParceiro == null)
+            {
+                _Message.ShowAsync("Atenção", "Selecione um Parceiro.");
+                return false;
+            }
+            else return true;
+
+        }
+
+        private void IrParaViewLinhas()
+        {
+            if (!Validacao())
+                return;
+
+            PreencherPedido();
+            SalvarTxtPedido();
+            _Navigation.NavigateToPedItens();
+        }
+
+        public void PreencherPedido()
+        {
+            Ped = new Pedido();
+            Ped.Parceiro = this.SelectedParceiro;
+        }
+
+        public void CarregarTxtPedido()
+        {
+            string jsonPedido = _SaveAndLoad.LoadText("Pedido.txt");
+            Ped = JsonConvert.DeserializeObject<Pedido>(jsonPedido);
+        }
+
+        public void SalvarTxtPedido()
+        {
+            string ped = JsonConvert.SerializeObject(Ped);
+            _SaveAndLoad.SaveText("Pedido.txt", ped);
+        }
+        #endregion
+
+        #region Command
         public ICommand IrParaLinhas
         {
             get; set;
         }
 
-        private void Linhas()
+        #endregion
+
+        public PedCabecalhoViewModel()
         {
-            if (!Validacao())
-                return;
+            PreencherParceiros();
 
-            SalvarTxtPedido();
-            _navigation.NavigateToPedItens();
-        }
-
-        private bool Validacao()
-        {
-            if (SelectedParceiro == null)
-            {
-                _message.ShowAsync("Atenção", "Selecione um Parceiro.");
-                return false;
-            }
-            //else if (DtEntrega.Date < DateTime.Now.Date)
-            //{
-            //    _message.ShowAsync("Atenção", "Selecione uma data maior ou igual a data atual.");
-            //    return false;
-            //}
-            else return true;
-
-        }
-
-        public Pedido Pedido
-        {
-            get
-            {
-                return pedido;
-            }
-
-            set
-            {
-                pedido = value;
-                this.Notify("Pedido");
-            }
-        }
-
-        private void SalvarTxtPedido()
-        {
-            this.Pedido = new Pedido();
-            Pedido.Parceiro = this.SelectedParceiro;
-
-            string ped = JsonConvert.SerializeObject(Pedido);
-            _saveAndLoad.SaveText("pedido.txt", ped);
+            this.IrParaLinhas = new Command(IrParaViewLinhas);
         }
     }
 }

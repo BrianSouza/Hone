@@ -11,13 +11,10 @@ namespace Hone.ViewModel
 {
     public class MainViewModel : BaseViewModel
     {
-        private readonly INavigationService _navigation;
-
         public MainViewModel()
         {
             this.GoCadPN = new Command(this.Parceiros);
             this.GoPedidos = new Command(this.Pedidos);
-            this._navigation = DependencyService.Get<INavigationService>();
         }
 
         #region Cadastro de Parceiros
@@ -27,7 +24,7 @@ namespace Hone.ViewModel
         }
         private async void Parceiros()
         {
-            await this._navigation.NavigateToCadPN();
+            await this._Navigation.NavigateToCadPN();
         }
         #endregion
 
@@ -39,7 +36,7 @@ namespace Hone.ViewModel
         }
         private async void Pedidos()
         {
-            await this._navigation.NavigateToPedCabecalho();
+            await this._Navigation.NavigateToPedCabecalho();
 
         }
         #endregion

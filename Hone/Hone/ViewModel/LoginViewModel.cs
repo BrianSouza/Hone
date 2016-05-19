@@ -41,9 +41,7 @@ namespace Hone.ViewModel
                 this.Notify("UserName");
             }
         }
-
-        private readonly IMessageServices _message;
-        private readonly INavigationService _navigation;
+        
         public ICommand LoginCommand
         {
             get;
@@ -52,14 +50,13 @@ namespace Hone.ViewModel
 
         public LoginViewModel()
         {
-            this._message = DependencyService.Get<IMessageServices>();
-            this._navigation = DependencyService.Get<INavigationService>();
+            
             this.LoginCommand = new Command(this.Login);
         }
 
         private void Login()
         {
-            this._navigation.NavigateToMain();
+            this._Navigation.NavigateToMain();
         }
     }
 }

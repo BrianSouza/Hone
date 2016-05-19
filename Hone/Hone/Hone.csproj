@@ -39,6 +39,7 @@
     <Compile Include="Controles\CustomListView.cs" />
     <Compile Include="Entidades\CondPagto.cs" />
     <Compile Include="Entidades\FormaPgto.cs" />
+    <Compile Include="Entidades\IPedido.cs" />
     <Compile Include="Entidades\Item.cs" />
     <Compile Include="Entidades\Parceiro.cs" />
     <Compile Include="Entidades\Pedido.cs" />

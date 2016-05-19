@@ -15,17 +15,12 @@ namespace Hone.ViewModel
     {
         public CadPNViewModel()
         {
-            _message = DependencyService.Get<IMessageServices>();
-            _navigation = DependencyService.Get<INavigationService>();
             ListarEstados();
             this.Salvar = new Command(this.SalvarPN);
             VisibleCPF = false;
             VisibleCNPJ = false;
         }
-
-        private readonly IMessageServices _message;
-        private readonly INavigationService _navigation;
-
+        
         #region Variaveis
         private string _descricao;
         private string _tipoDoc; //TODO: fazer enum para o tipo de documento
@@ -302,7 +297,7 @@ namespace Hone.ViewModel
             bool bValido = Validacoes();
 
             if (bValido)
-                _navigation.NavigateToMain();
+                _Navigation.NavigateToMain();
 
         }
 
@@ -312,52 +307,52 @@ namespace Hone.ViewModel
             if (string.IsNullOrEmpty(Descricao))
             {
 
-                _message.ShowAsync("Atenção", "Informe a razão social.");
+                _Message.ShowAsync("Atenção", "Informe a razão social.");
                 bValido = false;
             }
             else if (string.IsNullOrEmpty(TipoParc))
             {
-                _message.ShowAsync("Atenção", "Informe o tipo do parceiro.");
+                _Message.ShowAsync("Atenção", "Informe o tipo do parceiro.");
                 bValido = false;
             }
             else if (string.IsNullOrEmpty(TipoDoc))
             {
-                _message.ShowAsync("Atenção", "Informe se irá utilizar CNPJ ou CPF.");
+                _Message.ShowAsync("Atenção", "Informe se irá utilizar CNPJ ou CPF.");
                 bValido = false;
             }
             else if (string.IsNullOrEmpty(DocumentoCPF) && string.IsNullOrEmpty(DocumentoCNPJ))
             {
-                _message.ShowAsync("Atenção", "Informe o número do documento");
+                _Message.ShowAsync("Atenção", "Informe o número do documento");
                 bValido = false;
             }
             else if (!string.IsNullOrEmpty(DocumentoCPF) && DocumentoCPF.Length < 11)
             {
-                _message.ShowAsync("Atenção", "O CPF deve ter 11 dígitos.");
+                _Message.ShowAsync("Atenção", "O CPF deve ter 11 dígitos.");
                 bValido = false;
             }
             else if (!string.IsNullOrEmpty(DocumentoCNPJ) && DocumentoCNPJ.Length < 14)
             {
-                _message.ShowAsync("Atenção", "O CNPJ deve ter 14 dígitos.");
+                _Message.ShowAsync("Atenção", "O CNPJ deve ter 14 dígitos.");
                 bValido = false;
             }
             else if (string.IsNullOrEmpty(Endereco))
             {
-                _message.ShowAsync("Atenção", "Informe o endereço.");
+                _Message.ShowAsync("Atenção", "Informe o endereço.");
                 bValido = false;
             }
             else if (string.IsNullOrEmpty(Cidade))
             {
-                _message.ShowAsync("Atenção", "Informe a cidade.");
+                _Message.ShowAsync("Atenção", "Informe a cidade.");
                 bValido = false;
             }
             else if (string.IsNullOrEmpty(CEP))
             {
-                _message.ShowAsync("Atenção", "Informe o CEP.");
+                _Message.ShowAsync("Atenção", "Informe o CEP.");
                 bValido = false;
             }
             else if (!string.IsNullOrEmpty(CEP) && CEP.Length < 8)
             {
-                _message.ShowAsync("Atenção", "O CEP deve ter 8 dígitos.");
+                _Message.ShowAsync("Atenção", "O CEP deve ter 8 dígitos.");
                 bValido = false;
             }
 

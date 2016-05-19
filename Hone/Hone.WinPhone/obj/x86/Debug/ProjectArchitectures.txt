@@ -1,0 +1,2 @@
+C:\Users\brian.souza\Source\Repos\Hone\Hone\Hone.WinPhone\Hone.WinPhone.csproj;x86
+C:\Users\brian.souza\Source\Repos\Hone\Hone\Hone\Hone.csproj;neutral

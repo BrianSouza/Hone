@@ -4,6 +4,7 @@ using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Input;
 using Hone.Entidades;
 using Hone.Services;
 using Newtonsoft.Json;
@@ -11,18 +12,18 @@ using Xamarin.Forms;
 
 namespace Hone.ViewModel
 {
-    public class PedConfirmViewModel : BaseViewModel
+    public class PedConfirmViewModel : BaseViewModel,IPedido
     {
+        #region Variaveis
         private string _PN;
         private DateTime _DtEntrega;
         private string _CP;
         private string _FP;
         private ObservableCollection<Item> lstItem;
-        private readonly IMessageServices _Message;
-        private readonly INavigationService _Navigation;
-        private readonly ISaveAndLoad _SaveAndLoad;
-        private Pedido _Ped;
+        private Pedido ped;
+        #endregion
 
+        #region Propriedades
         public string PN
         {
             get
@@ -97,30 +98,18 @@ namespace Hone.ViewModel
         {
             get
             {
-                return _Ped;
+                return ped;
             }
 
             set
             {
-                _Ped = value;
+                ped = value;
                 this.Notify("Ped");
             }
         }
+        #endregion
 
-        public PedConfirmViewModel()
-        {
-            _Message = DependencyService.Get<IMessageServices>();
-            _Navigation = DependencyService.Get<INavigationService>();
-            _SaveAndLoad = DependencyService.Get<ISaveAndLoad>();
-            LoadPedido();
-            SetValues();
-        }
-
-        private void LoadPedido()
-        {
-            string jsonPedido = _SaveAndLoad.LoadText("Pedido.txt");
-            Ped = JsonConvert.DeserializeObject<Pedido>(jsonPedido);
-        }
+        #region Métodos
         private void SetValues()
         {
             PN = string.Format("{0} - {1}",Ped.Parceiro.CardCode,Ped.Parceiro.CardName);
@@ -129,8 +118,43 @@ namespace Hone.ViewModel
             FP = Ped.FormaPgto.Descript;
             LstItem = Ped.Itens;
         }
+        
+        public void CarregarTxtPedido()
+        {
+            string jsonPedido = _SaveAndLoad.LoadText("Pedido.txt");
+            Ped = JsonConvert.DeserializeObject<Pedido>(jsonPedido);
+        }
+
+        public void PreencherPedido()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void SalvarTxtPedido()
+        {
+            throw new NotImplementedException();
+        }
+
+        private void SalvarPedido()
+        {
+            _Navigation.NavigateToMain();
+        }
+        #endregion
+
+        #region Commands
+        public ICommand Salvar
+        {
+            get;set;
+        }
+        #endregion
 
 
+        public PedConfirmViewModel()
+        {
+            CarregarTxtPedido();
+            SetValues();
+            Salvar = new Command(SalvarPedido);
+        }
 
     }
 }

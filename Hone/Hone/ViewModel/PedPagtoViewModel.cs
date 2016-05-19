@@ -7,26 +7,15 @@ using System.Threading.Tasks;
 using System.Windows.Input;
 using Hone.Entidades;
 using Hone.Services;
+using Newtonsoft.Json;
 using Xamarin.Forms;
 
 namespace Hone.ViewModel
 {
-    public class PedPagtoViewModel : BaseViewModel
+    public class PedPagtoViewModel : BaseViewModel, IPedido
     {
-        private IMessageServices _message;
-        private INavigationService _navigation;
-        private ISaveAndLoad _saveAndLoad;
-        public PedPagtoViewModel()
-        {
-            _message = DependencyService.Get<IMessageServices>();
-            _navigation = DependencyService.Get<INavigationService>();
-            _saveAndLoad = DependencyService.Get<ISaveAndLoad>();
-            CarregarListaCondPagto();
-            CarregarListaFormaPgto();
-            DtEntrega = DateTime.Now;
-            NavegarParaConfirmacao = new Command(IrParaConfirmacao);
-        }
-
+        
+        #region Variaveis
         private int formPagtoIndex;
         private FormaPgto formaPagto;
         private ObservableCollection<FormaPgto> listaFormaPagto;
@@ -37,6 +26,25 @@ namespace Hone.ViewModel
 
         private DateTime dtEntrega;
         private DateTime dataMin;
+
+        private Pedido _Ped;
+        #endregion
+
+        #region Propriedades
+
+        public Pedido Ped
+        {
+            get
+            {
+                return _Ped;
+            }
+
+            set
+            {
+                _Ped = value;
+                this.Notify("Ped");
+            }
+        }
 
         public int FormPagtoIndex
         {
@@ -150,8 +158,9 @@ namespace Hone.ViewModel
                 this.Notify("DataMin");
             }
         }
+        #endregion
 
-
+        #region Métodos
         private void CarregarListaFormaPgto()
         {
             ListaFormaPagto = new ObservableCollection<FormaPgto>
@@ -170,14 +179,74 @@ namespace Hone.ViewModel
             };
         }
 
+        private void IrParaViewConfirmacao()
+        {
+            if(Validacoes())
+            {
+                PreencherPedido();
+                SalvarTxtPedido();
+                _Navigation.NavigateToConfirm();
+            }
+            
+        }
+
+        private bool Validacoes()
+        {
+            if (FormaPagto == null)
+            {
+                _Message.ShowAsync("Atenção", "Selecione uma forma de pagamento.");
+                return false;
+            }
+            else if (CondPgto == null)
+            {
+                _Message.ShowAsync("Atenção", "Selecione uma condição de pagamento.");
+                return false;
+            }
+            else if (DtEntrega.Date < DateTime.Now.Date)
+            {
+                _Message.ShowAsync("Atenção", "Data de entrega deve ser maior ou igual a data atual.");
+                return false;
+            }
+            else
+                return true;
+        }
+
+        public void PreencherPedido()
+        {
+            Ped.CondPagto = this.CondPgto;
+            Ped.FormaPgto = this.FormaPagto;
+            Ped.DtEntrega = this.DtEntrega.Date;
+        }
+
+        public void CarregarTxtPedido()
+        {
+            string jsonPedido = _SaveAndLoad.LoadText("Pedido.txt");
+            Ped = JsonConvert.DeserializeObject<Pedido>(jsonPedido);
+        }
+
+        public void SalvarTxtPedido()
+        {
+            string ped = JsonConvert.SerializeObject(Ped);
+            _SaveAndLoad.SaveText("Pedido.txt", ped);
+        }
+        #endregion
+
+        #region Command
         public ICommand NavegarParaConfirmacao
         {
             get;set;
         }
+        #endregion
 
-        private void IrParaConfirmacao()
+        public PedPagtoViewModel()
         {
-            _navigation.NavigateToConfirm();
+            Ped = null;
+            Ped = new Pedido();
+            CarregarTxtPedido();
+            CarregarListaCondPagto();
+            CarregarListaFormaPgto();
+            DtEntrega = DateTime.Now;
+            NavegarParaConfirmacao = new Command(IrParaViewConfirmacao);
         }
     }
 }
