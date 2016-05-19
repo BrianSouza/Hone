@@ -6,7 +6,6 @@
     <Button Text="Próximo" Command="{Binding IrParaLinhas}"></Button>
     <Label Text="Parceiro"></Label>
     <Picker x:Name="pckParceiros" SelectedIndex="{Binding ParceiroIndex}" ></Picker>
-    <Label Text="Data de Entrega"></Label>
-    <DatePicker Format="dd/MM/yyyy" Date="{Binding DtEntrega}" ></DatePicker>
+    
   </StackLayout>
 </ContentPage>

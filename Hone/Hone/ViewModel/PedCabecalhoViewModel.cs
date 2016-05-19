@@ -17,7 +17,7 @@ namespace Hone.ViewModel
             _navigation = DependencyService.Get<INavigationService>();
             _saveAndLoad = DependencyService.Get<ISaveAndLoad>();
             PreencherParceiros();
-            DtEntrega = DateTime.Now;
+            
             this.IrParaLinhas = new Command(Linhas);
         }
         private readonly IMessageServices _message;
@@ -28,8 +28,7 @@ namespace Hone.ViewModel
         private int parceiroIndex;
         private Parceiro selectedParceiro;
         private ObservableCollection<Parceiro> parceiros;
-        private DateTime dtEntrega;
-        private DateTime dataMin;
+        
 
         public int ParceiroIndex
         {
@@ -68,33 +67,7 @@ namespace Hone.ViewModel
                 this.Notify("Parceiros");
             }
         }
-        public DateTime DtEntrega
-        {
-            get
-            {
-                return dtEntrega;
-            }
-            set
-            {
-                dtEntrega = value;
-                this.Notify("DtEntrega");
-            }
-        }
-
-        public DateTime DataMin
-        {
-            get
-            {
-                return dataMin;
-            }
-
-            set
-            {
-                dataMin = value;
-                this.Notify("DataMin");
-            }
-        }
-
+        
         private void PreencherParceiros()
         {
             Parceiros = new ObservableCollection<Parceiro>();
@@ -123,11 +96,11 @@ namespace Hone.ViewModel
                 _message.ShowAsync("Atenção", "Selecione um Parceiro.");
                 return false;
             }
-            else if (DtEntrega.Date < DateTime.Now.Date)
-            {
-                _message.ShowAsync("Atenção", "Selecione uma data maior ou igual a data atual.");
-                return false;
-            }
+            //else if (DtEntrega.Date < DateTime.Now.Date)
+            //{
+            //    _message.ShowAsync("Atenção", "Selecione uma data maior ou igual a data atual.");
+            //    return false;
+            //}
             else return true;
 
         }
@@ -150,7 +123,6 @@ namespace Hone.ViewModel
         {
             this.Pedido = new Pedido();
             Pedido.Parceiro = this.SelectedParceiro;
-            Pedido.DtEntrega = this.DtEntrega;
 
             string ped = JsonConvert.SerializeObject(Pedido);
             _saveAndLoad.SaveText("pedido.txt", ped);

@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Hone.View.PedConfirmView">
   <StackLayout>
+    <Button Text="Salvar"></Button>
     <Label Text="Parceiro" VerticalOptions="Center" HorizontalOptions="Center" />
     <Label Text="{Binding PN}" VerticalOptions="Center" HorizontalOptions="Center" />
     <Label Text="Data de Entrega" VerticalOptions="Center" HorizontalOptions="Center" />

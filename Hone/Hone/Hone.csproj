@@ -55,6 +55,7 @@
     <Compile Include="ViewModel\MainViewModel.cs" />
     <Compile Include="ViewModel\PedConfirmViewModel.cs" />
     <Compile Include="ViewModel\PedItensViewModel.cs" />
+    <Compile Include="ViewModel\PedPagtoViewModel.cs" />
     <Compile Include="View\CadPNView.xaml.cs">
       <DependentUpon>CadPNView.xaml</DependentUpon>
     </Compile>

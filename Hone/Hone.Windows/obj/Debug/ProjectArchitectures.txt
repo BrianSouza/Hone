@@ -1,2 +1,0 @@
-C:\Users\Brian Souza\Desktop\Hone\Hone\Hone.Windows\Hone.Windows.csproj;neutral
-C:\Users\Brian Souza\Desktop\Hone\Hone\Hone\Hone.csproj;neutral
