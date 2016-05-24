@@ -15,6 +15,7 @@ namespace Hone
             DependencyService.Register<INavigationService, NavigationService>();
             // The root page of your application
             MainPage = new NavigationPage(new View.LoginView());
+            //MainPage = new View.MainView();
         }
 
         protected override void OnStart()

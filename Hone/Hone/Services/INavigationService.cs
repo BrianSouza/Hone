@@ -9,10 +9,10 @@ namespace Hone.Services
     public interface INavigationService
     {
         Task NavigateToLogin();
-        Task NavigateToMain();
+        void NavigateToMain();
         Task NavigateToCadPN();
         Task NavigateToPedCabecalho();
-        Task NavigateToPedItens();
+        void NavigateToPedItens();
         Task NavigateToPedPagto();
         Task NavigateToConfirm();
     }

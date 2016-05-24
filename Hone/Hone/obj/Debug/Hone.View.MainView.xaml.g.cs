@@ -14,11 +14,15 @@ namespace Hone.View {
     using Xamarin.Forms.Xaml;
     
     
-    public partial class MainView : global::Xamarin.Forms.ContentPage {
+    public partial class MainView : global::Xamarin.Forms.MasterDetailPage {
+        
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::Hone.View.PaginaPrincipal masterPage;
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
             this.LoadFromXaml(typeof(MainView));
+            masterPage = this.FindByName<global::Hone.View.PaginaPrincipal>("masterPage");
         }
     }
 }

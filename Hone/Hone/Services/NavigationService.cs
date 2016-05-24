@@ -18,9 +18,10 @@ namespace Hone.Services
             await App.Current.MainPage.Navigation.PushAsync(new View.LoginView());
         }
 
-        public async Task NavigateToMain()
+        public void NavigateToMain()
         {
-            await App.Current.MainPage.Navigation.PushAsync(new View.MainView());
+            //await App.Current.MainPage.Navigation.PushAsync(new View.MainView());
+            App.Current.MainPage = new View.MainView();
         }
         public async Task NavigateToPedCabecalho()
         {
@@ -31,9 +32,12 @@ namespace Hone.Services
             await App.Current.MainPage.Navigation.PushAsync(new View.CadPNView());
         }
 
-        public async Task NavigateToPedItens()
+        public void NavigateToPedItens()
         {
-            await App.Current.MainPage.Navigation.PushAsync(new View.PedItensView());
+            //await App.Current.MainPage.Navigation.PushAsync(new View.PedItensView());
+            //Detail = new NavigationPage((Page)Activator.CreateInstance(item.TargetType));
+            var master = (MasterDetailPage)App.Current.MainPage;
+            master.Detail = new NavigationPage((Page)Activator.CreateInstance(typeof(View.PedItensView)));
         }
 
         public async Task NavigateToPedPagto()

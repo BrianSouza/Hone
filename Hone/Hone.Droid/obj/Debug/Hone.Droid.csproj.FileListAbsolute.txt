@@ -200,8 +200,9 @@ C:\Users\brian.souza\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\res\drawable\ic
 C:\Users\brian.souza\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\res\drawable-hdpi\icon.png
 C:\Users\brian.souza\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\res\drawable-xhdpi\icon.png
 C:\Users\brian.souza\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\res\drawable-xxhdpi\icon.png
+C:\Users\brian.souza\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\res\drawable\pn.png
+C:\Users\brian.souza\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\res\drawable\ham.png
 C:\Users\brian.souza\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\R.cs.flag
 C:\Users\brian.souza\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\uploadflags.txt
-C:\Users\brian.souza\Source\Repos\Hone\Hone\Hone.Droid\bin\Debug\Hone.dll.mdb
 C:\Users\brian.souza\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\Hone.Droid.dll.mdb
 C:\Users\brian.souza\Source\Repos\Hone\Hone\Hone.Droid\bin\Debug\Hone.Droid.dll.mdb

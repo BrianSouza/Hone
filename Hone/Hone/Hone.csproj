@@ -37,6 +37,7 @@
   <ItemGroup>
     <Compile Include="App.cs" />
     <Compile Include="Controles\CustomListView.cs" />
+    <Compile Include="Entidades\PropriedadesMenuPrincipal.cs" />
     <Compile Include="Entidades\CondPagto.cs" />
     <Compile Include="Entidades\FormaPgto.cs" />
     <Compile Include="Entidades\IPedido.cs" />
@@ -54,17 +55,24 @@
     <Compile Include="ViewModel\CadPNViewModel.cs" />
     <Compile Include="ViewModel\LoginViewModel.cs" />
     <Compile Include="ViewModel\MainViewModel.cs" />
+    <Compile Include="ViewModel\PaginaPrincipalViewModel.cs" />
     <Compile Include="ViewModel\PedConfirmViewModel.cs" />
     <Compile Include="ViewModel\PedItensViewModel.cs" />
     <Compile Include="ViewModel\PedPagtoViewModel.cs" />
     <Compile Include="View\CadPNView.xaml.cs">
       <DependentUpon>CadPNView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="View\HomeView.xaml.cs">
+      <DependentUpon>HomeView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View\LoginView.xaml.cs">
       <DependentUpon>LoginView.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\MainView.xaml.cs">
       <DependentUpon>MainView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\PaginaPrincipal.xaml.cs">
+      <DependentUpon>PaginaPrincipal.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\PedCabecalhoView.xaml.cs">
       <DependentUpon>PedCabecalhoView.xaml</DependentUpon>
@@ -141,6 +149,18 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="View\PedConfirmView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="View\PaginaPrincipal.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="View\HomeView.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
