@@ -12,8 +12,6 @@ namespace Hone.View
             InitializeComponent();
             this.BindingContext = mVM;
             //masterPage.ListView.ItemSelected += OnItemSelected;
-            masterPage.ListView.SetBinding(ListView.SelectedItemProperty, "GoPedidos");
-            masterPage.ListView.SelectedItem = mVM.GoPedidos;
             if (Device.OS == TargetPlatform.Windows)
             {
                 Master.Icon = "icon.png";

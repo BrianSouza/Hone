@@ -5,12 +5,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Hone.Entidades;
+using Xamarin.Forms;
 
 namespace Hone.ViewModel
 {
     public class PaginaPrincipalViewModel : BaseViewModel
     {
         private ObservableCollection<PropriedadesMenuPrincipal> menus;
+        private PropriedadesMenuPrincipal selectedMenu;
 
         public ObservableCollection<PropriedadesMenuPrincipal> Menus
         {
@@ -23,6 +25,32 @@ namespace Hone.ViewModel
             {
                 menus = value;
                 this.Notify("Menus");
+            }
+        }
+
+        public PropriedadesMenuPrincipal SelectedMenu
+        {
+            get
+            {
+                return selectedMenu;
+            }
+
+            set
+            {
+                selectedMenu = value;
+                NavigateDetail(value);
+                this.Notify("SelectedMenu");
+            }
+        }
+
+        private void NavigateDetail(PropriedadesMenuPrincipal pmp)
+        {
+            if (pmp != null)
+            {
+                var master = (MasterDetailPage)App.Current.MainPage;
+                master.Detail = new NavigationPage((Page)Activator.CreateInstance(pmp.TargetType));
+                SelectedMenu = null;
+                master.IsPresented = false;
             }
         }
 

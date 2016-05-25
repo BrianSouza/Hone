@@ -7,10 +7,10 @@
              Title="Hone">
   <ContentPage.Content>
     <StackLayout VerticalOptions="FillAndExpand">
-      <ListView x:Name="listaMenus" VerticalOptions="FillAndExpand" SeparatorVisibility="None" ItemsSource="{Binding Menus}">
+      <ListView x:Name="listaMenus" VerticalOptions="FillAndExpand" SeparatorVisibility="None" ItemsSource="{Binding Menus}" SelectedItem="{Binding SelectedMenu}">
         <ListView.ItemTemplate>
           <DataTemplate>
-            <ImageCell Text="{Binding Title}" ImageSource="{Binding IconSource}" />
+            <ImageCell Text="{Binding Title}" ImageSource="{Binding IconSource}"/>
           </DataTemplate>
         </ListView.ItemTemplate>
       </ListView>
