@@ -2,7 +2,8 @@
 <MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:Hone;assembly=Hone"     
-             x:Class="Hone.View.MainView">
+             x:Class="Hone.View.MainView"
+                  BackgroundColor="White">
   <MasterDetailPage.Master>
     <local:View.PaginaPrincipal x:Name="masterPage"/>
   </MasterDetailPage.Master>

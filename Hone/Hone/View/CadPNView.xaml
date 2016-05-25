@@ -2,7 +2,8 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:mascara="clr-namespace:Hone;assembly=Hone"
-             x:Class="Hone.View.CadPNView">
+             x:Class="Hone.View.CadPNView"
+             BackgroundColor="White">
   <ContentPage.Resources>
     <ResourceDictionary>
       <mascara:Mask x:Key="Mask"></mascara:Mask>

@@ -13,32 +13,7 @@ namespace Hone.ViewModel
     {
         public MainViewModel()
         {
-            this.GoCadPN = new Command(this.Parceiros);
-            this.GoPedidos = new Command(this.Pedidos);
         }
-
-        #region Cadastro de Parceiros
-        public ICommand GoCadPN
-        {
-            get; set;
-        }
-        private async void Parceiros()
-        {
-            await this._Navigation.NavigateToCadPN();
-        }
-        #endregion
-
-        #region Pedidos
-        public ICommand GoPedidos
-        {
-            get;
-            set;
-        }
-        private async void Pedidos()
-        {
-            await this._Navigation.NavigateToPedCabecalho();
-
-        }
-        #endregion
+        
     }
 }

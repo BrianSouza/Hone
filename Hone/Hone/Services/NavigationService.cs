@@ -9,45 +9,41 @@ namespace Hone.Services
 {
     public class NavigationService : INavigationService
     {
-
+        private MasterDetailPage master = (MasterDetailPage)App.Current.MainPage;
         public NavigationService()
         {
         }
-        public async Task NavigateToLogin()
+        public void NavigateToLogin()
         {
-            await App.Current.MainPage.Navigation.PushAsync(new View.LoginView());
+            App.Current.MainPage = new View.LoginView();
         }
 
         public void NavigateToMain()
         {
-            //await App.Current.MainPage.Navigation.PushAsync(new View.MainView());
             App.Current.MainPage = new View.MainView();
         }
-        public async Task NavigateToPedCabecalho()
-        {
-            await App.Current.MainPage.Navigation.PushAsync(new View.PedCabecalhoView());
-        }
-        public async Task NavigateToCadPN()
-        {
-            await App.Current.MainPage.Navigation.PushAsync(new View.CadPNView());
-        }
+        //public async Task NavigateToPedCabecalho()
+        //{
+        //    await App.Current.MainPage.Navigation.PushAsync(new View.PedCabecalhoView());
+        //}
+        //public async Task NavigateToCadPN()
+        //{
+        //    await App.Current.MainPage.Navigation.PushAsync(new View.CadPNView());
+        //}
 
         public void NavigateToPedItens()
         {
-            //await App.Current.MainPage.Navigation.PushAsync(new View.PedItensView());
-            //Detail = new NavigationPage((Page)Activator.CreateInstance(item.TargetType));
-            var master = (MasterDetailPage)App.Current.MainPage;
             master.Detail = new NavigationPage((Page)Activator.CreateInstance(typeof(View.PedItensView)));
         }
 
-        public async Task NavigateToPedPagto()
+        public void NavigateToPedPagto()
         {
-            await App.Current.MainPage.Navigation.PushAsync(new View.PedPagtoView());
+            master.Detail = new NavigationPage((Page)Activator.CreateInstance(typeof(View.PedPagtoView)));
         }
 
-        public async Task NavigateToConfirm()
+        public void NavigateToConfirm()
         {
-            await App.Current.MainPage.Navigation.PushAsync(new View.PedConfirmView());
+            master.Detail = new NavigationPage((Page)Activator.CreateInstance(typeof(View.PedConfirmView)));
         }
     }
 }

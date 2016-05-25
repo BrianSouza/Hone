@@ -3,8 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Hone.View.PaginaPrincipal"
              Padding="0,40,0,0"
-             Icon="Ham.png"
-             Title="Hone">
+             Icon="menu.png"
+             Title="Hone" BackgroundColor="White">
   <ContentPage.Content>
     <StackLayout VerticalOptions="FillAndExpand">
       <ListView x:Name="listaMenus" VerticalOptions="FillAndExpand" SeparatorVisibility="None" ItemsSource="{Binding Menus}" SelectedItem="{Binding SelectedMenu}">

@@ -8,12 +8,12 @@ namespace Hone.Services
 {
     public interface INavigationService
     {
-        Task NavigateToLogin();
+        void NavigateToLogin();
         void NavigateToMain();
-        Task NavigateToCadPN();
-        Task NavigateToPedCabecalho();
+        //Task NavigateToCadPN();
+        //Task NavigateToPedCabecalho();
         void NavigateToPedItens();
-        Task NavigateToPedPagto();
-        Task NavigateToConfirm();
+        void NavigateToPedPagto();
+        void NavigateToConfirm();
     }
 }
