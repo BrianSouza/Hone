@@ -6,7 +6,7 @@
   <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
   <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
   <application android:name="mono.android.app.Application" android:allowBackup="true" android:label="Hone.Droid" android:icon="@drawable/icon" android:debuggable="true">
-    <activity android:configChanges="orientation|screenSize" android:icon="@drawable/icon" android:label="Hone" android:name="md5d0f262f79dc6b6ca9b59a4df2679bf04.MainActivity">
+    <activity android:configChanges="orientation|screenSize" android:icon="@drawable/icon" android:label="Hone" android:theme="@android:style/Theme.Material.Light" android:name="md5d0f262f79dc6b6ca9b59a4df2679bf04.MainActivity">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
         <category android:name="android.intent.category.LAUNCHER" />
