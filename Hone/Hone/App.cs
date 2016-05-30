@@ -16,6 +16,7 @@ namespace Hone
             // The root page of your application
             MainPage = new NavigationPage(new View.LoginView());
             //MainPage = new View.MainView();
+            //App.Current.Resources.Add("fundoPrincipal", "#1E90FF");
         }
 
         protected override void OnStart()

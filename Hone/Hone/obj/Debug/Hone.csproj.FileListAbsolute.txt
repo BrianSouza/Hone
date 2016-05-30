@@ -100,3 +100,7 @@ C:\Users\Brian Souza\Desktop\Hone\Hone\Hone\obj\Debug\Hone.dll.mdb
 C:\Users\Brian Souza\Desktop\Hone\Hone\Hone\bin\Debug\Hone.dll.mdb
 C:\Users\Brian Souza\Desktop\Hone\Hone\Hone\obj\Debug\Hone.dll.mdb
 C:\Users\Brian Souza\Desktop\Hone\Hone\Hone\bin\Debug\Hone.dll.mdb
+C:\Users\Brian Souza\Desktop\Hone\Hone\Hone\obj\Debug\Hone.dll.mdb
+C:\Users\Brian Souza\Desktop\Hone\Hone\Hone\bin\Debug\Hone.dll.mdb
+C:\Users\Brian Souza\Desktop\Hone\Hone\Hone\obj\Debug\Hone.dll.mdb
+C:\Users\Brian Souza\Desktop\Hone\Hone\Hone\bin\Debug\Hone.dll.mdb

@@ -214,6 +214,9 @@ C:\Users\Brian Souza\Desktop\Hone\Hone\Hone.Droid\obj\Debug\res\drawable\shoppin
 C:\Users\Brian Souza\Desktop\Hone\Hone\Hone.Droid\obj\Debug\res\drawable\shoppingcart.png
 C:\Users\Brian Souza\Desktop\Hone\Hone\Hone.Droid\obj\Debug\R.cs.flag
 C:\Users\Brian Souza\Desktop\Hone\Hone\Hone.Droid\obj\Debug\uploadflags.txt
+C:\Users\Brian Souza\Desktop\Hone\Hone\Hone.Droid\obj\Debug\res\values\styles.xml
+C:\Users\Brian Souza\Desktop\Hone\Hone\Hone.Droid\obj\Debug\res\values-v21\styles.xml
+C:\Users\Brian Souza\Desktop\Hone\Hone\Hone.Droid\obj\Debug\res\values-v21\colors.xml
 C:\Users\Brian Souza\Desktop\Hone\Hone\Hone.Droid\bin\Debug\Hone.dll.mdb
 C:\Users\Brian Souza\Desktop\Hone\Hone\Hone.Droid\obj\Debug\Hone.Droid.dll.mdb
 C:\Users\Brian Souza\Desktop\Hone\Hone\Hone.Droid\bin\Debug\Hone.Droid.dll.mdb

@@ -4,7 +4,8 @@
              x:Class="Hone.View.PaginaPrincipal"
              Padding="0,40,0,0"
              Icon="menu.png"
-             Title="Hone" >
+             Title="Hone">
+
   <ContentPage.Content>
     <StackLayout VerticalOptions="FillAndExpand">
       <ListView x:Name="listaMenus" VerticalOptions="FillAndExpand" SeparatorVisibility="None" ItemsSource="{Binding Menus}" SelectedItem="{Binding SelectedMenu}">
