@@ -2194,20 +2194,23 @@ containing a value of this type.
         public static int abc_config_showMenuShortcutsWhenKeyboardPresent=0x7f0c0007;
     }
     public static final class color {
-        public static int abc_background_cache_hint_selector_material_dark=0x7f0b0048;
-        public static int abc_background_cache_hint_selector_material_light=0x7f0b0049;
-        public static int abc_color_highlight_material=0x7f0b004a;
+        public static int abc_background_cache_hint_selector_material_dark=0x7f0b0050;
+        public static int abc_background_cache_hint_selector_material_light=0x7f0b0051;
+        public static int abc_color_highlight_material=0x7f0b0052;
         public static int abc_input_method_navigation_guard=0x7f0b0004;
-        public static int abc_primary_text_disable_only_material_dark=0x7f0b004b;
-        public static int abc_primary_text_disable_only_material_light=0x7f0b004c;
-        public static int abc_primary_text_material_dark=0x7f0b004d;
-        public static int abc_primary_text_material_light=0x7f0b004e;
-        public static int abc_search_url_text=0x7f0b004f;
+        public static int abc_primary_text_disable_only_material_dark=0x7f0b0053;
+        public static int abc_primary_text_disable_only_material_light=0x7f0b0054;
+        public static int abc_primary_text_material_dark=0x7f0b0055;
+        public static int abc_primary_text_material_light=0x7f0b0056;
+        public static int abc_search_url_text=0x7f0b0057;
         public static int abc_search_url_text_normal=0x7f0b0005;
         public static int abc_search_url_text_pressed=0x7f0b0006;
         public static int abc_search_url_text_selected=0x7f0b0007;
-        public static int abc_secondary_text_material_dark=0x7f0b0050;
-        public static int abc_secondary_text_material_light=0x7f0b0051;
+        public static int abc_secondary_text_material_dark=0x7f0b0058;
+        public static int abc_secondary_text_material_light=0x7f0b0059;
+        /** C5CAE9 
+         */
+        public static int accent=0x7f0b004b;
         public static int accent_material_dark=0x7f0b0008;
         public static int accent_material_light=0x7f0b0009;
         public static int background_floating_material_dark=0x7f0b000a;
@@ -2240,12 +2243,18 @@ containing a value of this type.
         public static int dim_foreground_disabled_material_light=0x7f0b0017;
         public static int dim_foreground_material_dark=0x7f0b0018;
         public static int dim_foreground_material_light=0x7f0b0019;
+        /**  FFFFFF 
+         */
+        public static int divider=0x7f0b004f;
         public static int foreground_material_dark=0x7f0b001a;
         public static int foreground_material_light=0x7f0b001b;
         public static int highlighted_text_material_dark=0x7f0b001c;
         public static int highlighted_text_material_light=0x7f0b001d;
         public static int hint_foreground_material_dark=0x7f0b001e;
         public static int hint_foreground_material_light=0x7f0b001f;
+        /**  727272 
+         */
+        public static int icons=0x7f0b004e;
         public static int material_blue_grey_800=0x7f0b0020;
         public static int material_blue_grey_900=0x7f0b0021;
         public static int material_blue_grey_950=0x7f0b0022;
@@ -2258,24 +2267,37 @@ containing a value of this type.
         public static int material_grey_800=0x7f0b0029;
         public static int material_grey_850=0x7f0b002a;
         public static int material_grey_900=0x7f0b002b;
+        public static int primary=0x7f0b0048;
+        /**  #1E90FF 
+         */
+        public static int primary_dark=0x7f0b0049;
         public static int primary_dark_material_dark=0x7f0b002c;
         public static int primary_dark_material_light=0x7f0b002d;
+        /** 303F9F 
+         */
+        public static int primary_light=0x7f0b004a;
         public static int primary_material_dark=0x7f0b002e;
         public static int primary_material_light=0x7f0b002f;
+        /**  607D8B 
+         */
+        public static int primary_text=0x7f0b004c;
         public static int primary_text_default_material_dark=0x7f0b0030;
         public static int primary_text_default_material_light=0x7f0b0031;
         public static int primary_text_disabled_material_dark=0x7f0b0032;
         public static int primary_text_disabled_material_light=0x7f0b0033;
         public static int ripple_material_dark=0x7f0b0034;
         public static int ripple_material_light=0x7f0b0035;
+        /**  212121 
+         */
+        public static int secondary_text=0x7f0b004d;
         public static int secondary_text_default_material_dark=0x7f0b0036;
         public static int secondary_text_default_material_light=0x7f0b0037;
         public static int secondary_text_disabled_material_dark=0x7f0b0038;
         public static int secondary_text_disabled_material_light=0x7f0b0039;
         public static int switch_thumb_disabled_material_dark=0x7f0b003a;
         public static int switch_thumb_disabled_material_light=0x7f0b003b;
-        public static int switch_thumb_material_dark=0x7f0b0052;
-        public static int switch_thumb_material_light=0x7f0b0053;
+        public static int switch_thumb_material_dark=0x7f0b005a;
+        public static int switch_thumb_material_light=0x7f0b005b;
         public static int switch_thumb_normal_material_dark=0x7f0b003c;
         public static int switch_thumb_normal_material_light=0x7f0b003d;
     }
@@ -2987,6 +3009,9 @@ containing a value of this type.
         public static int CardView=0x7f0a0017;
         public static int CardView_Dark=0x7f0a0019;
         public static int CardView_Light=0x7f0a001a;
+        /**  Base theme applied no matter what API 
+         */
+        public static int MeuTema=0x7f0a0172;
         public static int Platform_AppCompat=0x7f0a0032;
         public static int Platform_AppCompat_Light=0x7f0a0033;
         public static int Platform_ThemeOverlay_AppCompat=0x7f0a0095;

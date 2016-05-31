@@ -9,7 +9,6 @@ namespace Hone.Services
 {
     public class NavigationService : INavigationService
     {
-        private MasterDetailPage master = (MasterDetailPage)App.Current.MainPage;
         public NavigationService()
         {
         }
@@ -33,16 +32,19 @@ namespace Hone.Services
 
         public void NavigateToPedItens()
         {
+            MasterDetailPage master = (MasterDetailPage)App.Current.MainPage;
             master.Detail = new NavigationPage((Page)Activator.CreateInstance(typeof(View.PedItensView)));
         }
 
         public void NavigateToPedPagto()
         {
+            MasterDetailPage master = (MasterDetailPage)App.Current.MainPage;
             master.Detail = new NavigationPage((Page)Activator.CreateInstance(typeof(View.PedPagtoView)));
         }
 
         public void NavigateToConfirm()
         {
+            MasterDetailPage master = (MasterDetailPage)App.Current.MainPage;
             master.Detail = new NavigationPage((Page)Activator.CreateInstance(typeof(View.PedConfirmView)));
         }
     }
