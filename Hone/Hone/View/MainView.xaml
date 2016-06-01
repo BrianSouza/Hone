@@ -8,7 +8,7 @@
     <local:View.PaginaPrincipal x:Name="masterPage"/>
   </MasterDetailPage.Master>
   <MasterDetailPage.Detail>
-    <NavigationPage>
+    <NavigationPage Style="{DynamicResource NavPageStyle}">
     <x:Arguments>
       <local:View.HomeView />
     </x:Arguments>

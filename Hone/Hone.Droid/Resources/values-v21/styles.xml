@@ -9,5 +9,7 @@
 
       <item name="android:colorAccent">@color/accent</item>
 
+      <item name="android:icon">@android:color/transparent</item>
+
     </style>
 </resources>

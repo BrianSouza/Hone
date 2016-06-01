@@ -1,1 +1,8 @@
-<!--<?xml version="1.0" encoding="utf-8" ?>--><resources><!-- Base theme applied no matter what API --><style name="MeuTema" parent="android:Theme.Holo.Light"></style></resources>
+<!--<?xml version="1.0" encoding="utf-8" ?>-->
+<resources>
+
+  <!-- Base theme applied no matter what API -->
+  <style name="MeuTema" parent="android:Theme.Holo.Light">
+    <item name="android:icon">@android:color/transparent</item>
+  </style>
+</resources>

@@ -4,10 +4,35 @@
              x:Class="Hone.App">
   <Application.Resources>
     <ResourceDictionary>
-      <Color x:Key="backgroundcolor1">#D3D3D3</Color>
-      <Color x:Key="backgroundcolor2">#4ca4e1</Color>
-      <Color x:Key="fontecolor1">#D3D3D3</Color>
-      <Color x:Key="fontecolor2">#4ca4e1</Color>
+      
+      <Color x:Key="LightCinza">#D3D3D3</Color>
+      <Color x:Key="LightBlue">#4ca4e1</Color>
+      <Color x:Key="Snow">#FFFAFA</Color>
+
+      <Style x:Key="NavPageStyle" TargetType="NavigationPage">
+        <Setter Property="BarBackgroundColor" Value="{DynamicResource LightBlue}"/>
+      </Style>
+
+      <Style x:Key="MenuStyle" TargetType="ListView">
+        <Setter Property="SeparatorVisibility" Value="Default" />
+        <Setter Property="SeparatorColor" Value="{DynamicResource LightBlue}" />
+        <Setter Property="BackgroundColor" Value="{DynamicResource Snow}" />
+      </Style>
+      
+      <Style x:Key="labelHeaderMenu" TargetType="Label">
+        <Setter Property="TextColor" Value="{DynamicResource LightCinza}" />
+        <Setter Property="HorizontalOptions" Value="End" />
+        <Setter Property="VerticalOptions" Value="FillAndExpand" />
+        <Setter Property="Text" Value="Menu" />
+        <Setter Property="FontSize" Value="Medium" />
+        <Setter Property="FontAttributes" Value="Bold" />
+      </Style>
+
+      <Style x:Key="imgCellMenu" TargetType="Label">
+        <Setter Property="TextColor" Value="{DynamicResource LightBlue}"/>
+        <Setter Property="FontAttributes" Value="Bold" />
+      </Style>
+      
     </ResourceDictionary>
   </Application.Resources>
 </Application>

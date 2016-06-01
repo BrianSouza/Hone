@@ -2,18 +2,26 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Hone.View.PaginaPrincipal"
-             Padding="0,40,0,0"
+             Padding="0,20,0,0"
              Icon="menu.png"
-             Title="Hone"
-             BackgroundColor="{StaticResource backgroundcolor1}"
-             >
+             Title="Hone">
 
   <ContentPage.Content>
     <StackLayout VerticalOptions="FillAndExpand">
-      <ListView x:Name="listaMenus" VerticalOptions="FillAndExpand" SeparatorVisibility="None" ItemsSource="{Binding Menus}" SelectedItem="{Binding SelectedMenu}" >
+      <ListView x:Name="listaMenus" 
+                VerticalOptions="FillAndExpand"  
+                ItemsSource="{Binding Menus}" 
+                SelectedItem="{Binding SelectedMenu}">
+        <ListView.Header>
+          <StackLayout Padding="0,0,20,20">
+          <Label Style="{DynamicResource labelHeaderMenu}"/>
+            </StackLayout>
+        </ListView.Header>
+            
         <ListView.ItemTemplate>
           <DataTemplate>
-            <ImageCell Text="{Binding Title}" ImageSource="{Binding IconSource}"/>
+            <ImageCell Text="{Binding Title}" ImageSource="{Binding IconSource}">
+            </ImageCell>
           </DataTemplate>
         </ListView.ItemTemplate>
       </ListView>
