@@ -4,5 +4,6 @@
   <!-- Base theme applied no matter what API -->
   <style name="MeuTema" parent="android:Theme.Holo.Light">
     <item name="android:icon">@android:color/transparent</item>
+    
   </style>
 </resources>

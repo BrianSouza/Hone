@@ -19,7 +19,7 @@
         <Setter Property="BackgroundColor" Value="{DynamicResource Snow}" />
       </Style>
       
-      <Style x:Key="labelHeaderMenu" TargetType="Label">
+      <Style x:Key="labelHeaderMenuStyle" TargetType="Label">
         <Setter Property="TextColor" Value="{DynamicResource LightCinza}" />
         <Setter Property="HorizontalOptions" Value="End" />
         <Setter Property="VerticalOptions" Value="FillAndExpand" />
@@ -28,9 +28,13 @@
         <Setter Property="FontAttributes" Value="Bold" />
       </Style>
 
-      <Style x:Key="imgCellMenu" TargetType="Label">
+      <Style x:Key="imgCellMenuStyle" TargetType="Label">
         <Setter Property="TextColor" Value="{DynamicResource LightBlue}"/>
         <Setter Property="FontAttributes" Value="Bold" />
+      </Style>
+
+      <Style x:Key="contentPageStyle" TargetType="ContentPage">
+        <Setter Property="BackgroundColor" Value="{DynamicResource Snow}"/>
       </Style>
       
     </ResourceDictionary>

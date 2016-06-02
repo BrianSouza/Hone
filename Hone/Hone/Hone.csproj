@@ -38,7 +38,7 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Controles\CustomListView.cs" />
+    <Compile Include="Controles\CustomImageCell.cs" />
     <Compile Include="Entidades\PropriedadesMenuPrincipal.cs" />
     <Compile Include="Entidades\CondPagto.cs" />
     <Compile Include="Entidades\FormaPgto.cs" />
