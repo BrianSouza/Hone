@@ -5,20 +5,26 @@
   <Application.Resources>
     <ResourceDictionary>
       
+<!--CORES-->
       <Color x:Key="LightCinza">#D3D3D3</Color>
       <Color x:Key="LightBlue">#4ca4e1</Color>
       <Color x:Key="Snow">#FFFAFA</Color>
-
+      
+<!--ESTILOS-->
+      
+      <!--NavifationPage-->
       <Style x:Key="NavPageStyle" TargetType="NavigationPage">
         <Setter Property="BarBackgroundColor" Value="{DynamicResource LightBlue}"/>
       </Style>
 
+      <!--Listview-->
       <Style x:Key="MenuStyle" TargetType="ListView">
         <Setter Property="SeparatorVisibility" Value="Default" />
         <Setter Property="SeparatorColor" Value="{DynamicResource LightBlue}" />
         <Setter Property="BackgroundColor" Value="{DynamicResource Snow}" />
       </Style>
-      
+
+      <!--Label-->
       <Style x:Key="labelHeaderMenuStyle" TargetType="Label">
         <Setter Property="TextColor" Value="{DynamicResource LightCinza}" />
         <Setter Property="HorizontalOptions" Value="End" />
@@ -28,15 +34,26 @@
         <Setter Property="FontAttributes" Value="Bold" />
       </Style>
 
-      <Style x:Key="imgCellMenuStyle" TargetType="Label">
-        <Setter Property="TextColor" Value="{DynamicResource LightBlue}"/>
-        <Setter Property="FontAttributes" Value="Bold" />
-      </Style>
-
+      <!--ContentPage-->
       <Style x:Key="contentPageStyle" TargetType="ContentPage">
         <Setter Property="BackgroundColor" Value="{DynamicResource Snow}"/>
       </Style>
-      
+
+      <!--Button-->
+      <Style x:Key="buttonStyle" TargetType="Button">
+        <Setter Property="BackgroundColor" Value="{DynamicResource Snow}"/>
+        <Setter Property="TextColor" Value="{DynamicResource LightBlue}" />
+        <Setter Property="BorderColor" Value="{DynamicResource LightBlue}"/>
+        <Setter Property="BorderRadius" Value="15"/>
+        <Setter Property="BorderWidth" Value="1"/>
+        <Setter Property="FontAttributes" Value="Bold" />
+      </Style>
+
+      <!--StackLayout-->
+      <Style x:Key="stackStyle" TargetType="StackLayout">
+        <Setter Property="Padding" Value="10,0,10,0"/>
+      </Style>
+
     </ResourceDictionary>
   </Application.Resources>
 </Application>

@@ -2,13 +2,13 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Hone.View.LoginView">
-  <ContentPage.Content>
-    <StackLayout>
-      <Label Text="Usuário" />
-      <Entry Text="{Binding UserName}"/>
-      <Label Text="Senha" />
-      <Entry IsPassword="True" Text="{Binding Password}"/>
-      <Button Text="Login" Command="{Binding LoginCommand}" />
-    </StackLayout>
-  </ContentPage.Content>
+    <ContentView>
+      <StackLayout Style="{DynamicResource stackStyle}">
+        <Label Text="Usuário" />
+        <Entry Text="{Binding UserName}"/>
+        <Label Text="Senha" />
+        <Entry IsPassword="True" Text="{Binding Password}"/>
+        <Button Text="Login" Command="{Binding LoginCommand}" Style="{DynamicResource buttonStyle}" />
+      </StackLayout>
+    </ContentView>
 </ContentPage>
