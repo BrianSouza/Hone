@@ -3,15 +3,19 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Hone.View.PedItensView"
              BackgroundColor="White">
-  <StackLayout>
-    <Button Text="Próximo" Command="{Binding IrParaPgto}"></Button>
-    <Label Text="Selecione o item"  />
+  
+  <ContentPage.ToolbarItems>
+    <ToolbarItem Name="Próximo" Command="{Binding IrParaPgto}"></ToolbarItem>
+  </ContentPage.ToolbarItems>
+  
+  <StackLayout Style="{DynamicResource stackStyle}">
+    <Label Text="Selecione o item" Style="{DynamicResource labelPagesStyle}" />
     <Picker x:Name="pckItens" SelectedIndex="{Binding ItemIndex}"></Picker>
-    <Label Text="Quantidade"></Label>
+    <Label Text="Quantidade" Style="{DynamicResource labelPagesStyle}" ></Label>
     <Entry Text="{Binding Quantidade}"></Entry>
-    <Label Text="Valor Un."></Label>
+    <Label Text="Valor Un." Style="{DynamicResource labelPagesStyle}"></Label>
     <Entry Text="{Binding ValorUnit}"></Entry>
-    <Button Text="Add" Command="{Binding SelecionarItens}"></Button>
+    <Button Text="Add" Command="{Binding SelecionarItens}" Style="{DynamicResource buttonStyle}"></Button>
     <ListView ItemsSource="{Binding ItensSelecionados}">
       <ListView.ItemTemplate>
         <DataTemplate>

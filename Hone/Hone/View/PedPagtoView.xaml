@@ -3,13 +3,17 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Hone.View.PedPagtoView"
              BackgroundColor="White">
-  <StackLayout>
-    <Button Text="Próximo" Command="{Binding NavegarParaConfirmacao}"></Button>
-    <Label Text="Forma de Pagamento"/>
+
+  <ContentPage.ToolbarItems>
+    <ToolbarItem Name="Próximo" Command="{Binding NavegarParaConfirmacao}"></ToolbarItem>
+  </ContentPage.ToolbarItems>
+  
+  <StackLayout Style="{DynamicResource stackStyle}">
+    <Label Text="Forma de Pagamento" Style="{DynamicResource labelPagesStyle}" />
     <Picker x:Name="pckFormPagto" SelectedIndex="{Binding FormPagtoIndex}"></Picker>
-    <Label Text="Condição de Pagamento"/>
+    <Label Text="Condição de Pagamento" Style="{DynamicResource labelPagesStyle}" />
     <Picker x:Name="pckCondPagto" SelectedIndex="{Binding CondPagtoIndex}"></Picker>
-    <Label Text="Data de Entrega"></Label>
+    <Label Text="Data de Entrega" Style="{DynamicResource labelPagesStyle}" ></Label>
     <DatePicker Format="dd/MM/yyyy" Date="{Binding DtEntrega}" ></DatePicker>
   </StackLayout>
   

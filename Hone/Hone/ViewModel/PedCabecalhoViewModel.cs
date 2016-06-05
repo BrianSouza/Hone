@@ -100,7 +100,7 @@ namespace Hone.ViewModel
 
             PreencherPedido();
             SalvarTxtPedido();
-            _Navigation.NavigateToPedItens();
+            _Navigation.NavigateTo(new View.PedItensView());
         }
 
         public void PreencherPedido()

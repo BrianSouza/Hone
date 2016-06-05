@@ -10,10 +10,7 @@ namespace Hone.Services
     {
         void NavigateToLogin();
         void NavigateToMain();
-        //Task NavigateToCadPN();
-        //Task NavigateToPedCabecalho();
-        void NavigateToPedItens();
-        void NavigateToPedPagto();
-        void NavigateToConfirm();
+        Task NavigateTo(Xamarin.Forms.Page page);
+        Task GoBack();
     }
 }

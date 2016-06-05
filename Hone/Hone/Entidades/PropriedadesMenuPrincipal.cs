@@ -12,6 +12,6 @@ namespace Hone.Entidades
 
         public string IconSource { get; set; }
 
-        public Type TargetType { get; set; }
+        public Xamarin.Forms.Page TargetType { get; set; }
     }
 }

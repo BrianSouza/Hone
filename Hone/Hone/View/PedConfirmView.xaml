@@ -3,15 +3,21 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Hone.View.PedConfirmView"
              BackgroundColor="White">
-  <StackLayout>
-    <Button Text="Salvar" Command ="{Binding Salvar}"></Button>
-    <Label Text="Parceiro"  />
+
+
+  <ContentPage.ToolbarItems>
+    <ToolbarItem Name="Próximo" Command="{Binding Salvar}"></ToolbarItem>
+  </ContentPage.ToolbarItems>
+
+
+  <StackLayout Style="{DynamicResource stackStyle}">
+    <Label Text="Parceiro"  Style="{DynamicResource labelPagesStyle}"/>
     <Label Text="{Binding PN}" />
-    <Label Text="Data de Entrega"  />
+    <Label Text="Data de Entrega"  Style="{DynamicResource labelPagesStyle}"/>
     <Label Text="{Binding DtEntrega}"/>
-    <Label Text="Forma de Pagto"  />
+    <Label Text="Forma de Pagto"  Style="{DynamicResource labelPagesStyle}"/>
     <Label Text="{Binding FP}" />
-    <Label Text="Condição de Pagamento" />
+    <Label Text="Condição de Pagamento" Style="{DynamicResource buttonStyle}"/>
     <ListView ItemsSource="{Binding LstItem}">
       <ListView.ItemTemplate>
         <DataTemplate>

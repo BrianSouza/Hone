@@ -19,8 +19,8 @@
 
       <!--Listview-->
       <Style x:Key="MenuStyle" TargetType="ListView">
-        <Setter Property="SeparatorVisibility" Value="Default" />
-        <Setter Property="SeparatorColor" Value="{DynamicResource LightBlue}" />
+        <!--<Setter Property="SeparatorVisibility" Value="Default" />
+        <Setter Property="SeparatorColor" Value="{DynamicResource LightBlue}" />-->
         <Setter Property="BackgroundColor" Value="{DynamicResource Snow}" />
       </Style>
 
@@ -34,6 +34,12 @@
         <Setter Property="FontAttributes" Value="Bold" />
       </Style>
 
+      <Style x:Key="labelPagesStyle" TargetType="Label">
+        <Setter Property="TextColor" Value="{DynamicResource LightBlue}" />
+        <Setter Property="FontSize" Value="Medium" />
+        <Setter Property="FontAttributes" Value="Bold" />
+      </Style>
+      
       <!--ContentPage-->
       <Style x:Key="contentPageStyle" TargetType="ContentPage">
         <Setter Property="BackgroundColor" Value="{DynamicResource Snow}"/>

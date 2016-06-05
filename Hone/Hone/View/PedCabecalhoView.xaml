@@ -3,9 +3,13 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Hone.View.PedCabecalhoView"
              BackgroundColor="White">
-  <StackLayout>
-    <Button Text="Próximo" Command="{Binding IrParaLinhas}"></Button>
-    <Label Text="Parceiro"></Label>
+  
+  <ContentPage.ToolbarItems>
+    <ToolbarItem Name="Próximo" Command="{Binding IrParaLinhas}"></ToolbarItem>
+  </ContentPage.ToolbarItems>
+  
+  <StackLayout Style="{DynamicResource stackStyle}">
+    <Label  Style="{DynamicResource labelPagesStyle}" Text="Selecione o Parceiro:"></Label>
     <Picker x:Name="pckParceiros" SelectedIndex="{Binding ParceiroIndex}" ></Picker>
     
   </StackLayout>

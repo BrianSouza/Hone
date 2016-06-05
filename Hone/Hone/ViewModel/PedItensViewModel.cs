@@ -151,7 +151,7 @@ namespace Hone.ViewModel
             {
                 PreencherPedido();
                 SalvarTxtPedido();
-                _Navigation.NavigateToPedPagto();
+                _Navigation.NavigateTo(new View.PedPagtoView());
             }
         }
 

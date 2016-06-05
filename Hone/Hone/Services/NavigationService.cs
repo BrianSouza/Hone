@@ -21,31 +21,22 @@ namespace Hone.Services
         {
             App.Current.MainPage = new View.MainView();
         }
-        //public async Task NavigateToPedCabecalho()
-        //{
-        //    await App.Current.MainPage.Navigation.PushAsync(new View.PedCabecalhoView());
-        //}
-        //public async Task NavigateToCadPN()
-        //{
-        //    await App.Current.MainPage.Navigation.PushAsync(new View.CadPNView());
-        //}
 
-        public void NavigateToPedItens()
+        public async Task NavigateTo(Page page)
         {
-            MasterDetailPage master = (MasterDetailPage)App.Current.MainPage;
-            master.Detail = new NavigationPage((Page)Activator.CreateInstance(typeof(View.PedItensView)));
+            var _master = (MasterDetailPage)App.Current.MainPage;
+            var _nav = (NavigationPage)_master.Detail;
+            await _nav.PushAsync(page);
+
         }
 
-        public void NavigateToPedPagto()
+        public async Task GoBack()
         {
-            MasterDetailPage master = (MasterDetailPage)App.Current.MainPage;
-            master.Detail = new NavigationPage((Page)Activator.CreateInstance(typeof(View.PedPagtoView)));
-        }
+            var _master = (MasterDetailPage)App.Current.MainPage;
+            var _nav = (NavigationPage)_master.Detail;
+            await _nav.PopAsync();
 
-        public void NavigateToConfirm()
-        {
-            MasterDetailPage master = (MasterDetailPage)App.Current.MainPage;
-            master.Detail = new NavigationPage((Page)Activator.CreateInstance(typeof(View.PedConfirmView)));
         }
+        
     }
 }
