@@ -27,7 +27,7 @@ namespace Hone.Services
             var _master = (MasterDetailPage)App.Current.MainPage;
             var _nav = (NavigationPage)_master.Detail;
             await _nav.PushAsync(page);
-
+            _master.IsPresented = false;
         }
 
         public async Task GoBack()

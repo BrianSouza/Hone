@@ -2,11 +2,11 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Hone.View.PedConfirmView"
-             BackgroundColor="White">
+             Style ="{DynamicResource NavPageStyle}">
 
 
   <ContentPage.ToolbarItems>
-    <ToolbarItem Name="Próximo" Command="{Binding Salvar}"></ToolbarItem>
+    <ToolbarItem Name="Salvar" Command="{Binding Salvar}"></ToolbarItem>
   </ContentPage.ToolbarItems>
 
 
