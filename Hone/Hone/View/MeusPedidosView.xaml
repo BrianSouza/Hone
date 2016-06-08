@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Hone.View.MeusPedidosView">
+
+  <StackLayout Style="{DynamicResource stackStyle}">
+    <Label Text="Data de Cadastro de:" Style="{DynamicResource labelPagesStyle}" ></Label>
+    <DatePicker Format="dd/MM/yyyy" Date="{Binding DtEntrega}" ></DatePicker>
+    <Label Text="Data de Cadastro até:" Style="{DynamicResource labelPagesStyle}" ></Label>
+    <DatePicker Format="dd/MM/yyyy" Date="{Binding DtEntrega}" ></DatePicker>
+    <ListView ItemsSource="{Binding }" >
+      <ListView.ItemTemplate>
+        <DataTemplate>
+          <ViewCell>
+            <Grid Padding="5">
+              <Grid.RowDefinitions>
+                <RowDefinition Height="20"></RowDefinition>
+                <RowDefinition Height="20"></RowDefinition>
+              </Grid.RowDefinitions>
+              <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="40"></ColumnDefinition>
+              </Grid.ColumnDefinitions>
+
+              <Label Grid.Row="0" Grid.Column="0" Text="{Binding }" LineBreakMode="TailTruncation">
+
+              </Label>
+              <Label Grid.Row="1" Grid.Column="0" Text="{Binding }" Font="Small" TextColor="Gray" LineBreakMode="TailTruncation"></Label>
+
+            </Grid>
+          </ViewCell>
+        </DataTemplate>
+      </ListView.ItemTemplate>
+    </ListView>
+  </StackLayout>
+</ContentPage>
