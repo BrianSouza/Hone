@@ -17,30 +17,31 @@
     <Label Text="{Binding DtEntrega}"/>
     <Label Text="Forma de Pagto"  Style="{DynamicResource labelPagesStyle}"/>
     <Label Text="{Binding FP}" />
-    <Label Text="Condição de Pagamento" Style="{DynamicResource buttonStyle}"/>
-    <ListView ItemsSource="{Binding LstItem}">
-      <ListView.ItemTemplate>
-        <DataTemplate>
-          <ViewCell>
-            <Grid Padding="5">
-              <Grid.RowDefinitions>
-                <RowDefinition Height="20"></RowDefinition>
-                <RowDefinition Height="20"></RowDefinition>
-              </Grid.RowDefinitions>
-              <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*"></ColumnDefinition>
-                <ColumnDefinition Width="40"></ColumnDefinition>
-              </Grid.ColumnDefinitions>
+    <Label Text="Condição de Pagamento" Style="{DynamicResource labelPagesStyle}"/>
+    <Label Text="{Binding CP}"/>
+  <ListView ItemsSource="{Binding LstItem}" >
+    <ListView.ItemTemplate>
+      <DataTemplate>
+        <ViewCell>
+          <Grid Padding="5">
+            <Grid.RowDefinitions>
+              <RowDefinition Height="20"></RowDefinition>
+              <RowDefinition Height="20"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+              <ColumnDefinition Width="*"></ColumnDefinition>
+              <ColumnDefinition Width="40"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
 
-              <Label Grid.Row="0" Grid.Column="0" Text="{Binding ItemCode}" LineBreakMode="TailTruncation">
+            <Label Grid.Row="0" Grid.Column="0" Text="{Binding ItemCode}" LineBreakMode="TailTruncation">
 
-              </Label>
-              <Label Grid.Row="1" Grid.Column="0" Text="{Binding ItemName}" Font="Small" TextColor="Gray" LineBreakMode="TailTruncation"></Label>
+            </Label>
+            <Label Grid.Row="1" Grid.Column="0" Text="{Binding ItemName}" Font="Small" TextColor="Gray" LineBreakMode="TailTruncation"></Label>
 
-            </Grid>
-          </ViewCell>
-        </DataTemplate>
-      </ListView.ItemTemplate>
-    </ListView>
+          </Grid>
+        </ViewCell>
+      </DataTemplate>
+    </ListView.ItemTemplate>
+  </ListView>
   </StackLayout>
 </ContentPage>
