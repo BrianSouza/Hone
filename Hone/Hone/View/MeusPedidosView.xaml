@@ -5,10 +5,10 @@
 
   <StackLayout Style="{DynamicResource stackStyle}">
     <Label Text="Data de Cadastro de:" Style="{DynamicResource labelPagesStyle}" ></Label>
-    <DatePicker Format="dd/MM/yyyy" Date="{Binding DtEntrega}" ></DatePicker>
+    <DatePicker Format="dd/MM/yyyy" Date="{Binding DataDe}" ></DatePicker>
     <Label Text="Data de Cadastro até:" Style="{DynamicResource labelPagesStyle}" ></Label>
-    <DatePicker Format="dd/MM/yyyy" Date="{Binding DtEntrega}" ></DatePicker>
-    <ListView ItemsSource="{Binding }" >
+    <DatePicker Format="dd/MM/yyyy" Date="{Binding DataAte}" ></DatePicker>
+    <ListView ItemsSource="{Binding LstPedidos}" >
       <ListView.ItemTemplate>
         <DataTemplate>
           <ViewCell>
@@ -22,10 +22,10 @@
                 <ColumnDefinition Width="40"></ColumnDefinition>
               </Grid.ColumnDefinitions>
 
-              <Label Grid.Row="0" Grid.Column="0" Text="{Binding }" LineBreakMode="TailTruncation">
+              <Label Grid.Row="0" Grid.Column="0" Text="{Binding Id}" LineBreakMode="TailTruncation">
 
               </Label>
-              <Label Grid.Row="1" Grid.Column="0" Text="{Binding }" Font="Small" TextColor="Gray" LineBreakMode="TailTruncation"></Label>
+              <Label Grid.Row="1" Grid.Column="0" Text="{Binding Parceiro}" Font="Small" TextColor="Gray" LineBreakMode="TailTruncation"></Label>
 
             </Grid>
           </ViewCell>
