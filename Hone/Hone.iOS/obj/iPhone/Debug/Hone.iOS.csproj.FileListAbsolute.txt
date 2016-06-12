@@ -67,6 +67,12 @@ C:\Users\Brian Souza\Desktop\Hone\Hone\Hone.iOS\obj\iPhone\Debug\optimized\
 C:\Users\Brian Souza\Desktop\Hone\Hone\Hone.iOS\obj\iPhone\Debug\Hone.iOS.csprojResolveAssemblyReference.cache
 C:\Users\Brian Souza\Desktop\Hone\Hone\Hone.iOS\obj\iPhone\Debug\HoneiOS.exe
 C:\Users\Brian Souza\Desktop\Hone\Hone\Hone.iOS\obj\iPhone\Debug\HoneiOS.pdb
-C:\Users\Brian Souza\Desktop\Hone\Hone\Hone.iOS\bin\iPhone\Debug\Hone.dll.mdb
+C:\Users\Brian Souza\Desktop\Hone\Hone\Hone.iOS\obj\iPhone\Debug\actool\_PartialAppManifest.items
+C:\Users\Brian Souza\Desktop\Hone\Hone\Hone.iOS\obj\iPhone\Debug\actool\_BundleResourceWithLogicalName.items
+C:\Users\Brian Souza\Desktop\Hone\Hone\Hone.iOS\obj\iPhone\Debug\optimized\group.png
+C:\Users\Brian Souza\Desktop\Hone\Hone\Hone.iOS\obj\iPhone\Debug\optimized\house.png
+C:\Users\Brian Souza\Desktop\Hone\Hone\Hone.iOS\obj\iPhone\Debug\optimized\menu.png
+C:\Users\Brian Souza\Desktop\Hone\Hone\Hone.iOS\obj\iPhone\Debug\optimized\shoppingcart.png
+C:\Users\Brian Souza\Desktop\Hone\Hone\Hone.iOS\obj\iPhone\Debug\optimized\shoppingbag.png
 C:\Users\Brian Souza\Desktop\Hone\Hone\Hone.iOS\obj\iPhone\Debug\HoneiOS.exe.mdb
 C:\Users\Brian Souza\Desktop\Hone\Hone\Hone.iOS\bin\iPhone\Debug\HoneiOS.exe.mdb

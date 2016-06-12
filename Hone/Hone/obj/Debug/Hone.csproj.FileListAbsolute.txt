@@ -98,5 +98,3 @@ C:\Users\Brian Souza\Desktop\Hone\Hone\Hone\obj\Debug\Hone.csprojResolveAssembly
 C:\Users\Brian Souza\Desktop\Hone\Hone\Hone\obj\Debug\Hone.View.MeusPedidosView.xaml.g.cs
 C:\Users\Brian Souza\Desktop\Hone\Hone\Hone\obj\Debug\Hone.dll.mdb
 C:\Users\Brian Souza\Desktop\Hone\Hone\Hone\bin\Debug\Hone.dll.mdb
-C:\Users\Brian Souza\Desktop\Hone\Hone\Hone\obj\Debug\Hone.dll.mdb
-C:\Users\Brian Souza\Desktop\Hone\Hone\Hone\bin\Debug\Hone.dll.mdb

@@ -19,8 +19,8 @@
 
       <!--Listview-->
       <Style x:Key="MenuStyle" TargetType="ListView">
-        <!--<Setter Property="SeparatorVisibility" Value="Default" />
-        <Setter Property="SeparatorColor" Value="{DynamicResource LightBlue}" />-->
+        <Setter Property="SeparatorVisibility" Value="None" />
+        <!--<Setter Property="SeparatorColor" Value="{DynamicResource LightBlue}" />-->
         <Setter Property="BackgroundColor" Value="{DynamicResource Snow}" />
       </Style>
 
