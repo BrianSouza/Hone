@@ -3,13 +3,14 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Hone.View.LoginView"
              Style ="{DynamicResource NavPageStyle}">
-    <ContentView>
-      <StackLayout Style="{DynamicResource stackStyle}">
+  <ContentView>
+      <StackLayout Style="{DynamicResource stackLoginStyle}" >
+        <ImageView></ImageView>
         <Label Text="Usuário" Style="{DynamicResource labelPagesStyle}"/>
         <Entry Text="{Binding UserName}"/>
         <Label Text="Senha" Style="{DynamicResource labelPagesStyle}"/>
         <Entry IsPassword="True" Text="{Binding Password}"/>
         <Button Text="Login" Command="{Binding LoginCommand}" Style="{DynamicResource buttonStyle}" />
       </StackLayout>
-    </ContentView>
+  </ContentView>
 </ContentPage>
