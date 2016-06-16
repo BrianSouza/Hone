@@ -96,8 +96,6 @@ C:\Users\Brian Souza\Desktop\Hone\Hone\Hone\obj\Debug\Hone.dll
 C:\Users\Brian Souza\Desktop\Hone\Hone\Hone\obj\Debug\Hone.pdb
 C:\Users\Brian Souza\Desktop\Hone\Hone\Hone\obj\Debug\Hone.csprojResolveAssemblyReference.cache
 C:\Users\Brian Souza\Desktop\Hone\Hone\Hone\obj\Debug\Hone.View.MeusPedidosView.xaml.g.cs
-C:\Users\Brian Souza\Desktop\Hone\Hone\Hone\obj\Debug\Hone.dll.mdb
-C:\Users\Brian Souza\Desktop\Hone\Hone\Hone\bin\Debug\Hone.dll.mdb
 C:\Users\poliview\Source\Repos\Hone\Hone\Hone\bin\Debug\Hone.dll
 C:\Users\poliview\Source\Repos\Hone\Hone\Hone\bin\Debug\Hone.pdb
 C:\Users\poliview\Source\Repos\Hone\Hone\Hone\bin\Debug\Newtonsoft.Json.dll
@@ -126,3 +124,7 @@ C:\Users\poliview\Source\Repos\Hone\Hone\Hone\obj\Debug\Hone.dll
 C:\Users\poliview\Source\Repos\Hone\Hone\Hone\obj\Debug\Hone.pdb
 C:\Users\poliview\Source\Repos\Hone\Hone\Hone\obj\Debug\Hone.dll.mdb
 C:\Users\poliview\Source\Repos\Hone\Hone\Hone\bin\Debug\Hone.dll.mdb
+C:\Users\Brian Souza\Desktop\Hone\Hone\Hone\obj\Debug\Hone.dll.mdb
+C:\Users\Brian Souza\Desktop\Hone\Hone\Hone\bin\Debug\Hone.dll.mdb
+C:\Users\Brian Souza\Desktop\Hone\Hone\Hone\obj\Debug\Hone.dll.mdb
+C:\Users\Brian Souza\Desktop\Hone\Hone\Hone\bin\Debug\Hone.dll.mdb

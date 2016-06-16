@@ -5,7 +5,7 @@
              Style ="{DynamicResource NavPageStyle}">
   <ContentView>
       <StackLayout Style="{DynamicResource stackLoginStyle}" >
-        <ImageView></ImageView>
+        <Image Source="icon.png"/>
         <Label Text="Usuário" Style="{DynamicResource labelPagesStyle}"/>
         <Entry Text="{Binding UserName}"/>
         <Label Text="Senha" Style="{DynamicResource labelPagesStyle}"/>
