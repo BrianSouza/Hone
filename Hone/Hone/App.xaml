@@ -17,6 +17,12 @@
         <Setter Property="BarBackgroundColor" Value="{DynamicResource LightBlue}"/>
       </Style>
 
+      <!--ContentPage-->
+      <Style x:Key="ContentPageStyle" TargetType="ContentPage">
+        <Setter Property="BackgroundColor" Value="{DynamicResource LightBlue}"/>
+      </Style>
+
+
       <!--Listview-->
       <Style x:Key="MenuStyle" TargetType="ListView">
         <Setter Property="SeparatorVisibility" Value="None" />
@@ -36,6 +42,12 @@
 
       <Style x:Key="labelPagesStyle" TargetType="Label">
         <Setter Property="TextColor" Value="{DynamicResource LightBlue}" />
+        <Setter Property="FontSize" Value="Medium" />
+        <Setter Property="FontAttributes" Value="Bold" />
+      </Style>
+
+      <Style x:Key="labelLoginStyle" TargetType="Label">
+        <Setter Property="TextColor" Value="{DynamicResource Snow}" />
         <Setter Property="FontSize" Value="Medium" />
         <Setter Property="FontAttributes" Value="Bold" />
       </Style>
@@ -67,6 +79,10 @@
         <Setter Property="VerticalOptions" Value="Center"/>
       </Style>
 
+      <!--Entry-->
+      <Style x:Key="EntryStyle" TargetType="Entry">
+        <Setter Property="TextColor" Value="{DynamicResource Snow}" />
+      </Style>
 
     </ResourceDictionary>
   </Application.Resources>
