@@ -12,9 +12,9 @@
     <Label Text="Selecione o item" Style="{DynamicResource labelPagesStyle}" />
     <Picker x:Name="pckItens" SelectedIndex="{Binding ItemIndex}"></Picker>
     <Label Text="Quantidade" Style="{DynamicResource labelPagesStyle}" ></Label>
-    <Entry Text="{Binding Quantidade}"></Entry>
+    <Entry Text="{Binding Quantidade}" Style="{DynamicResource EntryStyleBlue}"></Entry>
     <Label Text="Valor Un." Style="{DynamicResource labelPagesStyle}"></Label>
-    <Entry Text="{Binding ValorUnit}"></Entry>
+    <Entry Text="{Binding ValorUnit}" Style="{DynamicResource EntryStyleBlue}"></Entry>
     <Button Text="Add" Command="{Binding SelecionarItens}" Style="{DynamicResource buttonStyle}"></Button>
     <ListView ItemsSource="{Binding ItensSelecionados}">
       <ListView.ItemTemplate>

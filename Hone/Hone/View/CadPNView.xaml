@@ -20,28 +20,28 @@
     <ScrollView Orientation="Vertical" VerticalOptions="FillAndExpand">
       <StackLayout>
         <Label Text="Razão Social ou Nome" Style="{DynamicResource labelPagesStyle}"/>
-        <Entry Text="{Binding Descricao}" Keyboard="Text" />
+        <Entry Text="{Binding Descricao}" Keyboard="Text" Style="{DynamicResource EntryStyleBlue}"/>
         <Label Text="Escolha o tipo do Parceiro" Style="{DynamicResource labelPagesStyle}"/>
         <Picker x:Name="pckTipoParc" SelectedIndex="{Binding TipoParcID}" Title="Tipo Parceiro" HorizontalOptions="Fill"></Picker>
         <Label Text="Escolha o Tipo de Documento" Style="{DynamicResource labelPagesStyle}"/>
         <Picker x:Name="pckTipoDoc" SelectedIndex="{Binding TipoDocID}" Title="Tipo Documento" HorizontalOptions="Fill"> </Picker>
         <Label Text="Documento" Style="{DynamicResource labelPagesStyle}"/>
-        <Entry Text="{Binding DocumentoCNPJ, Converter = {StaticResource Mask}, ConverterParameter=CNPJ}" Keyboard="Numeric" IsVisible="{Binding VisibleCNPJ}"/>
-        <Entry Text="{Binding DocumentoCPF, Converter = {StaticResource Mask}, ConverterParameter=CPF}" Keyboard="Numeric" IsVisible="{Binding VisibleCPF}"/>
+        <Entry Text="{Binding DocumentoCNPJ, Converter = {StaticResource Mask}, ConverterParameter=CNPJ}" Keyboard="Numeric" IsVisible="{Binding VisibleCNPJ}" Style="{DynamicResource EntryStyleBlue}"/>
+        <Entry Text="{Binding DocumentoCPF, Converter = {StaticResource Mask}, ConverterParameter=CPF}" Keyboard="Numeric" IsVisible="{Binding VisibleCPF}" Style="{DynamicResource EntryStyleBlue}"/>
         <Label Text="Rua" Style="{DynamicResource labelPagesStyle}"/>
-        <Entry Text="{Binding Endereco}" Keyboard="Text"/>
+        <Entry Text="{Binding Endereco}" Keyboard="Text" Style="{DynamicResource EntryStyleBlue}"/>
         <Label Text="Nº" Style="{DynamicResource labelPagesStyle}"/>
-        <Entry Text="{Binding Num}" Keyboard="Numeric"/>
+        <Entry Text="{Binding Num}" Keyboard="Numeric" Style="{DynamicResource EntryStyleBlue}"/>
         <Label Text="Bairro" Style="{DynamicResource labelPagesStyle}"/>
-        <Entry Text="{Binding Bairro}" Keyboard="Text"/>
+        <Entry Text="{Binding Bairro}" Keyboard="Text" Style="{DynamicResource EntryStyleBlue}"/>
         <Label Text="Cidade" Style="{DynamicResource labelPagesStyle}"/>
-        <Entry Text="{Binding Cidade}" Keyboard="Text"/>
+        <Entry Text="{Binding Cidade}" Keyboard="Text" Style="{DynamicResource EntryStyleBlue}"/>
         <Label Text="Estado" Style="{DynamicResource labelPagesStyle}"/>
         <Picker x:Name="pckEstados" SelectedIndex="{Binding EstadoID}" Title="Estados"  HorizontalOptions="Fill"></Picker>
         <Label Text="CEP" Style="{DynamicResource labelPagesStyle}"/>
-        <Entry Text="{Binding CEP,Converter = {StaticResource Mask} , ConverterParameter=CEP}" Keyboard="Numeric"/>
+        <Entry Text="{Binding CEP,Converter = {StaticResource Mask} , ConverterParameter=CEP}" Keyboard="Numeric" Style="{DynamicResource EntryStyleBlue}"/>
         <Label Text="Telefone" Style="{DynamicResource labelPagesStyle}"/>
-        <Entry Text="{Binding Telefone,Converter = {StaticResource Mask} , ConverterParameter=Phone}" Keyboard="Numeric"/>
+        <Entry Text="{Binding Telefone,Converter = {StaticResource Mask} , ConverterParameter=Phone}" Keyboard="Numeric" Style="{DynamicResource EntryStyleBlue}"/>
 
       </StackLayout>
     </ScrollView>

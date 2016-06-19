@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Hone.View.PaginaPrincipal"
              xmlns:Controls="clr-namespace:Hone.Controles;assembly=Hone"
-             Padding="0,20,0,0"
+             Padding="0,20,0,20"
              Icon="menu.png"
              Title="Hone">
 
@@ -14,7 +14,7 @@
                 ItemsSource="{Binding Menus}"
                 SelectedItem="{Binding SelectedMenu}">
         <ListView.Header>
-          <StackLayout Padding="0,0,20,20">
+          <StackLayout Padding="0,0,20,0">
             <Label Style="{DynamicResource labelHeaderMenuStyle}"/>
           </StackLayout>
         </ListView.Header>

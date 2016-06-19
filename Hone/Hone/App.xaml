@@ -84,6 +84,10 @@
         <Setter Property="TextColor" Value="{DynamicResource Snow}" />
       </Style>
 
+      <Style x:Key="EntryStyleBlue" TargetType="Entry">
+        <Setter Property="TextColor" Value="{DynamicResource LightBlue}" />
+      </Style>
+
     </ResourceDictionary>
   </Application.Resources>
 </Application>
