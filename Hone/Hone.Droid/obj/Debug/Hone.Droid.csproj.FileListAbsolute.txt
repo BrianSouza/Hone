@@ -242,7 +242,6 @@ C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\bin\Debug\Xamarin.Forms.Plat
 C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\bin\Debug\Xamarin.Forms.Xaml.dll
 C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\bin\Debug\Newtonsoft.Json.dll
 C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\bin\Debug\Hone.pdb
-C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\bin\Debug\Hone.dll.mdb
 C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\bin\Debug\FormsViewGroup.pdb
 C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\bin\Debug\FormsViewGroup.dll.mdb
 C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\bin\Debug\Xamarin.Forms.Core.pdb
@@ -305,8 +304,6 @@ C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\android\assets\Sys
 C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\android\assets\Xamarin.Forms.Core.dll.mdb
 C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\android\assets\Xamarin.Forms.Platform.Android.dll.mdb
 C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\android\assets\Xamarin.Forms.Xaml.dll.mdb
-C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\android\assets\Hone.dll.mdb
-C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\Hone.Droid.dll.mdb
 C:\Users\Brian Souza\Desktop\Hone\Hone\Hone.Droid\bin\Debug\Hone.dllHone.dll.mdb
 C:\Users\Brian Souza\Desktop\Hone\Hone\Hone.Droid\bin\Debug\Hone.Droid.dllHone.Droid.dll.mdb
 C:\Users\Brian Souza\Desktop\Hone\Hone\Hone.Droid\bin\Debug\Java.Interop.dll.mdb
@@ -341,4 +338,14 @@ C:\Users\Brian Souza\Desktop\Hone\Hone\Hone.Droid\obj\Debug\android\assets\Xamar
 C:\Users\Brian Souza\Desktop\Hone\Hone\Hone.Droid\obj\Debug\android\assets\Xamarin.Forms.Platform.Android.dll.mdb
 C:\Users\Brian Souza\Desktop\Hone\Hone\Hone.Droid\obj\Debug\android\assets\Xamarin.Forms.Xaml.dll.mdb
 C:\Users\Brian Souza\Desktop\Hone\Hone\Hone.Droid\obj\Debug\Hone.Droid.dll.mdb
-C:\Users\Brian Souza\Desktop\Hone\Hone\Hone.Droid\bin\Debug\Hone.Droid.dll.mdb
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\res\drawable\next128.png
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\res\drawable\next228.png
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\res\drawable\next428.png
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\res\drawable\right328.png
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\bin\Debug\Java.Interop.dll.mdb
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\bin\Debug\Hone.dll.mdb
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\android\assets\Hone.dll.mdb
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\res\drawable\save16x16.png
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\res\drawable\config28x28.png
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\Hone.Droid.dll.mdb
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\bin\Debug\Hone.Droid.dll.mdb

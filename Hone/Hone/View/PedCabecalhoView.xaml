@@ -5,7 +5,7 @@
              Style ="{DynamicResource NavPageStyle}">
   
   <ContentPage.ToolbarItems>
-    <ToolbarItem Name="Próximo" Command="{Binding IrParaLinhas}"></ToolbarItem>
+    <ToolbarItem Name="Próximo" Icon="right328.png"  Command="{Binding IrParaLinhas}"></ToolbarItem>
   </ContentPage.ToolbarItems>
   
   <StackLayout Style="{DynamicResource stackStyle}">

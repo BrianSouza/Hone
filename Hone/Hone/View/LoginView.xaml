@@ -5,7 +5,7 @@
              Style ="{DynamicResource ContentPageStyle}">
   
     <ContentPage.ToolbarItems Background="{DynamicResource LightBlue}">
-    <ToolbarItem Name="Configurações"></ToolbarItem>
+    <ToolbarItem Name="Configurações" Icon="config28x28.png"></ToolbarItem>
   </ContentPage.ToolbarItems>
       
   <ContentView>

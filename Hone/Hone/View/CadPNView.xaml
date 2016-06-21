@@ -13,7 +13,7 @@
   </ContentPage.Resources>
 
   <ContentPage.ToolbarItems>
-    <ToolbarItem Name="Salvar" Command="{Binding Salvar}"></ToolbarItem>
+    <ToolbarItem Name="Salvar" Icon="save16x16.png" Command="{Binding Salvar}"></ToolbarItem>
   </ContentPage.ToolbarItems> 
   
   <StackLayout  Style="{DynamicResource stackStyle}">
