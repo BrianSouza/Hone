@@ -17,8 +17,12 @@ namespace Hone.View {
     public partial class MeusPedidosView : global::Xamarin.Forms.ContentPage {
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::Xamarin.Forms.Picker pckStatusPedido;
+        
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
             this.LoadFromXaml(typeof(MeusPedidosView));
+            pckStatusPedido = this.FindByName<global::Xamarin.Forms.Picker>("pckStatusPedido");
         }
     }
 }

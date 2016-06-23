@@ -137,13 +137,7 @@
     <AndroidResource Include="Resources\drawable\house.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\download1.png" />
-  </ItemGroup>
-  <ItemGroup>
     <AndroidResource Include="Resources\drawable\group.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable\menu.png" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\shoppingbag.png" />
@@ -155,16 +149,28 @@
     <AndroidResource Include="Resources\values-v21\colors.xml">
       <SubType>Designer</SubType>
     </AndroidResource>
-    <AndroidResource Include="Resources\drawable\next128.png" />
-    <AndroidResource Include="Resources\drawable\next228.png" />
-    <AndroidResource Include="Resources\drawable\next428.png" />
-    <AndroidResource Include="Resources\drawable\right328.png" />
-    <AndroidResource Include="Resources\drawable\save16x16.png" />
-    <AndroidResource Include="Resources\drawable\config28x28.png" />
-    <AndroidResource Include="Resources\drawable\Salvar28x28.png" />
-    <AndroidResource Include="Resources\drawable\SetaDireita28x28.png" />
-    <AndroidResource Include="Resources\drawable\Salvar28x28B.png" />
-    <AndroidResource Include="Resources\drawable\SetaDireita28x28B.png" />
+    <AndroidResource Include="Resources\drawable\config.png" />
+    <AndroidResource Include="Resources\drawable\SetaDireitaB.png" />
+    <AndroidResource Include="Resources\drawable\MenuB.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\house.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\SetaDireitaB.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\shoppingbag.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\shoppingcart.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\house.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\MenuB.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\shoppingbag.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\shoppingcart.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\house.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\MenuB.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\SetaDireitaB.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\shoppingbag.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\shoppingcart.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\MenuB.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\SetaDireitaB.png" />
+    <AndroidResource Include="Resources\drawable\SalvarB.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\SalvarB.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\SalvarB.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\SalvarB.png" />
     <Content Include="Resources\values\colors.xml" />
     <AndroidResource Include="Resources\values\styles.xml">
       <SubType>Designer</SubType>

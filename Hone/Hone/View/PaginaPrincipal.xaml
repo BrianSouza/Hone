@@ -4,7 +4,7 @@
              x:Class="Hone.View.PaginaPrincipal"
              xmlns:Controls="clr-namespace:Hone.Controles;assembly=Hone"
              Padding="0,20,0,20"
-             Icon="menu.png"
+             Icon="MenuB.png"
              Title="Hone">
 
   <ContentPage.Content>

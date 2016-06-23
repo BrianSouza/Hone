@@ -262,9 +262,7 @@ C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\res\drawable-hdpi\
 C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\res\drawable-xhdpi\icon.png
 C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\res\drawable-xxhdpi\icon.png
 C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\res\drawable\house.png
-C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\res\drawable\download1.png
 C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\res\drawable\group.png
-C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\res\drawable\menu.png
 C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\res\drawable\shoppingbag.png
 C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\res\drawable\shoppingcart.png
 C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\res\values-v21\colors.xml
@@ -338,16 +336,9 @@ C:\Users\Brian Souza\Desktop\Hone\Hone\Hone.Droid\obj\Debug\android\assets\Xamar
 C:\Users\Brian Souza\Desktop\Hone\Hone\Hone.Droid\obj\Debug\android\assets\Xamarin.Forms.Platform.Android.dll.mdb
 C:\Users\Brian Souza\Desktop\Hone\Hone\Hone.Droid\obj\Debug\android\assets\Xamarin.Forms.Xaml.dll.mdb
 C:\Users\Brian Souza\Desktop\Hone\Hone\Hone.Droid\obj\Debug\Hone.Droid.dll.mdb
-C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\res\drawable\next128.png
-C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\res\drawable\next228.png
-C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\res\drawable\next428.png
-C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\res\drawable\right328.png
 C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\bin\Debug\Java.Interop.dll.mdb
 C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\bin\Debug\Hone.dll.mdb
 C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\android\assets\Hone.dll.mdb
-C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\res\drawable\save16x16.png
-C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\res\drawable\config28x28.png
-C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\Hone.Droid.dll.mdb
 C:\Users\Brian Souza\Documents\GitHub\Hone\Hone\Hone.Droid\bin\Debug\Hone.Droid.dll
 C:\Users\Brian Souza\Documents\GitHub\Hone\Hone\Hone.Droid\bin\Debug\Hone.Droid.pdb
 C:\Users\Brian Souza\Documents\GitHub\Hone\Hone\Hone.Droid\bin\Debug\Hone.Droid.apk
@@ -444,4 +435,27 @@ C:\Users\Brian Souza\Documents\GitHub\Hone\Hone\Hone.Droid\obj\Debug\android\ass
 C:\Users\Brian Souza\Documents\GitHub\Hone\Hone\Hone.Droid\obj\Debug\res\drawable\salvar28x28b.png
 C:\Users\Brian Souza\Documents\GitHub\Hone\Hone\Hone.Droid\obj\Debug\res\drawable\setadireita28x28b.png
 C:\Users\Brian Souza\Documents\GitHub\Hone\Hone\Hone.Droid\obj\Debug\Hone.Droid.dll.mdb
-C:\Users\Brian Souza\Documents\GitHub\Hone\Hone\Hone.Droid\bin\Debug\Hone.Droid.dll.mdb
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\res\drawable\config.png
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\res\drawable\salvarb.png
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\res\drawable\setadireitab.png
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\res\drawable\menub.png
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\res\drawable-hdpi\house.png
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\res\drawable-hdpi\salvarb.png
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\res\drawable-hdpi\setadireitab.png
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\res\drawable-hdpi\shoppingbag.png
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\res\drawable-hdpi\shoppingcart.png
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\res\drawable-xhdpi\house.png
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\res\drawable-xhdpi\menub.png
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\res\drawable-xhdpi\salvarb.png
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\res\drawable-xhdpi\shoppingbag.png
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\res\drawable-xhdpi\shoppingcart.png
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\res\drawable-xxhdpi\house.png
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\res\drawable-xxhdpi\menub.png
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\res\drawable-xxhdpi\salvarb.png
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\res\drawable-xxhdpi\setadireitab.png
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\res\drawable-xxhdpi\shoppingbag.png
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\res\drawable-xxhdpi\shoppingcart.png
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\res\drawable-hdpi\menub.png
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\res\drawable-xhdpi\setadireitab.png
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\Hone.Droid.dll.mdb
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\bin\Debug\Hone.Droid.dll.mdb
