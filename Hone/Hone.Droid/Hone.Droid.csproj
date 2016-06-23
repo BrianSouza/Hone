@@ -161,6 +161,10 @@
     <AndroidResource Include="Resources\drawable\right328.png" />
     <AndroidResource Include="Resources\drawable\save16x16.png" />
     <AndroidResource Include="Resources\drawable\config28x28.png" />
+    <AndroidResource Include="Resources\drawable\Salvar28x28.png" />
+    <AndroidResource Include="Resources\drawable\SetaDireita28x28.png" />
+    <AndroidResource Include="Resources\drawable\Salvar28x28B.png" />
+    <AndroidResource Include="Resources\drawable\SetaDireita28x28B.png" />
     <Content Include="Resources\values\colors.xml" />
     <AndroidResource Include="Resources\values\styles.xml">
       <SubType>Designer</SubType>

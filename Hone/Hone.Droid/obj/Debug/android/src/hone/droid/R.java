@@ -2589,11 +2589,15 @@ containing a value of this type.
         public static final int next128=0x7f0200a6;
         public static final int next228=0x7f0200a7;
         public static final int next428=0x7f0200a8;
-        public static final int notification_template_icon_bg=0x7f0200ad;
+        public static final int notification_template_icon_bg=0x7f0200b1;
         public static final int right328=0x7f0200a9;
-        public static final int save16x16=0x7f0200aa;
-        public static final int shoppingbag=0x7f0200ab;
-        public static final int shoppingcart=0x7f0200ac;
+        public static final int salvar28x28=0x7f0200aa;
+        public static final int salvar28x28b=0x7f0200ab;
+        public static final int save16x16=0x7f0200ac;
+        public static final int setadireita28x28=0x7f0200ad;
+        public static final int setadireita28x28b=0x7f0200ae;
+        public static final int shoppingbag=0x7f0200af;
+        public static final int shoppingcart=0x7f0200b0;
     }
     public static final class id {
         public static final int action0=0x7f07008b;
