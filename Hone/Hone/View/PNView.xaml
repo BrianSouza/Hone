@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Hone.View.PNView">
+  <StackLayout Style="{DynamicResource stackStyle}">
+    <SearchBar x:Name="sbFiltrar"/>
+    <ListView GroupDisplayBinding="{Binding Key}"
+              GroupShortNameBinding="{Binding Key}"
+              ItemsSource="{Binding }">
+      <ListView.ItemTemplate>
+        <DataTemplate>
+          <TextCell Text="{Binding CardCode}" Detail="{Binding CardName}"/>
+        </DataTemplate>
+      </ListView.ItemTemplate>
+    </ListView>
+  </StackLayout>
+</ContentPage>

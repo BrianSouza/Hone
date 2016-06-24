@@ -30,6 +30,11 @@
         <Setter Property="BackgroundColor" Value="{DynamicResource Snow}" />
       </Style>
 
+      <Style x:Key="MenuStyle" TargetType="ListView">
+        <Setter Property="BackgroundColor" Value="{DynamicResource Snow}" />
+        <Setter Property="IsGroupingEnabled" Value="True"/>
+      </Style>
+
       <!--Label-->
       <Style x:Key="labelHeaderMenuStyle" TargetType="Label">
         <Setter Property="TextColor" Value="{DynamicResource LightCinza}" />
