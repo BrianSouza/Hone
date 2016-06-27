@@ -14,18 +14,21 @@ namespace Hone.ViewModel
     {
         public PNViewModel()
         {
-            Filtrar = new Command(FiltrarPN);
+            ListaParceiros = new List<Parceiro>
+            {
+                new Parceiro {CardCode = "C0001" , CardName = "Adam Diogo" },
+                new Parceiro { CardCode = "C0002" , CardName = "Brian Diego"},
+                new Parceiro {CardCode = "C0003", CardName = "Charles Felipe" }
+            };
+            NovoParceiro = new Command(IrParaViewCadPN);
+            FiltrarPN();
         }
 
-        private ObservableCollection<Parceiro> listaParceiros;
+        private List<Parceiro> listaParceiros;
+        private IEnumerable<Group<char, Parceiro>> listaFiltro;
+        private string textoFiltro;
 
-        public ICommand Filtrar
-        {
-            get;
-            set;
-        }
-
-        public ObservableCollection<Parceiro> ListaParceiros
+        public List<Parceiro> ListaParceiros
         {
             get
             {
@@ -39,12 +42,57 @@ namespace Hone.ViewModel
             }
         }
 
-        private IEnumerable<Group<char,Parceiro>> FiltrarPN()
+        public IEnumerable<Group<char, Parceiro>> ListaFiltro
         {
-            return from pn in ListaParceiros
-                   orderby pn.CardName
-                   group pn by pn.CardName[0] into grupos
-                   select new Group<char, Parceiro> ( grupos.Key, grupos );
+            get
+            {
+                return listaFiltro;
+            }
+
+            set
+            {
+                listaFiltro = value;
+                this.Notify("ListaFiltro");
+            }
+        }
+
+        public string TextoFiltro
+        {
+            get
+            {
+                return textoFiltro;
+            }
+
+            set
+            {
+                textoFiltro = value;
+                FiltrarPN();
+                this.Notify("TextoFiltro");
+            }
+        }
+
+        private void FiltrarPN()
+        {
+
+            IEnumerable<Parceiro> ListaFltrada = ListaParceiros;
+            if (!string.IsNullOrEmpty(textoFiltro))
+                ListaFltrada = ListaParceiros.Where(P => P.CardName.ToLower().Contains(textoFiltro.ToLower()));
+
+
+            ListaFiltro = from pn in ListaFltrada
+                          orderby pn.CardName
+                          group pn by pn.CardName[0] into grupos
+                          select new Group<char, Parceiro>(grupos.Key, grupos);
+        }
+
+        public ICommand NovoParceiro
+        {
+            get;set;
+        }
+
+        private void IrParaViewCadPN()
+        {
+            _Navigation.NavigateTo(new View.CadPNView());
         }
     }
 }

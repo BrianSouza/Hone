@@ -66,7 +66,7 @@ namespace Hone.ViewModel
             Menus = new ObservableCollection<PropriedadesMenuPrincipal>
             {
                 new PropriedadesMenuPrincipal { Title = "Home" , IconSource = "house.png" , TargetType = new View.HomeView()},
-                new PropriedadesMenuPrincipal { Title = "Cadastro de Parceiros" , IconSource = "group.png" , TargetType = new View.CadPNView()},
+                new PropriedadesMenuPrincipal { Title = "Cadastro de Parceiros" , IconSource = "group.png" , TargetType = new View.PNView()},
                 new PropriedadesMenuPrincipal { Title = "Cadastro de Pedidos" , IconSource = "shoppingcart.png" , TargetType =new View.PedCabecalhoView()},
                 new PropriedadesMenuPrincipal { Title = "Meus Pedidos" , IconSource = "shoppingbag.png" , TargetType = new View.MeusPedidosView()}
                 //new PropriedadesMenuPrincipal { Title = "Sincronizar" , IconSource = "download-1.png" , TargetType = typeof(View.PedCabecalhoView)}

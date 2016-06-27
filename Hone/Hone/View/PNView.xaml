@@ -2,11 +2,18 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Hone.View.PNView">
+
+  <ContentPage.ToolbarItems>
+    <ToolbarItem Name="Adicionar" Icon="" Command="{Binding NovoParceiro}"/>
+  </ContentPage.ToolbarItems>
+  
   <StackLayout Style="{DynamicResource stackStyle}">
-    <SearchBar x:Name="sbFiltrar"/>
-    <ListView GroupDisplayBinding="{Binding Key}"
+    <SearchBar x:Name="sbFiltrar" Text="{Binding TextoFiltro}"/>
+    <ListView 
+      IsGroupingEnabled="True"
+      GroupDisplayBinding="{Binding Key}"
               GroupShortNameBinding="{Binding Key}"
-              ItemsSource="{Binding }">
+              ItemsSource="{Binding ListaFiltro}">
       <ListView.ItemTemplate>
         <DataTemplate>
           <TextCell Text="{Binding CardCode}" Detail="{Binding CardName}"/>

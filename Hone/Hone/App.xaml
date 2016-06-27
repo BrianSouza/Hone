@@ -30,7 +30,7 @@
         <Setter Property="BackgroundColor" Value="{DynamicResource Snow}" />
       </Style>
 
-      <Style x:Key="MenuStyle" TargetType="ListView">
+      <Style x:Key="listGroup" TargetType="ListView">
         <Setter Property="BackgroundColor" Value="{DynamicResource Snow}" />
         <Setter Property="IsGroupingEnabled" Value="True"/>
       </Style>

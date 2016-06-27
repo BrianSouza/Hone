@@ -2495,9 +2495,9 @@ containing a value of this type.
         public static int abc_textfield_search_activated_mtrl_alpha=0x7f020048;
         public static int abc_textfield_search_default_mtrl_alpha=0x7f020049;
         public static int abc_textfield_search_material=0x7f02004a;
-        public static int design_fab_background=0x7f02004b;
-        public static int design_snackbar_background=0x7f02004c;
-        public static int download1=0x7f02004d;
+        public static int config=0x7f02004b;
+        public static int design_fab_background=0x7f02004c;
+        public static int design_snackbar_background=0x7f02004d;
         public static int group=0x7f02004e;
         public static int house=0x7f02004f;
         public static int ic_audiotrack=0x7f020050;
@@ -2569,7 +2569,7 @@ containing a value of this type.
         public static int ic_tv_dark=0x7f020092;
         public static int ic_tv_light=0x7f020093;
         public static int icon=0x7f020094;
-        public static int menu=0x7f020095;
+        public static int menub=0x7f020095;
         public static int mr_dialog_material_background_dark=0x7f020096;
         public static int mr_dialog_material_background_light=0x7f020097;
         public static int mr_ic_audiotrack_light=0x7f020098;
@@ -2585,9 +2585,11 @@ containing a value of this type.
         public static int mr_ic_pause_light=0x7f0200a2;
         public static int mr_ic_play_dark=0x7f0200a3;
         public static int mr_ic_play_light=0x7f0200a4;
-        public static int notification_template_icon_bg=0x7f0200a7;
-        public static int shoppingbag=0x7f0200a5;
-        public static int shoppingcart=0x7f0200a6;
+        public static int notification_template_icon_bg=0x7f0200a9;
+        public static int salvarb=0x7f0200a5;
+        public static int setadireitab=0x7f0200a6;
+        public static int shoppingbag=0x7f0200a7;
+        public static int shoppingcart=0x7f0200a8;
     }
     public static final class id {
         public static int action0=0x7f07008b;
