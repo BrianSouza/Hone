@@ -171,6 +171,10 @@
     <AndroidResource Include="Resources\drawable-hdpi\SalvarB.png" />
     <AndroidResource Include="Resources\drawable-xhdpi\SalvarB.png" />
     <AndroidResource Include="Resources\drawable-xxhdpi\SalvarB.png" />
+    <AndroidResource Include="Resources\drawable\Add.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\Add.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\Add.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\Add.png" />
     <Content Include="Resources\values\colors.xml" />
     <AndroidResource Include="Resources\values\styles.xml">
       <SubType>Designer</SubType>

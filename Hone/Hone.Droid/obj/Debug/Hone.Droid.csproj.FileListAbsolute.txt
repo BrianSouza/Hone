@@ -222,86 +222,6 @@ C:\Users\Brian Souza\Desktop\Hone\Hone\Hone.Droid\obj\Debug\R.cs.flag
 C:\Users\Brian Souza\Desktop\Hone\Hone\Hone.Droid\obj\Debug\uploadflags.txt
 C:\Users\Brian Souza\Desktop\Hone\Hone\Hone.Droid\bin\Debug\Hone.dll.mdb
 C:\Users\Brian Souza\Desktop\Hone\Hone\Hone.Droid\bin\Debug\Hone.Droid.dll.mdb
-C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\bin\Debug\Hone.Droid.dll
-C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\bin\Debug\Hone.Droid.pdb
-C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\bin\Debug\Hone.Droid.apk
-C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\bin\Debug\Hone.Droid-Signed.apk
-C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\bin\Debug\FormsViewGroup.dll
-C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\bin\Debug\Hone.dll
-C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\bin\Debug\Xamarin.Android.Support.Animated.Vector.Drawable.dll
-C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\bin\Debug\Xamarin.Android.Support.Design.dll
-C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\bin\Debug\Xamarin.Android.Support.v4.dll
-C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\bin\Debug\Xamarin.Android.Support.v7.AppCompat.dll
-C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\bin\Debug\Xamarin.Android.Support.v7.CardView.dll
-C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\bin\Debug\Xamarin.Android.Support.v7.MediaRouter.dll
-C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\bin\Debug\Xamarin.Android.Support.v7.RecyclerView.dll
-C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\bin\Debug\Xamarin.Android.Support.Vector.Drawable.dll
-C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\bin\Debug\Xamarin.Forms.Core.dll
-C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\bin\Debug\Xamarin.Forms.Platform.Android.dll
-C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\bin\Debug\Xamarin.Forms.Platform.dll
-C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\bin\Debug\Xamarin.Forms.Xaml.dll
-C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\bin\Debug\Newtonsoft.Json.dll
-C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\bin\Debug\Hone.pdb
-C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\bin\Debug\FormsViewGroup.pdb
-C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\bin\Debug\FormsViewGroup.dll.mdb
-C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\bin\Debug\Xamarin.Forms.Core.pdb
-C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\bin\Debug\Xamarin.Forms.Core.xml
-C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\bin\Debug\Xamarin.Forms.Core.dll.mdb
-C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\bin\Debug\Xamarin.Forms.Platform.Android.pdb
-C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\bin\Debug\Xamarin.Forms.Platform.Android.dll.mdb
-C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\bin\Debug\Xamarin.Forms.Xaml.pdb
-C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\bin\Debug\Xamarin.Forms.Xaml.xml
-C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\bin\Debug\Xamarin.Forms.Xaml.dll.mdb
-C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\bin\Debug\Newtonsoft.Json.xml
-C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\Hone.Droid.csprojResolveAssemblyReference.cache
-C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\Hone.Droid.dll
-C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\Hone.Droid.pdb
-C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\android\bin\Hone.Droid.apk
-C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\res\drawable\icon.png
-C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\res\drawable-hdpi\icon.png
-C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\res\drawable-xhdpi\icon.png
-C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\res\drawable-xxhdpi\icon.png
-C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\res\drawable\house.png
-C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\res\drawable\group.png
-C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\res\drawable\shoppingbag.png
-C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\res\drawable\shoppingcart.png
-C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\res\values-v21\colors.xml
-C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\res\values\styles.xml
-C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\res\values-v21\styles.xml
-C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\R.cs.flag
-C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\uploadflags.txt
-C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\bin\Debug\Hone.dllHone.dll.mdb
-C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\bin\Debug\Hone.Droid.dll.mdb
-C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\bin\Debug\Hone.Droid.dllHone.Droid.dll.mdb
-C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\bin\Debug\Mono.Android.dll.mdb
-C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\bin\Debug\mscorlib.dll.mdb
-C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\bin\Debug\System.ComponentModel.Composition.dll.mdb
-C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\bin\Debug\System.ComponentModel.DataAnnotations.dll.mdb
-C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\bin\Debug\System.Core.dll.mdb
-C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\bin\Debug\System.dll.mdb
-C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\bin\Debug\System.Net.Http.dll.mdb
-C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\bin\Debug\System.Numerics.dll.mdb
-C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\bin\Debug\System.Runtime.Serialization.dll.mdb
-C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\bin\Debug\System.ServiceModel.dll.mdb
-C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\bin\Debug\System.ServiceModel.Internals.dll.mdb
-C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\bin\Debug\System.Xml.dll.mdb
-C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\bin\Debug\System.Xml.Linq.dll.mdb
-C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\android\assets\FormsViewGroup.dll.mdb
-C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\android\assets\Hone.Droid.dll.mdb
-C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\android\assets\Java.Interop.dll.mdb
-C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\android\assets\Mono.Android.dll.mdb
-C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\android\assets\mscorlib.dll.mdb
-C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\android\assets\System.ComponentModel.Composition.dll.mdb
-C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\android\assets\System.Core.dll.mdb
-C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\android\assets\System.dll.mdb
-C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\android\assets\System.Net.Http.dll.mdb
-C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\android\assets\System.Runtime.Serialization.dll.mdb
-C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\android\assets\System.ServiceModel.Internals.dll.mdb
-C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\android\assets\System.Xml.dll.mdb
-C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\android\assets\System.Xml.Linq.dll.mdb
-C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\android\assets\Xamarin.Forms.Core.dll.mdb
-C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\android\assets\Xamarin.Forms.Platform.Android.dll.mdb
-C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\android\assets\Xamarin.Forms.Xaml.dll.mdb
 C:\Users\Brian Souza\Desktop\Hone\Hone\Hone.Droid\bin\Debug\Hone.dllHone.dll.mdb
 C:\Users\Brian Souza\Desktop\Hone\Hone\Hone.Droid\bin\Debug\Hone.Droid.dllHone.Droid.dll.mdb
 C:\Users\Brian Souza\Desktop\Hone\Hone\Hone.Droid\bin\Debug\Java.Interop.dll.mdb
@@ -336,9 +256,6 @@ C:\Users\Brian Souza\Desktop\Hone\Hone\Hone.Droid\obj\Debug\android\assets\Xamar
 C:\Users\Brian Souza\Desktop\Hone\Hone\Hone.Droid\obj\Debug\android\assets\Xamarin.Forms.Platform.Android.dll.mdb
 C:\Users\Brian Souza\Desktop\Hone\Hone\Hone.Droid\obj\Debug\android\assets\Xamarin.Forms.Xaml.dll.mdb
 C:\Users\Brian Souza\Desktop\Hone\Hone\Hone.Droid\obj\Debug\Hone.Droid.dll.mdb
-C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\bin\Debug\Java.Interop.dll.mdb
-C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\bin\Debug\Hone.dll.mdb
-C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\android\assets\Hone.dll.mdb
 C:\Users\Brian Souza\Documents\GitHub\Hone\Hone\Hone.Droid\bin\Debug\Hone.Droid.dll
 C:\Users\Brian Souza\Documents\GitHub\Hone\Hone\Hone.Droid\bin\Debug\Hone.Droid.pdb
 C:\Users\Brian Souza\Documents\GitHub\Hone\Hone\Hone.Droid\bin\Debug\Hone.Droid.apk
@@ -387,29 +304,6 @@ C:\Users\Brian Souza\Documents\GitHub\Hone\Hone\Hone.Droid\bin\Debug\FormsViewGr
 C:\Users\Brian Souza\Documents\GitHub\Hone\Hone\Hone.Droid\bin\Debug\Xamarin.Forms.Core.dll.mdb
 C:\Users\Brian Souza\Documents\GitHub\Hone\Hone\Hone.Droid\bin\Debug\Xamarin.Forms.Platform.Android.dll.mdb
 C:\Users\Brian Souza\Documents\GitHub\Hone\Hone\Hone.Droid\bin\Debug\Xamarin.Forms.Xaml.dll.mdb
-C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\res\drawable\config.png
-C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\res\drawable\salvarb.png
-C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\res\drawable\setadireitab.png
-C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\res\drawable\menub.png
-C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\res\drawable-hdpi\house.png
-C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\res\drawable-hdpi\salvarb.png
-C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\res\drawable-hdpi\setadireitab.png
-C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\res\drawable-hdpi\shoppingbag.png
-C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\res\drawable-hdpi\shoppingcart.png
-C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\res\drawable-xhdpi\house.png
-C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\res\drawable-xhdpi\menub.png
-C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\res\drawable-xhdpi\salvarb.png
-C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\res\drawable-xhdpi\shoppingbag.png
-C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\res\drawable-xhdpi\shoppingcart.png
-C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\res\drawable-xxhdpi\house.png
-C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\res\drawable-xxhdpi\menub.png
-C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\res\drawable-xxhdpi\salvarb.png
-C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\res\drawable-xxhdpi\setadireitab.png
-C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\res\drawable-xxhdpi\shoppingbag.png
-C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\res\drawable-xxhdpi\shoppingcart.png
-C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\res\drawable-hdpi\menub.png
-C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\res\drawable-xhdpi\setadireitab.png
-C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\Hone.Droid.dll.mdb
 C:\Users\Brian Souza\Documents\GitHub\Hone\Hone\Hone.Droid\obj\Debug\res\drawable\config.png
 C:\Users\Brian Souza\Documents\GitHub\Hone\Hone\Hone.Droid\obj\Debug\res\drawable\setadireitab.png
 C:\Users\Brian Souza\Documents\GitHub\Hone\Hone\Hone.Droid\obj\Debug\res\drawable\menub.png
@@ -463,4 +357,109 @@ C:\Users\Brian Souza\Documents\GitHub\Hone\Hone\Hone.Droid\obj\Debug\android\ass
 C:\Users\Brian Souza\Documents\GitHub\Hone\Hone\Hone.Droid\obj\Debug\android\assets\Xamarin.Forms.Platform.Android.dll.mdb
 C:\Users\Brian Souza\Documents\GitHub\Hone\Hone\Hone.Droid\obj\Debug\android\assets\Xamarin.Forms.Xaml.dll.mdb
 C:\Users\Brian Souza\Documents\GitHub\Hone\Hone\Hone.Droid\obj\Debug\Hone.Droid.dll.mdb
-C:\Users\Brian Souza\Documents\GitHub\Hone\Hone\Hone.Droid\bin\Debug\Hone.Droid.dll.mdb
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\bin\Debug\Hone.Droid.dll
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\bin\Debug\Hone.Droid.pdb
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\bin\Debug\Hone.Droid.apk
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\bin\Debug\Hone.Droid-Signed.apk
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\bin\Debug\FormsViewGroup.dll
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\bin\Debug\Hone.dll
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\bin\Debug\Xamarin.Android.Support.Animated.Vector.Drawable.dll
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\bin\Debug\Xamarin.Android.Support.Design.dll
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\bin\Debug\Xamarin.Android.Support.v4.dll
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\bin\Debug\Xamarin.Android.Support.v7.AppCompat.dll
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\bin\Debug\Xamarin.Android.Support.v7.CardView.dll
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\bin\Debug\Xamarin.Android.Support.v7.MediaRouter.dll
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\bin\Debug\Xamarin.Android.Support.v7.RecyclerView.dll
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\bin\Debug\Xamarin.Android.Support.Vector.Drawable.dll
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\bin\Debug\Xamarin.Forms.Core.dll
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\bin\Debug\Xamarin.Forms.Platform.Android.dll
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\bin\Debug\Xamarin.Forms.Platform.dll
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\bin\Debug\Xamarin.Forms.Xaml.dll
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\bin\Debug\Newtonsoft.Json.dll
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\bin\Debug\Hone.pdb
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\bin\Debug\FormsViewGroup.pdb
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\bin\Debug\FormsViewGroup.dll.mdb
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\bin\Debug\Xamarin.Forms.Core.pdb
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\bin\Debug\Xamarin.Forms.Core.xml
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\bin\Debug\Xamarin.Forms.Core.dll.mdb
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\bin\Debug\Xamarin.Forms.Platform.Android.pdb
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\bin\Debug\Xamarin.Forms.Platform.Android.dll.mdb
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\bin\Debug\Xamarin.Forms.Xaml.pdb
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\bin\Debug\Xamarin.Forms.Xaml.xml
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\bin\Debug\Xamarin.Forms.Xaml.dll.mdb
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\bin\Debug\Newtonsoft.Json.xml
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\Hone.Droid.csprojResolveAssemblyReference.cache
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\Hone.Droid.dll
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\Hone.Droid.pdb
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\android\bin\Hone.Droid.apk
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\res\drawable\icon.png
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\res\drawable-hdpi\icon.png
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\res\drawable-xhdpi\icon.png
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\res\drawable-xxhdpi\icon.png
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\res\drawable\house.png
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\res\drawable\group.png
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\res\drawable\shoppingbag.png
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\res\drawable\shoppingcart.png
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\res\values-v21\colors.xml
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\res\drawable\config.png
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\res\drawable\setadireitab.png
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\res\drawable\menub.png
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\res\drawable-hdpi\house.png
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\res\drawable-hdpi\setadireitab.png
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\res\drawable-hdpi\shoppingbag.png
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\res\drawable-hdpi\shoppingcart.png
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\res\drawable-xhdpi\house.png
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\res\drawable-xhdpi\menub.png
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\res\drawable-xhdpi\shoppingbag.png
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\res\drawable-xhdpi\shoppingcart.png
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\res\drawable-xxhdpi\house.png
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\res\drawable-xxhdpi\menub.png
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\res\drawable-xxhdpi\setadireitab.png
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\res\drawable-xxhdpi\shoppingbag.png
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\res\drawable-xxhdpi\shoppingcart.png
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\res\drawable-hdpi\menub.png
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\res\drawable-xhdpi\setadireitab.png
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\res\drawable\salvarb.png
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\res\drawable-hdpi\salvarb.png
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\res\drawable-xhdpi\salvarb.png
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\res\drawable-xxhdpi\salvarb.png
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\res\values\styles.xml
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\res\values-v21\styles.xml
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\R.cs.flag
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\uploadflags.txt
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\res\drawable\add.png
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\res\drawable-hdpi\add.png
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\res\drawable-xhdpi\add.png
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\res\drawable-xxhdpi\add.png
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\bin\Debug\Hone.Droid.dll.mdb
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\bin\Debug\Hone.dll.mdb
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\bin\Debug\Java.Interop.dll.mdb
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\bin\Debug\Mono.Android.dll.mdb
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\bin\Debug\mscorlib.dll.mdb
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\bin\Debug\System.ComponentModel.Composition.dll.mdb
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\bin\Debug\System.Core.dll.mdb
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\bin\Debug\System.dll.mdb
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\bin\Debug\System.Net.Http.dll.mdb
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\bin\Debug\System.Runtime.Serialization.dll.mdb
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\bin\Debug\System.ServiceModel.Internals.dll.mdb
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\bin\Debug\System.Xml.dll.mdb
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\bin\Debug\System.Xml.Linq.dll.mdb
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\android\assets\FormsViewGroup.dll.mdb
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\android\assets\Hone.dll.mdb
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\android\assets\Hone.Droid.dll.mdb
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\android\assets\Java.Interop.dll.mdb
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\android\assets\Mono.Android.dll.mdb
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\android\assets\mscorlib.dll.mdb
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\android\assets\System.ComponentModel.Composition.dll.mdb
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\android\assets\System.Core.dll.mdb
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\android\assets\System.dll.mdb
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\android\assets\System.Net.Http.dll.mdb
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\android\assets\System.Runtime.Serialization.dll.mdb
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\android\assets\System.ServiceModel.Internals.dll.mdb
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\android\assets\System.Xml.dll.mdb
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\android\assets\System.Xml.Linq.dll.mdb
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\android\assets\Xamarin.Forms.Core.dll.mdb
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\android\assets\Xamarin.Forms.Platform.Android.dll.mdb
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\android\assets\Xamarin.Forms.Xaml.dll.mdb
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\Hone.Droid.dll.mdb
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\bin\Debug\Hone.Droid.dll.mdb

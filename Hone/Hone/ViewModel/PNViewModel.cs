@@ -21,12 +21,15 @@ namespace Hone.ViewModel
                 new Parceiro {CardCode = "C0003", CardName = "Charles Felipe" }
             };
             NovoParceiro = new Command(IrParaViewCadPN);
+            ExcluirParceiro = new Command(ExcluirPN);
             FiltrarPN();
         }
 
         private List<Parceiro> listaParceiros;
         private IEnumerable<Group<char, Parceiro>> listaFiltro;
         private string textoFiltro;
+        private Parceiro selectedParceiro;
+
 
         public List<Parceiro> ListaParceiros
         {
@@ -93,6 +96,33 @@ namespace Hone.ViewModel
         private void IrParaViewCadPN()
         {
             _Navigation.NavigateTo(new View.CadPNView());
+        }
+
+        public ICommand ExcluirParceiro
+        {
+            get;set;
+        }
+        private void ExcluirPN()
+        {
+            if(SelectedParceiro != null)
+            {
+                ListaParceiros.Remove(SelectedParceiro);
+                FiltrarPN();
+            }
+        }
+       
+        public Parceiro SelectedParceiro
+        {
+            get
+            {
+                return selectedParceiro;
+            }
+
+            set
+            {
+                selectedParceiro = value;
+                this.Notify("SelectedParceiro");
+            }
         }
     }
 }
