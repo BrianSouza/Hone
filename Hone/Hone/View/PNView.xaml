@@ -20,7 +20,7 @@
         <DataTemplate>
           <TextCell Text="{Binding CardCode}" Detail="{Binding CardName}">
             <TextCell.ContextActions>
-              <MenuItem Text="Excluir" IsDestructive="True" Command="{Binding Path=BindingContext.ExcluirParceiro, Source={x:Reference Name=PNView}}"/>
+              <MenuItem Text="Excluir" IsDestructive="false" Command="{Binding Path=BindingContext.ExcluirParceiro, Source={x:Reference Name=PNView}}" CommandParameter="{Binding .}"/>
             </TextCell.ContextActions>
           </TextCell>
         </DataTemplate>

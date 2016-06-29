@@ -20,17 +20,24 @@ namespace Hone.ViewModel
                 new Parceiro { CardCode = "C0002" , CardName = "Brian Diego"},
                 new Parceiro {CardCode = "C0003", CardName = "Charles Felipe" }
             };
+
             NovoParceiro = new Command(IrParaViewCadPN);
-            ExcluirParceiro = new Command(ExcluirPN);
+            ExcluirParceiro = new Command<object>((param) =>
+            {
+                ExcluirPN((Parceiro)param);
+            });
+
             FiltrarPN();
         }
 
+        #region Variaveis
         private List<Parceiro> listaParceiros;
         private IEnumerable<Group<char, Parceiro>> listaFiltro;
         private string textoFiltro;
         private Parceiro selectedParceiro;
+        #endregion
 
-
+        #region Propriedades
         public List<Parceiro> ListaParceiros
         {
             get
@@ -74,6 +81,38 @@ namespace Hone.ViewModel
             }
         }
 
+        public Parceiro SelectedParceiro
+        {
+            get
+            {
+                return selectedParceiro;
+            }
+
+            set
+            {
+                selectedParceiro = value;
+                this.Notify("SelectedParceiro");
+            }
+        }
+        #endregion
+
+        #region Commands
+        public ICommand NovoParceiro
+        {
+            get; set;
+        }
+        public ICommand ExcluirParceiro
+        {
+            get; set;
+        }
+        #endregion
+
+        #region Métodos
+        private void IrParaViewCadPN()
+        {
+            _Navigation.NavigateTo(new View.CadPNView());
+        }
+
         private void FiltrarPN()
         {
 
@@ -88,41 +127,15 @@ namespace Hone.ViewModel
                           select new Group<char, Parceiro>(grupos.Key, grupos);
         }
 
-        public ICommand NovoParceiro
+        private void ExcluirPN(Parceiro pn)
         {
-            get;set;
-        }
-
-        private void IrParaViewCadPN()
-        {
-            _Navigation.NavigateTo(new View.CadPNView());
-        }
-
-        public ICommand ExcluirParceiro
-        {
-            get;set;
-        }
-        private void ExcluirPN()
-        {
-            if(SelectedParceiro != null)
+            if (pn != null)
             {
-                ListaParceiros.Remove(SelectedParceiro);
+                ListaParceiros.Remove(pn);
                 FiltrarPN();
             }
         }
-       
-        public Parceiro SelectedParceiro
-        {
-            get
-            {
-                return selectedParceiro;
-            }
+        #endregion
 
-            set
-            {
-                selectedParceiro = value;
-                this.Notify("SelectedParceiro");
-            }
-        }
     }
 }

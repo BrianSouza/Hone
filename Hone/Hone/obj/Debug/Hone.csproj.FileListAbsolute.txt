@@ -155,5 +155,3 @@ C:\Users\poliview\Source\Repos\Hone\Hone\Hone\obj\Debug\Hone.dll
 C:\Users\poliview\Source\Repos\Hone\Hone\Hone\obj\Debug\Hone.pdb
 C:\Users\poliview\Source\Repos\Hone\Hone\Hone\obj\Debug\Hone.dll.mdb
 C:\Users\poliview\Source\Repos\Hone\Hone\Hone\bin\Debug\Hone.dll.mdb
-C:\Users\poliview\Source\Repos\Hone\Hone\Hone\obj\Debug\Hone.dll.mdb
-C:\Users\poliview\Source\Repos\Hone\Hone\Hone\bin\Debug\Hone.dll.mdb
