@@ -43,7 +43,7 @@ namespace Hone.ViewModel
             }
         }
 
-        private void NavigateDetail(PropriedadesMenuPrincipal pmp)
+        private async void NavigateDetail(PropriedadesMenuPrincipal pmp)
         {
             if (pmp != null)
             {
@@ -52,7 +52,7 @@ namespace Hone.ViewModel
                 //SelectedMenu = null;
                 //master.IsPresented = false;
 
-                _Navigation.NavigateTo(pmp.TargetType);
+                await _Navigation.NavigateTo(pmp.TargetType);
             }
         }
 

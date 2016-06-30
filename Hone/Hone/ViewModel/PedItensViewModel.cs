@@ -145,13 +145,13 @@ namespace Hone.ViewModel
 
         #region Métodos
 
-        private void IrParaViewPagto()
+        private async void IrParaViewPagto()
         {
             if (ValidaListaItensSelecionados())
             {
                 PreencherPedido();
                 SalvarTxtPedido();
-                _Navigation.NavigateTo(new View.PedPagtoView());
+                await _Navigation.NavigateTo(new View.PedPagtoView());
             }
         }
 

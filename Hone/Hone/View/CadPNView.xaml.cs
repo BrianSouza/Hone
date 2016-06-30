@@ -24,10 +24,6 @@ namespace Hone.View
         private void FillListTipoDoc()
         {
             this.pckTipoDoc.Items.Clear();
-            vmCadPN.LstTipoDoc = new ObservableCollection<string>();
-            vmCadPN.LstTipoDoc.Add("CPF");
-            vmCadPN.LstTipoDoc.Add("CNPJ");
-
             foreach (var item in vmCadPN.LstTipoDoc)
             {
                 this.pckTipoDoc.Items.Add(item);
@@ -36,10 +32,6 @@ namespace Hone.View
         private void FillListTipoPN()
         {
             this.pckTipoParc.Items.Clear();
-            vmCadPN.LstTipoParc = new ObservableCollection<string>();
-            vmCadPN.LstTipoParc.Add("Cliente");
-            vmCadPN.LstTipoParc.Add("Fornecedor");
-
             foreach (var item in vmCadPN.LstTipoParc)
             {
                 this.pckTipoParc.Items.Add(item);
@@ -48,8 +40,6 @@ namespace Hone.View
         private void FillListEstados()
         {
             this.pckEstados.Items.Clear();
-           
-
             foreach (var item in vmCadPN.ListaEstados)
             {
                 this.pckEstados.Items.Add(item.Sigla);

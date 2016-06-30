@@ -93,14 +93,14 @@ namespace Hone.ViewModel
 
         }
 
-        private void IrParaViewLinhas()
+        private async void IrParaViewLinhas()
         {
             if (!Validacao())
                 return;
 
             PreencherPedido();
             SalvarTxtPedido();
-            _Navigation.NavigateTo(new View.PedItensView());
+            await _Navigation.NavigateTo(new View.PedItensView());
         }
 
         public void PreencherPedido()

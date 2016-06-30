@@ -179,13 +179,13 @@ namespace Hone.ViewModel
             };
         }
 
-        private void IrParaViewConfirmacao()
+        private async void IrParaViewConfirmacao()
         {
             if(Validacoes())
             {
                 PreencherPedido();
                 SalvarTxtPedido();
-                _Navigation.NavigateTo(new View.PedConfirmView());
+                await _Navigation.NavigateTo(new View.PedConfirmView());
             }
             
         }

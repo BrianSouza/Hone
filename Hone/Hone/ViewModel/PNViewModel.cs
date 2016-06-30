@@ -21,10 +21,10 @@ namespace Hone.ViewModel
                 new Parceiro {CardCode = "C0003", CardName = "Charles Felipe" }
             };
 
-            NovoParceiro = new Command(IrParaViewCadPN);
-            ExcluirParceiro = new Command<object>((param) =>
+            NovoParceiro = new Command(async () => await IrParaViewCadPN());
+            ExcluirParceiro = new Command<object>(async (param) => 
             {
-                ExcluirPN((Parceiro)param);
+              await Task.Run(() => ExcluirPN((Parceiro)param));
             });
 
             FiltrarPN();
@@ -108,23 +108,31 @@ namespace Hone.ViewModel
         #endregion
 
         #region Métodos
-        private void IrParaViewCadPN()
+        private async Task IrParaViewCadPN()
         {
-            _Navigation.NavigateTo(new View.CadPNView());
+            await _Navigation.NavigateTo(new View.CadPNView());
         }
 
         private void FiltrarPN()
         {
+            IEnumerable<Parceiro> ListaFltrada = FiltrarPNPorNome();
+            AgruparResultados(ListaFltrada);
+        }
 
+        private void AgruparResultados(IEnumerable<Parceiro> ListaFltrada)
+        {
+            ListaFiltro = (from pn in ListaFltrada
+                           orderby pn.CardName
+                           group pn by pn.CardName[0] into grupos
+                           select new Group<char, Parceiro>(grupos.Key, grupos));
+        }
+
+        private IEnumerable<Parceiro> FiltrarPNPorNome()
+        {
             IEnumerable<Parceiro> ListaFltrada = ListaParceiros;
             if (!string.IsNullOrEmpty(textoFiltro))
                 ListaFltrada = ListaParceiros.Where(P => P.CardName.ToLower().Contains(textoFiltro.ToLower()));
-
-
-            ListaFiltro = from pn in ListaFltrada
-                          orderby pn.CardName
-                          group pn by pn.CardName[0] into grupos
-                          select new Group<char, Parceiro>(grupos.Key, grupos);
+            return ListaFltrada;
         }
 
         private void ExcluirPN(Parceiro pn)
@@ -134,6 +142,11 @@ namespace Hone.ViewModel
                 ListaParceiros.Remove(pn);
                 FiltrarPN();
             }
+        }
+
+        private void CarregarPN(Parceiro pn)
+        {
+
         }
         #endregion
 

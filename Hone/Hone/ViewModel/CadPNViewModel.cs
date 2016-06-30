@@ -16,6 +16,8 @@ namespace Hone.ViewModel
         public CadPNViewModel()
         {
             ListarEstados();
+            ListarTipoPN();
+            ListarTipoDoc();
             this.Salvar = new Command(this.SalvarPN);
             VisibleCPF = false;
             VisibleCNPJ = false;
@@ -391,6 +393,28 @@ namespace Hone.ViewModel
                 new Estados ("São Paulo", "SP" ),
                 new Estados ("Sergipe", "SE" ),
                 new Estados ("Tocantins", "TO" )
+            };
+        }
+
+        private void ListarTipoPN()
+        {
+            LstTipoParc = new ObservableCollection<string>();
+            LstTipoParc.Add("Cliente");
+            LstTipoParc.Add("Fornecedor");
+        }
+
+        private void ListarTipoDoc()
+        {
+            LstTipoDoc = new ObservableCollection<string>();
+            LstTipoDoc.Add("CPF");
+            LstTipoDoc.Add("CNPJ");
+        }
+
+        private void CarregarParceiroSelecionado()
+        {
+            Parceiro pnSelecionado = new Parceiro
+            {
+                CardCode = "C0001"
             };
         }
     }
