@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
 using Hone.Entidades;
+using Newtonsoft.Json;
 using Xamarin.Forms;
 
 namespace Hone.ViewModel
@@ -25,6 +26,10 @@ namespace Hone.ViewModel
             ExcluirParceiro = new Command<object>(async (param) => 
             {
               await Task.Run(() => ExcluirPN((Parceiro)param));
+            });
+            EditarParceiro = new Command<object>(async (param) =>
+            {
+                await Task.Run(() => EditarPN((Parceiro)param));
             });
 
             FiltrarPN();
@@ -105,6 +110,11 @@ namespace Hone.ViewModel
         {
             get; set;
         }
+
+        public ICommand EditarParceiro
+        {
+            get;set;
+        }
         #endregion
 
         #region Métodos
@@ -143,10 +153,12 @@ namespace Hone.ViewModel
                 FiltrarPN();
             }
         }
-
-        private void CarregarPN(Parceiro pn)
+        
+        private void EditarPN(Parceiro pn)
         {
-
+            string parc = JsonConvert.SerializeObject(pn);
+            _SaveAndLoad.SaveText("pn.txt", parc);
+            _Navigation.NavigateTo(new View.CadPNView());
         }
         #endregion
 
