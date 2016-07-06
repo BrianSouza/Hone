@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using System.Windows.Input;
 using Hone.Entidades;
 using Hone.Services;
+using Newtonsoft.Json;
 using Xamarin.Forms;
 
 namespace Hone.ViewModel
@@ -21,8 +22,9 @@ namespace Hone.ViewModel
             this.Salvar = new Command(this.SalvarPN);
             VisibleCPF = false;
             VisibleCNPJ = false;
+            CarregarParceiroSelecionado();
         }
-        
+
         #region Variaveis
         private string _descricao;
         private string _tipoDoc; //TODO: fazer enum para o tipo de documento
@@ -412,10 +414,11 @@ namespace Hone.ViewModel
 
         private void CarregarParceiroSelecionado()
         {
-            Parceiro pnSelecionado = new Parceiro
-            {
-                CardCode = "C0001"
-            };
+            var pnJson = _SaveAndLoad.LoadText("pn.txt");
+            if (string.IsNullOrEmpty(pnJson))
+                return;
+
+           Parceiro pnSelecionado = JsonConvert.DeserializeObject<Parceiro>(pnJson);
         }
     }
 

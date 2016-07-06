@@ -1,4 +1,5 @@
 ﻿
+using System;
 using Hone.iOS.Services;
 using Hone.Services;
 using Xamarin.Forms;
@@ -18,7 +19,17 @@ namespace Hone.iOS.Services
         {
             var documentsPath = System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal);
             var filePath = System.IO.Path.Combine(documentsPath, filename);
-            return System.IO.File.ReadAllText(filePath);
+            if (System.IO.File.Exists(filePath))
+                return System.IO.File.ReadAllText(filePath);
+            else return string.Empty;
+        }
+
+        public void ExcludeFile(string filename)
+        {
+            var documentsPath = System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal);
+            var filePath = System.IO.Path.Combine(documentsPath, filename);
+            if (System.IO.File.Exists(filePath))
+                System.IO.File.Delete(filePath);
         }
     }
 }

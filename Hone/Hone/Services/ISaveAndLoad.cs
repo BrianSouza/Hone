@@ -10,5 +10,7 @@ namespace Hone.Services
     {
         void SaveText(string filename, string text);
         string LoadText(string filename);
+
+        void ExcludeFile(string filename);
     }
 }

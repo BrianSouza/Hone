@@ -33,6 +33,8 @@ namespace Hone.ViewModel
             });
 
             FiltrarPN();
+
+            _SaveAndLoad.ExcludeFile("pn.txt");
         }
 
         #region Variaveis
