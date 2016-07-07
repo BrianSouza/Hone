@@ -27,10 +27,10 @@ namespace Hone.ViewModel
             {
               await Task.Run(() => ExcluirPN((Parceiro)param));
             });
-            EditarParceiro = new Command<object>(async (param) =>
-            {
-                await Task.Run(() => EditarPN((Parceiro)param));
-            });
+            //EditarParceiro = new Command<object>(async (param) =>
+            //{
+            //    await Task.Run(() => EditarPN((Parceiro)param));
+            //});
 
             FiltrarPN();
 
@@ -99,6 +99,7 @@ namespace Hone.ViewModel
             {
                 selectedParceiro = value;
                 this.Notify("SelectedParceiro");
+                EditarPN(value);
             }
         }
         #endregion
@@ -113,10 +114,10 @@ namespace Hone.ViewModel
             get; set;
         }
 
-        public ICommand EditarParceiro
-        {
-            get;set;
-        }
+        //public ICommand EditarParceiro
+        //{
+        //    get;set;
+        //}
         #endregion
 
         #region Métodos

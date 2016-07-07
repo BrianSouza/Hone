@@ -415,10 +415,34 @@ namespace Hone.ViewModel
         private void CarregarParceiroSelecionado()
         {
             var pnJson = _SaveAndLoad.LoadText("pn.txt");
-            if (string.IsNullOrEmpty(pnJson))
+            if (string.IsNullOrEmpty(pnJson) || pnJson == "null")
                 return;
 
            Parceiro pnSelecionado = JsonConvert.DeserializeObject<Parceiro>(pnJson);
+            this.Descricao = pnSelecionado.CardName;
+
+            if (pnSelecionado.TipoDocumento == "CNPJ")
+            {
+                this.visibleCPF = false;
+                this.visibleCNPJ = true;
+                this.DocumentoCNPJ = pnSelecionado.NumDocumento;
+            }
+            else if(pnSelecionado.TipoDocumento == "CPF")
+            {
+                this.visibleCNPJ = false;
+                this.visibleCPF = true;
+                this.DocumentoCPF = pnSelecionado.NumDocumento;
+            }
+            this.Bairro = pnSelecionado.Bairro;
+            this.CEP = pnSelecionado.Cep;
+            this.Cidade = pnSelecionado.Cidade;
+            this.Endereco = pnSelecionado.Logradouro;
+            //this.Estado = pnSelecionado.Estado;
+            this.Num = pnSelecionado.NumeroLog;
+            this.SelectedEstado = ListaEstados.Where(t0 => t0.Sigla.Equals(pnSelecionado.Estado)).FirstOrDefault();
+            this.Telefone = pnSelecionado.Telefone;
+            this.TipoDoc = pnSelecionado.TipoDocumento;
+            this.TipoParc = pnSelecionado.TipoParceiro;
         }
     }
 

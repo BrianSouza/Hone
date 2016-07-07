@@ -20,8 +20,8 @@
         <DataTemplate>
           <TextCell Text="{Binding CardCode}" Detail="{Binding CardName}">
             <TextCell.ContextActions>
-              <MenuItem Text="Excluir" IsDestructive="false" Command="{Binding Path=BindingContext.ExcluirParceiro, Source={x:Reference Name=PNView}}" CommandParameter="{Binding .}"/>
-              <MenuItem Text="Editar" IsDestructive="True" Command="{Binding Path=BindingContext.EditarParceiro, Source={x:Reference Name=PNView}}" CommandParameter="{Binding .}"/>
+              <MenuItem Text="Excluir" IsDestructive="False" Command="{Binding Path=BindingContext.ExcluirParceiro, Source={x:Reference Name=PNView}}" CommandParameter="{Binding .}"/>
+              <!--<MenuItem Text="Editar" IsDestructive="False" Command="{Binding Path=BindingContext.EditarParceiro, Source={x:Reference Name=PNView}}" CommandParameter="{Binding .}"/>-->
             </TextCell.ContextActions>
           </TextCell>
         </DataTemplate>
