@@ -175,6 +175,10 @@
     <AndroidResource Include="Resources\drawable-hdpi\Add.png" />
     <AndroidResource Include="Resources\drawable-xhdpi\Add.png" />
     <AndroidResource Include="Resources\drawable-xxhdpi\Add.png" />
+    <AndroidResource Include="Resources\drawable\Lupa.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\Lupa.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\Lupa.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\Lupa.png" />
     <Content Include="Resources\values\colors.xml" />
     <AndroidResource Include="Resources\values\styles.xml">
       <SubType>Designer</SubType>

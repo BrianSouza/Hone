@@ -465,5 +465,9 @@ C:\Users\Brian Souza\Documents\GitHub\Hone\Hone\Hone.Droid\obj\Debug\res\drawabl
 C:\Users\Brian Souza\Documents\GitHub\Hone\Hone\Hone.Droid\obj\Debug\res\drawable-hdpi\add.png
 C:\Users\Brian Souza\Documents\GitHub\Hone\Hone\Hone.Droid\obj\Debug\res\drawable-xhdpi\add.png
 C:\Users\Brian Souza\Documents\GitHub\Hone\Hone\Hone.Droid\obj\Debug\res\drawable-xxhdpi\add.png
+C:\Users\Brian Souza\Documents\GitHub\Hone\Hone\Hone.Droid\obj\Debug\res\drawable\lupa.png
+C:\Users\Brian Souza\Documents\GitHub\Hone\Hone\Hone.Droid\obj\Debug\res\drawable-hdpi\lupa.png
+C:\Users\Brian Souza\Documents\GitHub\Hone\Hone\Hone.Droid\obj\Debug\res\drawable-xhdpi\lupa.png
+C:\Users\Brian Souza\Documents\GitHub\Hone\Hone\Hone.Droid\obj\Debug\res\drawable-xxhdpi\lupa.png
 C:\Users\Brian Souza\Documents\GitHub\Hone\Hone\Hone.Droid\obj\Debug\Hone.Droid.dll.mdb
 C:\Users\Brian Souza\Documents\GitHub\Hone\Hone\Hone.Droid\bin\Debug\Hone.Droid.dll.mdb

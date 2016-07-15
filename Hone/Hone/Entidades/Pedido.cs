@@ -10,6 +10,8 @@ namespace Hone.Entidades
     public class Pedido
     {
         public int Id { get; set; }
+
+        public DateTime DtCadastro { get; set; }
         public DateTime DtEntrega { get; set; }
         public Parceiro Parceiro { get; set; }
         public FormaPgto FormaPgto { get; set; }

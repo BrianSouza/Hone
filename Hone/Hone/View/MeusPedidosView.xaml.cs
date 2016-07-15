@@ -15,19 +15,19 @@ namespace Hone.View
         {
             InitializeComponent();
             this.BindingContext = mpVM;
-            PreencherPickerStatus();
+            //PreencherPickerStatus();
         }
 
-        private void PreencherPickerStatus()
-        {
-            this.pckStatusPedido.Items.Clear();
-            if(mpVM.ListaStatusPedido.Count > 0)
-            {
-                foreach (var item in mpVM.ListaStatusPedido)
-                {
-                    this.pckStatusPedido.Items.Add(item.StatusName);
-                }
-            }
-        }
+        //private void PreencherPickerStatus()
+        //{
+        //    //this.pckStatusPedido.Items.Clear();
+        //    //if(mpVM.ListaStatusPedido.Count > 0)
+        //    //{
+        //    //    foreach (var item in mpVM.ListaStatusPedido)
+        //    //    {
+        //    //        this.pckStatusPedido.Items.Add(item.StatusName);
+        //    //    }
+        //    //}
+        //}
     }
 }
