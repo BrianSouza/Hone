@@ -137,9 +137,7 @@ namespace Hone.ViewModel
 
         private void SalvarPedido()
         {
-            _Navigation.NavigateToMain();
-           
-            //_Navigation.GoBack();
+            _Navigation.NavigationToBegin();
         }
         #endregion
 

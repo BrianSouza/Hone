@@ -301,7 +301,7 @@ namespace Hone.ViewModel
             bool bValido = Validacoes();
 
             if (bValido)
-                _Navigation.NavigateToMain();
+                _Navigation.NavigationToBegin();
 
         }
 

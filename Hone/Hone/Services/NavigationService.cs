@@ -22,6 +22,14 @@ namespace Hone.Services
             App.Current.MainPage = new View.MainView();
         }
 
+        public async Task NavigationToBegin()
+        {
+            var _master = (MasterDetailPage)App.Current.MainPage;
+            var _nav = (NavigationPage)_master.Detail;
+            await _nav.PopToRootAsync();
+            _master.IsPresented = false;
+        }
+
         public async Task NavigateTo(Page page)
         {
             var _master = (MasterDetailPage)App.Current.MainPage;

@@ -32,7 +32,7 @@ namespace TesteHone
         }
 
         [Test]
-        public void NewTest()
+        public void UiPedido()
         {
             app.Tap(x => x.Text("Login"));
             app.Tap(x => x.Id("up"));
