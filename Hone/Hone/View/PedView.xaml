@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Hone.View.PedView">
+  <StackLayout Style="{DynamicResource stackStyle}">
+    <Label Text="Parceiro"  Style="{DynamicResource labelPagesStyle}"/>
+    <Label Text="{Binding PN}" />
+    <Label Text="Data de Entrega"  Style="{DynamicResource labelPagesStyle}"/>
+    <Label Text="{Binding DtEntrega}"/>
+    <Label Text="Forma de Pagto"  Style="{DynamicResource labelPagesStyle}"/>
+    <Label Text="{Binding FP}" />
+    <Label Text="Condição de Pagamento" Style="{DynamicResource labelPagesStyle}"/>
+    <Label Text="{Binding CP}"/>
+    <ListView ItemsSource="{Binding LstItem}" >
+      <ListView.ItemTemplate>
+        <DataTemplate>
+          <ViewCell>
+            <Grid Padding="5">
+              <Grid.RowDefinitions>
+                <RowDefinition Height="20"></RowDefinition>
+                <RowDefinition Height="20"></RowDefinition>
+              </Grid.RowDefinitions>
+              <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="40"></ColumnDefinition>
+              </Grid.ColumnDefinitions>
+
+              <Label Grid.Row="0" Grid.Column="0" Text="{Binding ItemCode}" LineBreakMode="TailTruncation">
+
+              </Label>
+              <Label Grid.Row="1" Grid.Column="0" Text="{Binding ItemName}" Font="Small" TextColor="Gray" LineBreakMode="TailTruncation"></Label>
+
+            </Grid>
+          </ViewCell>
+        </DataTemplate>
+      </ListView.ItemTemplate>
+    </ListView>
+  </StackLayout>
+</ContentPage>

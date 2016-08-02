@@ -9,17 +9,13 @@
 
   <StackLayout Style="{DynamicResource stackStyle}">
     <SearchBar x:Name="sbFiltrar" Text="{Binding TextoFiltro}"/>
-    <!--<Label Text="Data de Cadastro de:" Style="{DynamicResource labelPagesStyle}" ></Label>
-    <DatePicker Format="dd/MM/yyyy" Date="{Binding DataDe}" ></DatePicker>
-    <Label Text="Data de Cadastro até:" Style="{DynamicResource labelPagesStyle}" ></Label>
-    <DatePicker Format="dd/MM/yyyy" Date="{Binding DataAte}" ></DatePicker>
-    <Label Text="Status Pedidos" Style="{DynamicResource labelPagesStyle}"/>
-    <Picker x:Name="pckStatusPedido" SelectedIndex="{Binding SelectedStatusIndex}" Title="Status Pedido" HorizontalOptions="Fill"></Picker>-->
+   
     <ListView
       Style="{DynamicResource listGroup}"
       GroupDisplayBinding="{Binding Key}"
       GroupShortNameBinding="{Binding Key}"
-      ItemsSource="{Binding ListaFiltro}" SeparatorVisibility="None">
+      ItemsSource="{Binding ListaFiltro}" SeparatorVisibility="None"
+      SelectedItem="{Binding SelectedPedido}">
       <ListView.ItemTemplate>
         <DataTemplate>
           <ViewCell>

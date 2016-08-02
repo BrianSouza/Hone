@@ -1,9 +1,8 @@
-﻿using System;
+﻿
 using System.Collections.ObjectModel;
 using System.Windows.Input;
 using Hone.Entidades;
-using Hone.Services;
-using Hone.ViewModel;
+
 using Newtonsoft.Json;
 using Xamarin.Forms;
 

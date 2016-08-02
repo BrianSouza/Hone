@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
 using Hone.Entidades;
+using Newtonsoft.Json;
+using Hone.View;
+
 
 namespace Hone.ViewModel
 {
@@ -11,47 +14,17 @@ namespace Hone.ViewModel
         public MeusPedidosViewModel()
         {
             CarregarPedidos();
+
         }
         public struct StatusPed
         {
             public int StatusId { get; set; }
             public string StatusName { get; set; }
         }
-        //private int selectedStatusIndex;
         private List<Pedido> lstPedidos;
-        //private DateTime dataDe;
-        //private DateTime dataAte;
-        //private StatusPed selectedStatus;
         private IEnumerable<Group<char, Pedido>> listaFiltro;
         private string textoFiltro;
-
-        //public DateTime DataAte
-        //{
-        //    get
-        //    {
-        //        return dataAte;
-        //    }
-
-        //    set
-        //    {
-        //        dataAte = value;
-        //        this.Notify("DataAte");
-        //    }
-        //}
-
-        //public DateTime DataDe
-        //{
-        //    get
-        //    {
-        //        return dataDe;
-        //    }
-
-        //    set
-        //    {
-        //        dataDe = value;
-        //        this.Notify("dataDe");
-        //    }
-        //}
+        private Pedido selectedPedido;
 
         public List<Pedido> LstPedidos
         {
@@ -90,8 +63,23 @@ namespace Hone.ViewModel
             set
             {
                 textoFiltro = value;
-                FiltrarPedidoNomePN();
+                FiltrarPedido();
                 this.Notify("TextoFiltro");
+            }
+        }
+
+        public Pedido SelectedPedido
+        {
+            get
+            {
+                return selectedPedido;
+            }
+
+            set
+            {
+                selectedPedido = value;
+                this.Notify("SelectedPedido");
+                SalvarTxtPedidoENavegar();
             }
         }
 
@@ -139,35 +127,20 @@ namespace Hone.ViewModel
             return ListaFltrada;
         }
 
-        //public StatusPed SelectedStatus
-        //{
-        //    get
-        //    {
-        //        return selectedStatus;
-        //    }
+        public void SalvarTxtPedidoENavegar()
+        {
+            if (selectedPedido != null)
+            {
+                string ped = JsonConvert.SerializeObject(SelectedPedido);
+                _SaveAndLoad.SaveText("Pedido.txt", ped);
+                NavegarParaPedido();
+            }
+        }
 
-        //    set
-        //    {
-        //        selectedStatus = value;
-        //        Notify("SelectedStatus");
-        //    }
-        //}
-        //public int SelectedStatusIndex
-        //{
-        //    get { return selectedStatusIndex; }
-        //    set
-        //    {
-        //        selectedStatusIndex = value;
-        //        SelectedStatus = ListaStatusPedido[value];
-        //        this.Notify("SelectedStatusIndex");
-        //    }
-        //}
-        //public ObservableCollection<StatusPed> ListaStatusPedido = new ObservableCollection<StatusPed>
-        //{
-        //    new StatusPed {StatusId = 0 , StatusName = "Todos" },
-        //    new StatusPed {StatusId = 1 , StatusName = "Sincronizado" },
-        //    new StatusPed {StatusId = 2 , StatusName = "Ñ Sincronizado" }
-
-        //};
+        private async void NavegarParaPedido()
+        {
+            if (_SaveAndLoad.ValidateExist("Pedido.txt"))
+                await _Navigation.NavigateTo(new PedView());
+        }
     }
 }

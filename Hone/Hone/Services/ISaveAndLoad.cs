@@ -12,5 +12,7 @@ namespace Hone.Services
         string LoadText(string filename);
 
         void ExcludeFile(string filename);
+
+        bool ValidateExist(string fileName);
     }
 }
