@@ -100,6 +100,8 @@ class MonoPackageManager_Resources {
 		/* We need to ensure that "Hone.Droid.dll" comes first in this list. */
 		"Hone.Droid.dll",
 		"FormsViewGroup.dll",
+		"SQLite.Net.dll",
+		"SQLite.Net.Platform.XamarinAndroid.dll",
 		"Xamarin.Android.Support.Animated.Vector.Drawable.dll",
 		"Xamarin.Android.Support.Design.dll",
 		"Xamarin.Android.Support.v4.dll",

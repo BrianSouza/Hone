@@ -29,3 +29,5 @@ C:\Users\Brian Souza\Documents\GitHub\Hone\TesteHone\bin\Debug\FormsViewGroup.pd
 C:\Users\Brian Souza\Documents\GitHub\Hone\TesteHone\obj\Debug\TesteHone.csprojResolveAssemblyReference.cache
 C:\Users\Brian Souza\Documents\GitHub\Hone\TesteHone\obj\Debug\TesteHone.dll
 C:\Users\Brian Souza\Documents\GitHub\Hone\TesteHone\obj\Debug\TesteHone.pdb
+C:\Users\Brian Souza\Documents\GitHub\Hone\TesteHone\bin\Debug\SQLite.Net.dll
+C:\Users\Brian Souza\Documents\GitHub\Hone\TesteHone\bin\Debug\SQLite.Net.Platform.XamarinAndroid.dll

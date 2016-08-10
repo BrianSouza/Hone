@@ -31,5 +31,16 @@ namespace Hone.iOS.Services
             if (System.IO.File.Exists(filePath))
                 System.IO.File.Delete(filePath);
         }
+
+        public bool ValidateExist(string fileName)
+        {
+            var documentsPath = System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal);
+            var filePath = System.IO.Path.Combine(documentsPath, fileName);
+            if (System.IO.File.Exists(filePath))
+                return true;
+            else
+                return false;
+
+        }
     }
 }
