@@ -41,6 +41,7 @@
     <Compile Include="Controles\CustomImageCell.cs" />
     <Compile Include="Dados\AcessarDados.cs" />
     <Compile Include="Dados\Entidades\Parceiros.cs" />
+    <Compile Include="Dados\Services\IAcessarDados.cs" />
     <Compile Include="Entidades\Group.cs" />
     <Compile Include="Entidades\PropriedadesMenuPrincipal.cs" />
     <Compile Include="Entidades\CondPagto.cs" />
@@ -51,7 +52,7 @@
     <Compile Include="Entidades\Pedido.cs" />
     <Compile Include="Mask\Mask.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Dados\IConfigDados.cs" />
+    <Compile Include="Dados\Services\IConfigDados.cs" />
     <Compile Include="Services\IMessageServices.cs" />
     <Compile Include="Services\INavigationService.cs" />
     <Compile Include="Services\ISaveAndLoad.cs" />

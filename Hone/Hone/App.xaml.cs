@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Hone.Dados;
+using Hone.Dados.Services;
 using Hone.Services;
 using Xamarin.Forms;
 
@@ -14,6 +16,8 @@ namespace Hone
         {
             DependencyService.Register<IMessageServices, MessageServices>();
             DependencyService.Register<INavigationService, NavigationService>();
+            DependencyService.Register<IAcessarDados, Dados.AcessarDados>();
+            
             // The root page of your application
             MainPage = new NavigationPage(new View.LoginView());
             InitializeComponent();
@@ -21,6 +25,7 @@ namespace Hone
 
         protected override void OnStart()
         {
+
             // Handle when your app starts
         }
 
