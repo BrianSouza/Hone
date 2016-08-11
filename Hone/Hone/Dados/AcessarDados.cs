@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Hone.Dados.Entidades;
 using Xamarin.Forms;
 
 namespace Hone.Dados
@@ -15,7 +16,7 @@ namespace Hone.Dados
             var config = DependencyService.Get<IConfigDados>();
             _conexao = new SQLite.Net.SQLiteConnection(config.Plataforma, System.IO.Path.Combine(config.DiretorioDB,"HoneDB.db3"));
 
-            _conexao.CreateTable<T>();
+            _conexao.CreateTable<Parceiros>();
         }
 
         public void Insert<T>(T tabela)

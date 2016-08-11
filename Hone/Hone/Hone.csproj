@@ -40,6 +40,7 @@
     </Compile>
     <Compile Include="Controles\CustomImageCell.cs" />
     <Compile Include="Dados\AcessarDados.cs" />
+    <Compile Include="Dados\Entidades\Parceiros.cs" />
     <Compile Include="Entidades\Group.cs" />
     <Compile Include="Entidades\PropriedadesMenuPrincipal.cs" />
     <Compile Include="Entidades\CondPagto.cs" />
