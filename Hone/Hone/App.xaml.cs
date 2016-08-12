@@ -14,19 +14,37 @@ namespace Hone
     {
         public App()
         {
-            DependencyService.Register<IMessageServices, MessageServices>();
-            DependencyService.Register<INavigationService, NavigationService>();
-            DependencyService.Register<IAcessarDados, Dados.AcessarDados>();
+            try
+            {
+                DependencyService.Register<IMessageServices, MessageServices>();
+                DependencyService.Register<INavigationService, NavigationService>();
+                DependencyService.Register<IAcessarDados, Dados.AcessarDados>();
+
+                // The root page of your application
+                MainPage = new NavigationPage(new View.LoginView());
+                InitializeComponent();
+            }
+            catch (Exception)
+            {
+                throw;
+            }
             
-            // The root page of your application
-            MainPage = new NavigationPage(new View.LoginView());
-            InitializeComponent();
         }
 
         protected override void OnStart()
         {
-
             // Handle when your app starts
+            try
+            {
+                var registrarTabelas = DependencyService.Get<IAcessarDados>();
+                registrarTabelas.CriarTabelas();
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+            
         }
 
         protected override void OnSleep()
