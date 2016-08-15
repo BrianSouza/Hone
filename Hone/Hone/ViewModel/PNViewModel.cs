@@ -5,6 +5,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
+using Hone.Dados;
+using Hone.Dados.Entidades;
 using Hone.Entidades;
 using Newtonsoft.Json;
 using Xamarin.Forms;
@@ -15,13 +17,13 @@ namespace Hone.ViewModel
     {
         public PNViewModel()
         {
-            ListaParceiros = new List<Parceiro>
-            {
-                new Parceiro {CardCode = "C0001" , CardName = "Adam Diogo" },
-                new Parceiro { CardCode = "C0002" , CardName = "Brian Diego"},
-                new Parceiro {CardCode = "C0003", CardName = "Charles Felipe" }
-            };
-
+            //ListaParceiros = new List<Parceiro>
+            //{
+            //    new Parceiro {CardCode = "C0001" , CardName = "Adam Diogo" },
+            //    new Parceiro { CardCode = "C0002" , CardName = "Brian Diego"},
+            //    new Parceiro {CardCode = "C0003", CardName = "Charles Felipe" }
+            //};
+            CarregarParceiros();
             NovoParceiro = new Command(async () => await IrParaViewCadPN());
             ExcluirParceiro = new Command<object>(async (param) => 
             {
@@ -162,6 +164,32 @@ namespace Hone.ViewModel
             string parc = JsonConvert.SerializeObject(pn);
             _SaveAndLoad.SaveText("pn.txt", parc);
             _Navigation.NavigateTo(new View.CadPNView());
+        }
+
+        private void CarregarParceiros()
+        {
+            ListaParceiros = new List<Parceiro>();
+            using (AcessarDados dados = new AcessarDados())
+            {
+                var parceiros = dados.Listar<Parceiros>();
+                foreach (var item in parceiros)
+                {
+                    Parceiro pn = new Parceiro();
+                    pn.Bairro = item.Bairro;
+                    pn.CardCode = item.CardCode;
+                    pn.CardName = item.CardName;
+                    pn.Cep = item.Cep;
+                    pn.Cidade = item.Cidade;
+                    pn.Estado = item.Estado;
+                    pn.Logradouro = item.Logradouro;
+                    pn.NumDocumento = item.NumDocumento;
+                    pn.NumeroLog = item.NumeroLog;
+                    pn.Telefone = item.Telefone;
+                    pn.TipoDocumento = item.TipoDocumento;
+                    pn.TipoParceiro = item.TipoParceiro;
+                    ListaParceiros.Add(pn);
+                }
+            }
         }
         #endregion
 

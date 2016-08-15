@@ -5,6 +5,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
+using Hone.Dados;
+using Hone.Dados.Entidades;
 using Hone.Entidades;
 using Hone.Services;
 using Newtonsoft.Json;
@@ -23,6 +25,7 @@ namespace Hone.ViewModel
             VisibleCPF = false;
             VisibleCNPJ = false;
             CarregarParceiroSelecionado();
+            Parceiros parceiro = new Dados.Entidades.Parceiros();
         }
 
         #region Variaveis
@@ -91,6 +94,7 @@ namespace Hone.ViewModel
             {
                 _TipoParcID = value;
                 _tipoParc = LstTipoParc[value];
+
                 this.Notify("TipoParcID");
             }
         }
@@ -300,8 +304,13 @@ namespace Hone.ViewModel
         {
             bool bValido = Validacoes();
 
+
             if (bValido)
+            {
+                SalvarParceiro();
                 _Navigation.NavigationToBegin();
+
+            }
 
         }
 
@@ -418,7 +427,7 @@ namespace Hone.ViewModel
             if (string.IsNullOrEmpty(pnJson) || pnJson == "null")
                 return;
 
-           Parceiro pnSelecionado = JsonConvert.DeserializeObject<Parceiro>(pnJson);
+            Parceiro pnSelecionado = JsonConvert.DeserializeObject<Parceiro>(pnJson);
             this.Descricao = pnSelecionado.CardName;
 
             if (pnSelecionado.TipoDocumento == "CNPJ")
@@ -427,7 +436,7 @@ namespace Hone.ViewModel
                 this.visibleCNPJ = true;
                 this.DocumentoCNPJ = pnSelecionado.NumDocumento;
             }
-            else if(pnSelecionado.TipoDocumento == "CPF")
+            else if (pnSelecionado.TipoDocumento == "CPF")
             {
                 this.visibleCNPJ = false;
                 this.visibleCPF = true;
@@ -443,6 +452,27 @@ namespace Hone.ViewModel
             this.Telefone = pnSelecionado.Telefone;
             this.TipoDoc = pnSelecionado.TipoDocumento;
             this.TipoParc = pnSelecionado.TipoParceiro;
+        }
+
+        private void SalvarParceiro()
+        {
+            Parceiros _parceiro = new Parceiros();
+            _parceiro.Bairro = this.Bairro;
+            _parceiro.CardName = this.Descricao;
+            _parceiro.Cep = this.CEP;
+            _parceiro.Cidade = this.Cidade;
+            _parceiro.Estado = this.Estado;
+            _parceiro.Logradouro = this.Endereco;
+            _parceiro.NumDocumento = string.IsNullOrEmpty(this._DocumentoCNPJ) ? this._DocumentoCPF : this._DocumentoCNPJ;
+            _parceiro.NumeroLog = this.Num;
+            _parceiro.Telefone = this.Telefone;
+            _parceiro.TipoDocumento = this.TipoDoc;
+            _parceiro.TipoParceiro = this.TipoParc;
+
+            using (AcessarDados ad = new AcessarDados())
+            {
+                ad.Insert<Parceiros>(_parceiro);
+            }
         }
     }
 

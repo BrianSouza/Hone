@@ -7,6 +7,7 @@ using SQLite.Net.Attributes;
 
 namespace Hone.Dados.Entidades
 {
+    [Table("Parceiros")]
     public class Parceiros
     {
         [PrimaryKey,AutoIncrement]
@@ -15,7 +16,6 @@ namespace Hone.Dados.Entidades
 
         public string CardName { get; set; }
 
-        public string PhoneCardCode { get; set; }
         [NotNull]
         public string TipoParceiro { get; set; }
         [NotNull]

@@ -18,7 +18,6 @@ namespace Hone
             {
                 DependencyService.Register<IMessageServices, MessageServices>();
                 DependencyService.Register<INavigationService, NavigationService>();
-                DependencyService.Register<IAcessarDados, Dados.AcessarDados>();
 
                 // The root page of your application
                 MainPage = new NavigationPage(new View.LoginView());
@@ -26,9 +25,9 @@ namespace Hone
             }
             catch (Exception)
             {
-                throw;
+                //TODO: Criar Log
             }
-            
+
         }
 
         protected override void OnStart()
@@ -36,13 +35,14 @@ namespace Hone
             // Handle when your app starts
             try
             {
-                var registrarTabelas = DependencyService.Get<IAcessarDados>();
-                registrarTabelas.CriarTabelas();
+                using (AcessarDados dados = new AcessarDados())
+                {
+                    dados.CriarTabelas();
+                }
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-
-                throw;
+                //TODO: Criar Log
             }
             
         }
