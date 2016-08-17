@@ -92,7 +92,12 @@
       <Style x:Key="EntryStyleBlue" TargetType="Entry">
         <Setter Property="TextColor" Value="{DynamicResource LightBlue}" />
       </Style>
-
+      
+      <!--Picker-->
+      <Style x:Key="pickerStyle" TargetType="Picker">
+        <Setter Property="TextColor" Value="{DynamicResource LightBlue}" />/>
+      </Style>
+      
     </ResourceDictionary>
   </Application.Resources>
 </Application>

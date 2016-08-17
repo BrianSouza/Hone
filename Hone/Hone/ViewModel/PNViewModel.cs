@@ -1,12 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
 using Hone.Dados;
-using Hone.Dados.Entidades;
 using Hone.Entidades;
 using Newtonsoft.Json;
 using Xamarin.Forms;
@@ -171,10 +167,11 @@ namespace Hone.ViewModel
             ListaParceiros = new List<Parceiro>();
             using (AcessarDados dados = new AcessarDados())
             {
-                var parceiros = dados.Listar<Parceiros>();
+                var parceiros = dados.ListarParceiros();
                 foreach (var item in parceiros)
                 {
                     Parceiro pn = new Parceiro();
+                    pn.IdMobile = item.IdMobile;
                     pn.Bairro = item.Bairro;
                     pn.CardCode = item.CardCode;
                     pn.CardName = item.CardName;

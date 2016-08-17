@@ -1,14 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
+﻿using System.Collections.ObjectModel;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Input;
 using Hone.Dados;
-using Hone.Dados.Entidades;
 using Hone.Entidades;
-using Hone.Services;
+using Hone.View;
 using Newtonsoft.Json;
 using Xamarin.Forms;
 
@@ -25,7 +20,7 @@ namespace Hone.ViewModel
             VisibleCPF = false;
             VisibleCNPJ = false;
             CarregarParceiroSelecionado();
-            Parceiros parceiro = new Dados.Entidades.Parceiros();
+            Parceiro parceiro = new Parceiro();
         }
 
         #region Variaveis
@@ -49,9 +44,16 @@ namespace Hone.ViewModel
         private int estadoID;
         private bool visibleCNPJ;
         private bool visibleCPF;
+        private int _idMobile;
+        private string _CEP;
         #endregion
 
         #region Propriedades
+        public int IdMobile
+        {
+            get { return _idMobile; }
+            set { _idMobile = value; }
+        }
         public bool VisibleCNPJ
         {
             get
@@ -103,7 +105,7 @@ namespace Hone.ViewModel
             get { return _tipoParc; }
             set
             {
-                _tipoParc = value;
+                _tipoParc = value.ToUpper();
                 this.Notify("TipoParc");
             }
         }
@@ -141,7 +143,7 @@ namespace Hone.ViewModel
             get { return _tipoDoc; }
             set
             {
-                _tipoDoc = value;
+                _tipoDoc = value.ToUpper();
                 this.Notify("TipoDoc");
             }
         }
@@ -198,7 +200,7 @@ namespace Hone.ViewModel
             get { return _descricao; }
             set
             {
-                _descricao = value;
+                _descricao = value.ToUpper();
                 this.Notify("Descricao");
             }
         }
@@ -208,7 +210,7 @@ namespace Hone.ViewModel
             get { return _DocumentoCPF; }
             set
             {
-                _DocumentoCPF = value;
+                _DocumentoCPF = value.ToUpper();
                 this.Notify("DocumentoCPF");
             }
         }
@@ -217,7 +219,7 @@ namespace Hone.ViewModel
             get { return _DocumentoCNPJ; }
             set
             {
-                _DocumentoCNPJ = value;
+                _DocumentoCNPJ = value.ToUpper();
                 this.Notify("DocumentoCNPJ");
             }
         }
@@ -227,7 +229,7 @@ namespace Hone.ViewModel
             get { return _endereco; }
             set
             {
-                _endereco = value;
+                _endereco = value.ToUpper();
                 this.Notify("Endereco");
             }
         }
@@ -237,7 +239,7 @@ namespace Hone.ViewModel
             get { return _num; }
             set
             {
-                _num = value;
+                _num = value.ToUpper();
                 this.Notify("Num");
             }
         }
@@ -247,7 +249,7 @@ namespace Hone.ViewModel
             get { return _cidade; }
             set
             {
-                _cidade = value;
+                _cidade = value.ToUpper();
                 this.Notify("Cidade");
             }
         }
@@ -257,8 +259,8 @@ namespace Hone.ViewModel
             get { return _bairro; }
             set
             {
-                _bairro = value;
-                this.Notify(Bairro);
+                _bairro = value.ToUpper();
+                this.Notify("Bairro");
             }
         }
 
@@ -267,7 +269,7 @@ namespace Hone.ViewModel
             get { return _estado; }
             set
             {
-                _estado = value;
+                _estado = value.ToUpper();
                 this.Notify("Estado");
             }
         }
@@ -277,17 +279,17 @@ namespace Hone.ViewModel
             get { return _Telefone; }
             set
             {
-                _Telefone = value;
+                _Telefone = value.ToUpper();
                 this.Notify("Telefone");
             }
         }
 
         public string CEP
         {
-            get { return _Telefone; }
+            get { return _CEP; }
             set
             {
-                _Telefone = value;
+                _CEP = value.ToUpper();
                 this.Notify("CEP");
             }
         }
@@ -308,7 +310,7 @@ namespace Hone.ViewModel
             if (bValido)
             {
                 SalvarParceiro();
-                _Navigation.NavigationToBegin();
+                _Navigation.NavigateTo(new PNView());
 
             }
 
@@ -456,7 +458,8 @@ namespace Hone.ViewModel
 
         private void SalvarParceiro()
         {
-            Parceiros _parceiro = new Parceiros();
+            Parceiro _parceiro = new Parceiro();
+            _parceiro.IdMobile = this._idMobile;
             _parceiro.Bairro = this.Bairro;
             _parceiro.CardName = this.Descricao;
             _parceiro.Cep = this.CEP;
@@ -471,7 +474,10 @@ namespace Hone.ViewModel
 
             using (AcessarDados ad = new AcessarDados())
             {
-                ad.Insert<Parceiros>(_parceiro);
+                if (_parceiro.IdMobile == 0)
+                    ad.Insert<Parceiro>(_parceiro);
+                else if (_parceiro.IdMobile > 0)
+                    ad.Update<Parceiro>(_parceiro);
             }
         }
     }

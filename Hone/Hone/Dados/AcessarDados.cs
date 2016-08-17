@@ -1,10 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Hone.Dados.Entidades;
 using Hone.Dados.Services;
+using Hone.Entidades;
 using Xamarin.Forms;
 
 namespace Hone.Dados
@@ -22,20 +20,25 @@ namespace Hone.Dados
         {
             _conexao.Insert(tabela);
         }
+
+        public void Update<T>(T tabela)
+        {
+            _conexao.Update(tabela);
+        }
         public void Delete<T>(T tabela)
         {
             _conexao.Delete(tabela);
         }
        
 
-        public List<T> Listar<T>() where T : class
+        public List<Parceiro> ListarParceiros()
         {
-            return _conexao.Table<T>().ToList();
+            return _conexao.Table<Parceiro>().ToList();
         }
 
         public void CriarTabelas()
         {
-           int retorno = _conexao.CreateTable<Parceiros>();
+           int retorno = _conexao.CreateTable<Parceiro>();
         }
 
         public void Dispose()

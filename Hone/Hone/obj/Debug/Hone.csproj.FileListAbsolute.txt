@@ -98,33 +98,6 @@ C:\Users\Brian Souza\Desktop\Hone\Hone\Hone\obj\Debug\Hone.csprojResolveAssembly
 C:\Users\Brian Souza\Desktop\Hone\Hone\Hone\obj\Debug\Hone.View.MeusPedidosView.xaml.g.cs
 C:\Users\Brian Souza\Desktop\Hone\Hone\Hone\obj\Debug\Hone.dll.mdb
 C:\Users\Brian Souza\Desktop\Hone\Hone\Hone\bin\Debug\Hone.dll.mdb
-C:\Users\poliview\Source\Repos\Hone\Hone\Hone\bin\Debug\Hone.dll
-C:\Users\poliview\Source\Repos\Hone\Hone\Hone\bin\Debug\Hone.pdb
-C:\Users\poliview\Source\Repos\Hone\Hone\Hone\bin\Debug\Newtonsoft.Json.dll
-C:\Users\poliview\Source\Repos\Hone\Hone\Hone\bin\Debug\Xamarin.Forms.Core.dll
-C:\Users\poliview\Source\Repos\Hone\Hone\Hone\bin\Debug\Xamarin.Forms.Platform.dll
-C:\Users\poliview\Source\Repos\Hone\Hone\Hone\bin\Debug\Xamarin.Forms.Xaml.dll
-C:\Users\poliview\Source\Repos\Hone\Hone\Hone\bin\Debug\Newtonsoft.Json.xml
-C:\Users\poliview\Source\Repos\Hone\Hone\Hone\bin\Debug\Xamarin.Forms.Core.pdb
-C:\Users\poliview\Source\Repos\Hone\Hone\Hone\bin\Debug\Xamarin.Forms.Core.xml
-C:\Users\poliview\Source\Repos\Hone\Hone\Hone\bin\Debug\Xamarin.Forms.Platform.pdb
-C:\Users\poliview\Source\Repos\Hone\Hone\Hone\bin\Debug\Xamarin.Forms.Xaml.pdb
-C:\Users\poliview\Source\Repos\Hone\Hone\Hone\bin\Debug\Xamarin.Forms.Xaml.xml
-C:\Users\poliview\Source\Repos\Hone\Hone\Hone\obj\Debug\Hone.View.PedItensView.xaml.g.cs
-C:\Users\poliview\Source\Repos\Hone\Hone\Hone\obj\Debug\Hone.View.CadPNView.xaml.g.cs
-C:\Users\poliview\Source\Repos\Hone\Hone\Hone\obj\Debug\Hone.View.LoginView.xaml.g.cs
-C:\Users\poliview\Source\Repos\Hone\Hone\Hone\obj\Debug\Hone.View.MainView.xaml.g.cs
-C:\Users\poliview\Source\Repos\Hone\Hone\Hone\obj\Debug\Hone.View.PedCabecalhoView.xaml.g.cs
-C:\Users\poliview\Source\Repos\Hone\Hone\Hone\obj\Debug\Hone.View.PedPagtoView.xaml.g.cs
-C:\Users\poliview\Source\Repos\Hone\Hone\Hone\obj\Debug\Hone.View.PedConfirmView.xaml.g.cs
-C:\Users\poliview\Source\Repos\Hone\Hone\Hone\obj\Debug\Hone.View.PaginaPrincipal.xaml.g.cs
-C:\Users\poliview\Source\Repos\Hone\Hone\Hone\obj\Debug\Hone.View.HomeView.xaml.g.cs
-C:\Users\poliview\Source\Repos\Hone\Hone\Hone\obj\Debug\Hone.App.xaml.g.cs
-C:\Users\poliview\Source\Repos\Hone\Hone\Hone\obj\Debug\Hone.View.MeusPedidosView.xaml.g.cs
-C:\Users\poliview\Source\Repos\Hone\Hone\Hone\obj\Debug\Hone.View.PNView.xaml.g.cs
-C:\Users\poliview\Source\Repos\Hone\Hone\Hone\obj\Debug\Hone.dll
-C:\Users\poliview\Source\Repos\Hone\Hone\Hone\obj\Debug\Hone.pdb
-C:\Users\poliview\Source\Repos\Hone\Hone\Hone\obj\Debug\Hone.csprojResolveAssemblyReference.cache
 C:\Users\Brian Souza\Documents\GitHub\Hone\Hone\Hone\bin\Debug\Hone.dll
 C:\Users\Brian Souza\Documents\GitHub\Hone\Hone\Hone\bin\Debug\Hone.pdb
 C:\Users\Brian Souza\Documents\GitHub\Hone\Hone\Hone\bin\Debug\Newtonsoft.Json.dll
@@ -154,9 +127,38 @@ C:\Users\Brian Souza\Documents\GitHub\Hone\Hone\Hone\obj\Debug\Hone.dll
 C:\Users\Brian Souza\Documents\GitHub\Hone\Hone\Hone\obj\Debug\Hone.pdb
 C:\Users\Brian Souza\Documents\GitHub\Hone\Hone\Hone\obj\Debug\Hone.View.PedView.xaml.g.cs
 C:\Users\Brian Souza\Documents\GitHub\Hone\Hone\Hone\bin\Debug\SQLite.Net.dll
-C:\Users\poliview\Source\Repos\Hone\Hone\Hone\bin\Debug\SQLite.Net.dll
-C:\Users\poliview\Source\Repos\Hone\Hone\Hone\obj\Debug\Hone.View.PedView.xaml.g.cs
-C:\Users\poliview\Source\Repos\Hone\Hone\Hone\obj\Debug\Hone.dll.mdb
-C:\Users\poliview\Source\Repos\Hone\Hone\Hone\bin\Debug\Hone.dll.mdb
 C:\Users\Brian Souza\Documents\GitHub\Hone\Hone\Hone\obj\Debug\Hone.dll.mdb
 C:\Users\Brian Souza\Documents\GitHub\Hone\Hone\Hone\bin\Debug\Hone.dll.mdb
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone\bin\Debug\Hone.dll
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone\bin\Debug\Hone.pdb
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone\bin\Debug\Newtonsoft.Json.dll
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone\bin\Debug\SQLite.Net.dll
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone\bin\Debug\Xamarin.Forms.Core.dll
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone\bin\Debug\Xamarin.Forms.Platform.dll
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone\bin\Debug\Xamarin.Forms.Xaml.dll
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone\bin\Debug\Newtonsoft.Json.xml
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone\bin\Debug\Xamarin.Forms.Core.pdb
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone\bin\Debug\Xamarin.Forms.Core.xml
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone\bin\Debug\Xamarin.Forms.Platform.pdb
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone\bin\Debug\Xamarin.Forms.Xaml.pdb
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone\bin\Debug\Xamarin.Forms.Xaml.xml
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone\obj\Debug\Hone.View.PedItensView.xaml.g.cs
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone\obj\Debug\Hone.View.CadPNView.xaml.g.cs
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone\obj\Debug\Hone.View.LoginView.xaml.g.cs
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone\obj\Debug\Hone.View.MainView.xaml.g.cs
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone\obj\Debug\Hone.View.PedCabecalhoView.xaml.g.cs
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone\obj\Debug\Hone.View.PedPagtoView.xaml.g.cs
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone\obj\Debug\Hone.View.PedConfirmView.xaml.g.cs
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone\obj\Debug\Hone.View.PaginaPrincipal.xaml.g.cs
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone\obj\Debug\Hone.View.HomeView.xaml.g.cs
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone\obj\Debug\Hone.App.xaml.g.cs
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone\obj\Debug\Hone.View.MeusPedidosView.xaml.g.cs
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone\obj\Debug\Hone.View.PNView.xaml.g.cs
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone\obj\Debug\Hone.View.PedView.xaml.g.cs
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone\obj\Debug\Hone.dll
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone\obj\Debug\Hone.pdb
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone\obj\Debug\Hone.csprojResolveAssemblyReference.cache
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone\obj\Debug\Hone.dll.mdb
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone\bin\Debug\Hone.dll.mdb
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone\obj\Debug\Hone.dll.mdb
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone\bin\Debug\Hone.dll.mdb
