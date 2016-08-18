@@ -430,6 +430,7 @@ namespace Hone.ViewModel
                 return;
 
             Parceiro pnSelecionado = JsonConvert.DeserializeObject<Parceiro>(pnJson);
+            this.IdMobile = pnSelecionado.IdMobile;
             this.Descricao = pnSelecionado.CardName;
 
             if (pnSelecionado.TipoDocumento == "CNPJ")

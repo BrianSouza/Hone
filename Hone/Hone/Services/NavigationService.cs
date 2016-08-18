@@ -45,6 +45,5 @@ namespace Hone.Services
             await _nav.PopAsync();
 
         }
-        
     }
 }
