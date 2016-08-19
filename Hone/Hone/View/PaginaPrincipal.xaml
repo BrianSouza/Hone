@@ -5,14 +5,16 @@
              xmlns:Controls="clr-namespace:Hone.Controles;assembly=Hone"
              Padding="0,20,0,20"
              Icon="MenuB.png"
-             Title="Hone">
+             Title="Hone"
+             >
 
   <ContentPage.Content>
     <StackLayout VerticalOptions="FillAndExpand">
       <ListView x:Name="listaMenus"
                 VerticalOptions="FillAndExpand"
                 ItemsSource="{Binding Menus}"
-                SelectedItem="{Binding SelectedMenu}">
+                SelectedItem="{Binding SelectedMenu}"
+                >
         <ListView.Header>
           <StackLayout Padding="0,0,20,0">
             <Label Style="{DynamicResource labelHeaderMenuStyle}"/>

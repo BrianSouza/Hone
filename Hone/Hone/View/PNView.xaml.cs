@@ -16,5 +16,11 @@ namespace Hone.View
             InitializeComponent();
             this.BindingContext = pnVM;
         }
+
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
+            lstParceiro.SelectedItem = null;
+        }
     }
 }

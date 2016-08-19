@@ -11,11 +11,13 @@
   <StackLayout Style="{DynamicResource stackStyle}">
     <SearchBar x:Name="sbFiltrar" Text="{Binding TextoFiltro}"/>
     <ListView
+      x:Name="lstParceiro"
       Style="{DynamicResource listGroup}"
       GroupDisplayBinding="{Binding Key}"
       GroupShortNameBinding="{Binding Key}"
       ItemsSource="{Binding ListaFiltro}"
-      SelectedItem="{Binding SelectedParceiro}">
+      SelectedItem="{Binding SelectedParceiro}"
+      >
       <ListView.ItemTemplate>
         <DataTemplate>
           <TextCell Text="{Binding CardCode}" Detail="{Binding CardName}">

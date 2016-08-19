@@ -16,6 +16,5 @@ namespace Hone.View
                 Master.Icon = "icon.png";
             }
         }
-    
     }
 }

@@ -13,22 +13,13 @@ namespace Hone.ViewModel
     {
         public PNViewModel()
         {
-            //ListaParceiros = new List<Parceiro>
-            //{
-            //    new Parceiro {CardCode = "C0001" , CardName = "Adam Diogo" },
-            //    new Parceiro { CardCode = "C0002" , CardName = "Brian Diego"},
-            //    new Parceiro {CardCode = "C0003", CardName = "Charles Felipe" }
-            //};
+            
             CarregarParceiros();
             NovoParceiro = new Command(async () => await IrParaViewCadPN());
             ExcluirParceiro = new Command<object>(async (param) => 
             {
               await Task.Run(() => ExcluirPN((Parceiro)param));
             });
-            //EditarParceiro = new Command<object>(async (param) =>
-            //{
-            //    await Task.Run(() => EditarPN((Parceiro)param));
-            //});
 
             FiltrarPN();
 
@@ -157,9 +148,12 @@ namespace Hone.ViewModel
         
         private void EditarPN(Parceiro pn)
         {
-            string parc = JsonConvert.SerializeObject(pn);
-            _SaveAndLoad.SaveText("pn.txt", parc);
-            _Navigation.NavigateTo(new View.CadPNView());
+            if (pn != null)
+            {
+                string parc = JsonConvert.SerializeObject(pn);
+                _SaveAndLoad.SaveText("pn.txt", parc);
+                _Navigation.NavigateTo(new View.CadPNView());
+            }
         }
 
         private void CarregarParceiros()

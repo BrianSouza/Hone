@@ -20,9 +20,13 @@ namespace Hone.View {
         private global::Xamarin.Forms.SearchBar sbFiltrar;
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::Xamarin.Forms.ListView lstParceiro;
+        
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
             this.LoadFromXaml(typeof(PNView));
             sbFiltrar = this.FindByName<global::Xamarin.Forms.SearchBar>("sbFiltrar");
+            lstParceiro = this.FindByName<global::Xamarin.Forms.ListView>("lstParceiro");
         }
     }
 }

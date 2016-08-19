@@ -47,11 +47,6 @@ namespace Hone.ViewModel
         {
             if (pmp != null)
             {
-                //var master = (MasterDetailPage)App.Current.MainPage;
-                //master.Detail = new NavigationPage((Page)Activator.CreateInstance(pmp.TargetType));
-                //SelectedMenu = null;
-                //master.IsPresented = false;
-
                 await _Navigation.NavigateTo(pmp.TargetType);
             }
         }
