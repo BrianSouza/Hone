@@ -17,33 +17,6 @@ namespace Hone.View
         {
             InitializeComponent();
             this.BindingContext = this.vmCadPN;
-            this.FillListEstados();
-            this.FillListTipoPN();
-            this.FillListTipoDoc();
-        }
-        private void FillListTipoDoc()
-        {
-            this.pckTipoDoc.Items.Clear();
-            foreach (var item in vmCadPN.LstTipoDoc)
-            {
-                this.pckTipoDoc.Items.Add(item);
-            }
-        }
-        private void FillListTipoPN()
-        {
-            this.pckTipoParc.Items.Clear();
-            foreach (var item in vmCadPN.LstTipoParc)
-            {
-                this.pckTipoParc.Items.Add(item);
-            }
-        }
-        private void FillListEstados()
-        {
-            this.pckEstados.Items.Clear();
-            foreach (var item in vmCadPN.ListaEstados)
-            {
-                this.pckEstados.Items.Add(item.Sigla);
-            }
         }
     }
 }

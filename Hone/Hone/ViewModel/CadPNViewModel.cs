@@ -25,13 +25,12 @@ namespace Hone.ViewModel
 
         #region Variaveis
         private string _descricao;
-        private string _tipoDoc; //TODO: fazer enum para o tipo de documento
-        private int _TipoDocID;
+        private string _tipoDoc; 
+        //TODO: fazer enum para o tipo de documento
         private ObservableCollection<string> _lstTipoDoc;
         private string _DocumentoCPF;
         private string _DocumentoCNPJ;
         private string _tipoParc;
-        private int _TipoParcID;
         private ObservableCollection<string> _lstTipoParc;
         private string _endereco;
         private string _num;
@@ -41,7 +40,6 @@ namespace Hone.ViewModel
         private string _Telefone;
         private ObservableCollection<Estados> _ListaEstados;
         private Estados _SelectedEstado;
-        private int estadoID;
         private bool visibleCNPJ;
         private bool visibleCPF;
         private int _idMobile;
@@ -86,20 +84,6 @@ namespace Hone.ViewModel
                 this.Notify("VisibleCPF");
             }
         }
-        public int TipoParcID
-        {
-            get
-            {
-                return _TipoParcID;
-            }
-            set
-            {
-                _TipoParcID = value;
-                _tipoParc = LstTipoParc[value];
-
-                this.Notify("TipoParcID");
-            }
-        }
         public string TipoParc
         {
             get { return _tipoParc; }
@@ -121,33 +105,16 @@ namespace Hone.ViewModel
                 this.Notify("LstTipoParc");
             }
         }
-
-        public int TipoDocID
-        {
-            get
-            {
-                return _TipoDocID;
-            }
-            set
-            {
-                _TipoDocID = value;
-                TipoDoc = _lstTipoDoc[value];
-                VisibleCNPJ = value == 1 ? true : false;
-                VisibleCPF = value == 0 ? true : false;
-                this.Notify("TipoDocID");
-            }
-        }
-
         public string TipoDoc
         {
             get { return _tipoDoc; }
             set
             {
                 _tipoDoc = value.ToUpper();
+                HabilitarDocCorreto(_tipoDoc);
                 this.Notify("TipoDoc");
             }
         }
-
         public ObservableCollection<string> LstTipoDoc
         {
             get { return _lstTipoDoc; }
@@ -157,17 +124,6 @@ namespace Hone.ViewModel
                 this.Notify("LstTipoDoc");
             }
         }
-
-        public int EstadoID
-        {
-            get { return estadoID; }
-            set
-            {
-                estadoID = value;
-                SelectedEstado = ListaEstados[value];
-            }
-        }
-
         public Estados SelectedEstado
         {
             get
@@ -181,7 +137,6 @@ namespace Hone.ViewModel
                 this.Notify("SelectedEstado");
             }
         }
-
         public ObservableCollection<Estados> ListaEstados
         {
             get
@@ -194,7 +149,6 @@ namespace Hone.ViewModel
                 this.Notify("ListaEstados");
             }
         }
-
         public string Descricao
         {
             get { return _descricao; }
@@ -204,7 +158,6 @@ namespace Hone.ViewModel
                 this.Notify("Descricao");
             }
         }
-
         public string DocumentoCPF
         {
             get { return _DocumentoCPF; }
@@ -374,7 +327,19 @@ namespace Hone.ViewModel
             return bValido;
         }
         #endregion
-
+        private void HabilitarDocCorreto(string tipo)
+        {
+            if (tipo == "CPF")
+            {
+                VisibleCPF = true;
+                VisibleCNPJ = false;
+            }
+            else if (tipo == "CNPJ")
+            {
+                VisibleCNPJ = true;
+                VisibleCPF = false;
+            }
+        }
         private void ListarEstados()
         {
             _ListaEstados = new ObservableCollection<Estados>()

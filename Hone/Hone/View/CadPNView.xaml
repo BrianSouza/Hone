@@ -2,6 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:mascara="clr-namespace:Hone;assembly=Hone"
+             xmlns:controls="clr-namespace:Hone.Controles;assembly=Hone"
              x:Class="Hone.View.CadPNView"
              Style ="{DynamicResource NavPageStyle}">
   
@@ -22,9 +23,9 @@
         <Label Text="Razão Social ou Nome" Style="{DynamicResource labelPagesStyle}"/>
         <Entry Text="{Binding Descricao}" Keyboard="Text" Style="{DynamicResource EntryStyleBlue}"/>
         <Label Text="Escolha o tipo do Parceiro" Style="{DynamicResource labelPagesStyle}"/>
-        <Picker x:Name="pckTipoParc" SelectedIndex="{Binding TipoParcID}" Title="Tipo Parceiro" HorizontalOptions="Fill" Style="{DynamicResource pickerStyle}"/>
+        <controls:BindablePicker x:Name="pckTipoParc" ItemsSource="{Binding LstTipoParc}" SelectedItem="{Binding TipoParc}" Title="Tipo Parceiro" HorizontalOptions="Fill" Style="{DynamicResource pickerStyle}"/>
         <Label Text="Escolha o Tipo de Documento" Style="{DynamicResource labelPagesStyle}"/>
-        <Picker x:Name="pckTipoDoc" SelectedIndex="{Binding TipoDocID}" Title="Tipo Documento" HorizontalOptions="Fill"> </Picker>
+        <controls:BindablePicker x:Name="pckTipoDoc" ItemsSource="{Binding LstTipoDoc}" SelectedItem="{Binding TipoDoc}" Title="Tipo Documento" HorizontalOptions="Fill"/>
         <Label Text="Documento" Style="{DynamicResource labelPagesStyle}"/>
         <Entry Text="{Binding DocumentoCNPJ, Converter = {StaticResource Mask}, ConverterParameter=CNPJ}" Keyboard="Numeric" IsVisible="{Binding VisibleCNPJ}" Style="{DynamicResource EntryStyleBlue}"/>
         <Entry Text="{Binding DocumentoCPF, Converter = {StaticResource Mask}, ConverterParameter=CPF}" Keyboard="Numeric" IsVisible="{Binding VisibleCPF}" Style="{DynamicResource EntryStyleBlue}"/>
@@ -37,7 +38,7 @@
         <Label Text="Cidade" Style="{DynamicResource labelPagesStyle}"/>
         <Entry Text="{Binding Cidade}" Keyboard="Text" Style="{DynamicResource EntryStyleBlue}"/>
         <Label Text="Estado" Style="{DynamicResource labelPagesStyle}"/>
-        <Picker x:Name="pckEstados" SelectedIndex="{Binding EstadoID}" Title="Estados"  HorizontalOptions="Fill" Style="{DynamicResource pickerStyle}"/>
+        <controls:BindablePicker x:Name="pckEstados" ItemsSource="{Binding ListaEstados}" SelectedItem="{Binding SelectedEstado}" Title="Estados"  HorizontalOptions="Fill" Style="{DynamicResource pickerStyle}"/>
         <Label Text="CEP" Style="{DynamicResource labelPagesStyle}"/>
         <Entry Text="{Binding CEP,Converter = {StaticResource Mask} , ConverterParameter=CEP}" Keyboard="Numeric" Style="{DynamicResource EntryStyleBlue}"/>
         <Label Text="Telefone" Style="{DynamicResource labelPagesStyle}"/>

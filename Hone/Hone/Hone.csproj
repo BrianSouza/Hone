@@ -38,6 +38,7 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Controles\BindablePicker.cs" />
     <Compile Include="Controles\CustomImageCell.cs" />
     <Compile Include="Dados\AcessarDados.cs" />
     <Compile Include="Dados\Services\IAcessarDados.cs" />

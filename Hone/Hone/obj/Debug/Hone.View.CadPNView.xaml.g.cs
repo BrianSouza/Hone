@@ -17,20 +17,20 @@ namespace Hone.View {
     public partial class CadPNView : global::Xamarin.Forms.ContentPage {
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
-        private global::Xamarin.Forms.Picker pckTipoParc;
+        private global::Hone.Controles.BindablePicker pckTipoParc;
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
-        private global::Xamarin.Forms.Picker pckTipoDoc;
+        private global::Hone.Controles.BindablePicker pckTipoDoc;
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
-        private global::Xamarin.Forms.Picker pckEstados;
+        private global::Hone.Controles.BindablePicker pckEstados;
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
             this.LoadFromXaml(typeof(CadPNView));
-            pckTipoParc = this.FindByName<global::Xamarin.Forms.Picker>("pckTipoParc");
-            pckTipoDoc = this.FindByName<global::Xamarin.Forms.Picker>("pckTipoDoc");
-            pckEstados = this.FindByName<global::Xamarin.Forms.Picker>("pckEstados");
+            pckTipoParc = this.FindByName<global::Hone.Controles.BindablePicker>("pckTipoParc");
+            pckTipoDoc = this.FindByName<global::Hone.Controles.BindablePicker>("pckTipoDoc");
+            pckEstados = this.FindByName<global::Hone.Controles.BindablePicker>("pckEstados");
         }
     }
 }
