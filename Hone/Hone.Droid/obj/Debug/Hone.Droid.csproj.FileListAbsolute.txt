@@ -364,7 +364,6 @@ C:\Users\Brian Souza\Documents\GitHub\Hone\Hone\Hone.Droid\obj\Debug\android\ass
 C:\Users\Brian Souza\Documents\GitHub\Hone\Hone\Hone.Droid\obj\Debug\android\assets\Xamarin.Forms.Core.dll.mdb
 C:\Users\Brian Souza\Documents\GitHub\Hone\Hone\Hone.Droid\obj\Debug\android\assets\Xamarin.Forms.Platform.Android.dll.mdb
 C:\Users\Brian Souza\Documents\GitHub\Hone\Hone\Hone.Droid\obj\Debug\android\assets\Xamarin.Forms.Xaml.dll.mdb
-C:\Users\Brian Souza\Documents\GitHub\Hone\Hone\Hone.Droid\obj\Debug\Hone.Droid.dll.mdb
 C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\bin\Debug\Hone.Droid.dll
 C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\bin\Debug\Hone.Droid.pdb
 C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\bin\Debug\Hone.Droid.apk
@@ -474,4 +473,5 @@ C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\android\assets\Xam
 C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\android\assets\Xamarin.Forms.Platform.Android.dll.mdb
 C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\android\assets\Xamarin.Forms.Xaml.dll.mdb
 C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\Hone.Droid.dll.mdb
-C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\bin\Debug\Hone.Droid.dll.mdb
+C:\Users\Brian Souza\Documents\GitHub\Hone\Hone\Hone.Droid\obj\Debug\Hone.Droid.dll.mdb
+C:\Users\Brian Souza\Documents\GitHub\Hone\Hone\Hone.Droid\bin\Debug\Hone.Droid.dll.mdb
