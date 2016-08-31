@@ -89,7 +89,7 @@ namespace Hone.ViewModel
             get { return _tipoParc; }
             set
             {
-                _tipoParc = value.ToUpper();
+                _tipoParc = value;
                 this.Notify("TipoParc");
             }
         }
@@ -414,7 +414,6 @@ namespace Hone.ViewModel
             this.CEP = pnSelecionado.Cep;
             this.Cidade = pnSelecionado.Cidade;
             this.Endereco = pnSelecionado.Logradouro;
-            //this.Estado = pnSelecionado.Estado;
             this.Num = pnSelecionado.NumeroLog;
             this.SelectedEstado = ListaEstados.Where(t0 => t0.Sigla.Equals(pnSelecionado.Estado)).FirstOrDefault();
             this.Telefone = pnSelecionado.Telefone;
