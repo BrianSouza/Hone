@@ -38,7 +38,7 @@
         <Label Text="Cidade" Style="{DynamicResource labelPagesStyle}"/>
         <Entry Text="{Binding Cidade}" Keyboard="Text" Style="{DynamicResource EntryStyleBlue}"/>
         <Label Text="Estado" Style="{DynamicResource labelPagesStyle}"/>
-        <controls:BindablePicker x:Name="pckEstados" ItemsSource="{Binding ListaEstados}" SelectedItem="{Binding SelectedEstado}" Title="Estados"  HorizontalOptions="Fill" Style="{DynamicResource pickerStyle}"/>
+        <controls:BindablePicker x:Name="pckEstados" ItemsSource="{Binding ListaEstados}" SelectedItem="{Binding SelectedEstado}" DisplayMemberPath="Sigla" Title="Estados"  HorizontalOptions="Fill" Style="{DynamicResource pickerStyle}"/>
         <Label Text="CEP" Style="{DynamicResource labelPagesStyle}"/>
         <Entry Text="{Binding CEP,Converter = {StaticResource Mask} , ConverterParameter=CEP}" Keyboard="Numeric" Style="{DynamicResource EntryStyleBlue}"/>
         <Label Text="Telefone" Style="{DynamicResource labelPagesStyle}"/>
