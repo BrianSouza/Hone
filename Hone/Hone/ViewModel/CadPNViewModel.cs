@@ -429,7 +429,7 @@ namespace Hone.ViewModel
             _parceiro.CardName = this.Descricao;
             _parceiro.Cep = this.CEP;
             _parceiro.Cidade = this.Cidade;
-            _parceiro.Estado = this.Estado;
+            _parceiro.Estado = this.SelectedEstado.Sigla;
             _parceiro.Logradouro = this.Endereco;
             _parceiro.NumDocumento = string.IsNullOrEmpty(this._DocumentoCNPJ) ? this._DocumentoCPF : this._DocumentoCNPJ;
             _parceiro.NumeroLog = this.Num;
