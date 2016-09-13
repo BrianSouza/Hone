@@ -37,7 +37,6 @@ namespace Hone.Services
             await _nav.PushAsync(page);
             _master.IsPresented = false;
         }
-
         public async Task GoBack()
         {
             var _master = (MasterDetailPage)App.Current.MainPage;
@@ -45,5 +44,6 @@ namespace Hone.Services
             await _nav.PopAsync();
 
         }
+        
     }
 }

@@ -143,6 +143,12 @@ namespace Hone.ViewModel
             {
                 ListaParceiros.Remove(pn);
                 FiltrarPN();
+
+                using (AcessarDados ad = new AcessarDados())
+                {
+                    if (pn.IdMobile > 0)
+                        ad.Delete<Parceiro>(pn);
+                }
             }
         }
         

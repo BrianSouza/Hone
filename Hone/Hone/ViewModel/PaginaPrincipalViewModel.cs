@@ -50,6 +50,7 @@ namespace Hone.ViewModel
                 await _Navigation.NavigateTo(pmp.TargetType);
             }
         }
+        
 
         public PaginaPrincipalViewModel()
         {
