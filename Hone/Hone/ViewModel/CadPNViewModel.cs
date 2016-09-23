@@ -263,7 +263,7 @@ namespace Hone.ViewModel
             if (bValido)
             {
                 SalvarParceiro();
-                _Navigation.NavigateTo(new PNView());
+                _Navigation.GoBack();
 
             }
 

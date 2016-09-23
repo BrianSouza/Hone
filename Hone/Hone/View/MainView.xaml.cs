@@ -11,10 +11,13 @@ namespace Hone.View
             ViewModel.MainViewModel mVM = new ViewModel.MainViewModel();
             InitializeComponent();
             this.BindingContext = mVM;
+            MasterBehavior = MasterBehavior.Popover;
             if (Device.OS == TargetPlatform.Windows)
             {
                 Master.Icon = "icon.png";
             }
+            
         }
+        
     }
 }

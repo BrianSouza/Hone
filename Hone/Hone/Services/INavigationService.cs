@@ -12,7 +12,7 @@ namespace Hone.Services
         void NavigateToMain();
         Task NavigateTo(Xamarin.Forms.Page page);
         Task GoBack();
-
         Task NavigationToBegin();
+        void NatigateSetDetail(Xamarin.Forms.Page page);
     }
 }

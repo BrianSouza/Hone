@@ -1,11 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
+﻿
 using System.Collections.ObjectModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 using Hone.Entidades;
-using Xamarin.Forms;
 
 namespace Hone.ViewModel
 {
@@ -45,12 +41,21 @@ namespace Hone.ViewModel
 
         private async void NavigateDetail(PropriedadesMenuPrincipal pmp)
         {
+
             if (pmp != null)
             {
                 await _Navigation.NavigateTo(pmp.TargetType);
             }
         }
-        
+
+        private void NavigateToDetail(PropriedadesMenuPrincipal pmp)
+        {
+
+            if (pmp != null)
+            {
+                _Navigation.NatigateSetDetail(pmp.TargetType);
+            }
+        }
 
         public PaginaPrincipalViewModel()
         {

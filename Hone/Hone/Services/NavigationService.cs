@@ -44,6 +44,13 @@ namespace Hone.Services
             await _nav.PopAsync();
 
         }
-        
+
+        public void NatigateSetDetail(Page page)
+        {
+            var _master = (MasterDetailPage)App.Current.MainPage;
+            _master.Detail = page;
+            _master.IsPresented = false;
+
+        }
     }
 }

@@ -19,6 +19,7 @@ namespace Hone.View
 
         protected override void OnAppearing()
         {
+            //TODO: Recarregar lista.
             base.OnAppearing();
             lstParceiro.SelectedItem = null;
             pnVM._SaveAndLoad.ExcludeFile("pn.txt");
