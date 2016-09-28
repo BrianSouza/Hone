@@ -12,7 +12,6 @@ namespace Hone.View
         {
             InitializeComponent();
             this.BindingContext = ppVM;
-            
         }
     }
 }

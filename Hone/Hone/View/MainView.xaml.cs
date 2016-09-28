@@ -16,8 +16,13 @@ namespace Hone.View
             {
                 Master.Icon = "icon.png";
             }
-            
+
+            masterPage.ListView.ItemSelected += ListView_ItemSelected;
         }
-        
+
+        private void ListView_ItemSelected(object sender, SelectedItemChangedEventArgs e)
+        {
+                masterPage.ListView.SelectedItem = null;
+        }
     }
 }

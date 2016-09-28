@@ -50,7 +50,6 @@ namespace Hone.Services
             var _master = (MasterDetailPage)App.Current.MainPage;
             _master.Detail = page;
             _master.IsPresented = false;
-
         }
     }
 }
