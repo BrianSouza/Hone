@@ -25,7 +25,7 @@
 	<key>CFBundleDisplayName</key>
 	<string>Hone</string>
 	<key>CFBundleIdentifier</key>
-	<string>HoneiOS</string>
+	<string>ArrayApp.Hone</string>
 	<key>CFBundleVersion</key>
 	<string>1.0</string>
 	<key>CFBundleIconFiles</key>

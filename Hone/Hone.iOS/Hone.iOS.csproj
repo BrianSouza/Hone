@@ -55,9 +55,7 @@
     <CodesignKey>iPhone Developer: brian-desouza@hotmail.com (3CU897XAU5)</CodesignKey>
     <MtouchDebug>true</MtouchDebug>
     <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
-    <CodesignProvision>f3fbaa52-1d3d-4e7f-b63a-7ff3330f33dd</CodesignProvision>
-    <CodesignResourceRules />
-    <CodesignExtraArgs />
+    <CodesignProvision>2e954f7d-6a9e-4957-a206-b1ebbc13b61b</CodesignProvision>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
     <DebugType>none</DebugType>
