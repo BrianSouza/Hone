@@ -142,7 +142,6 @@ C:\Users\Brian Souza\Documents\GitHub\Hone\Hone\Hone\bin\Debug\Xamarin.Forms.Cor
 C:\Users\Brian Souza\Documents\GitHub\Hone\Hone\Hone\bin\Debug\Xamarin.Forms.Platform.pdb
 C:\Users\Brian Souza\Documents\GitHub\Hone\Hone\Hone\bin\Debug\Xamarin.Forms.Xaml.pdb
 C:\Users\Brian Souza\Documents\GitHub\Hone\Hone\Hone\bin\Debug\Xamarin.Forms.Xaml.xml
-C:\Users\Brian Souza\Documents\GitHub\Hone\Hone\Hone\obj\Debug\Hone.csprojResolveAssemblyReference.cache
 C:\Users\Brian Souza\Documents\GitHub\Hone\Hone\Hone\obj\Debug\Hone.View.PedItensView.xaml.g.cs
 C:\Users\Brian Souza\Documents\GitHub\Hone\Hone\Hone\obj\Debug\Hone.View.CadPNView.xaml.g.cs
 C:\Users\Brian Souza\Documents\GitHub\Hone\Hone\Hone\obj\Debug\Hone.View.LoginView.xaml.g.cs

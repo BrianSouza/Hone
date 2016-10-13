@@ -159,82 +159,130 @@
     <Reference Include="Xamarin.iOS" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\group.png" />
+    <AndroidResource Include="Resources\Add.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\house.png" />
+    <AndroidResource Include="Resources\config.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\shoppingcart.png" />
+    <AndroidResource Include="Resources\group.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\shoppingbag.png" />
+    <AndroidResource Include="Resources\house.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\Home-Small%402x.png" />
+    <AndroidResource Include="Resources\icon.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\Home-Small%403x.png" />
+    <AndroidResource Include="Resources\Lupa.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\MenuB.png" />
+    <AndroidResource Include="Resources\MenuB.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\menuA.png" />
+    <AndroidResource Include="Resources\SalvarB.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\SalvarB%402x.png" />
+    <AndroidResource Include="Resources\SetaDireitaB.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\SalvarB%403x.png" />
+    <AndroidResource Include="Resources\shoppingbag.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\SalvarB.png" />
+    <AndroidResource Include="Resources\shoppingcart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Home-60%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Home-60%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Home-76.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Home-76%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Home-Small-40%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Home-Small-40%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\menu-76.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Salvar-60%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Salvar-60%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Salvar-76.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Salvar-76%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Salvar-Small-40%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Salvar-Small-40%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Salvar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Salvar28x28.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\SetaDireita-Small40%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\SetaDireita.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\shoppingbag-40%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\shoppingbag-60%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\shoppingbag-60%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\shoppingbag-76.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\shoppingbag-76%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\shoppingbag-Small-40%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\shoppingcart-40%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\shoppingcart-60%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\shoppingcart-60%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\shoppingcart-76.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\shoppingcart-76%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\shoppingcart-Small-40%402x.png" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\MenuB%402x.png" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\MenuB%403x.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\SetaDireitaB%403x.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\SetaDireitaB.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\SetaDireitaB%402x.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\shoppingbag%402x.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\shoppingbag%403x.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\shoppingcart%403x.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\shoppingcart%402x.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\Add.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\Add%402x.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\Add%403x.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\Lupa.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\Lupa%402x.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\Lupa%403x.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Import Project="..\..\packages\Xamarin.Forms.2.3.0.49\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets" Condition="Exists('..\..\packages\Xamarin.Forms.2.3.0.49\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets')" />
