@@ -25,12 +25,25 @@
     <ConsolePause>false</ConsolePause>
     <MtouchArch>i386, x86_64</MtouchArch>
     <MtouchLink>None</MtouchLink>
-    <MtouchDebug>true</MtouchDebug>
+    <MtouchDebug>True</MtouchDebug>
     <CodesignKey>iPhone Developer: brian-desouza@hotmail.com (3CU897XAU5)</CodesignKey>
     <CodesignProvision>f3fbaa52-1d3d-4e7f-b63a-7ff3330f33dd</CodesignProvision>
     <CodesignEntitlements />
     <CodesignResourceRules />
     <CodesignExtraArgs />
+    <MtouchSdkVersion>10.0</MtouchSdkVersion>
+    <MtouchProfiling>False</MtouchProfiling>
+    <MtouchFastDev>False</MtouchFastDev>
+    <MtouchExtraArgs>-v -v -v -v</MtouchExtraArgs>
+    <MtouchUseLlvm>False</MtouchUseLlvm>
+    <MtouchUseThumb>False</MtouchUseThumb>
+    <MtouchEnableBitcode>False</MtouchEnableBitcode>
+    <MtouchUseSGen>False</MtouchUseSGen>
+    <MtouchUseRefCounting>False</MtouchUseRefCounting>
+    <OptimizePNGs>True</OptimizePNGs>
+    <MtouchTlsProvider>Default</MtouchTlsProvider>
+    <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
+    <MtouchFloat32>False</MtouchFloat32>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
     <DebugType>none</DebugType>
@@ -53,9 +66,24 @@
     <ConsolePause>false</ConsolePause>
     <MtouchArch>ARMv7, ARM64</MtouchArch>
     <CodesignKey>iPhone Developer: brian-desouza@hotmail.com (3CU897XAU5)</CodesignKey>
-    <MtouchDebug>true</MtouchDebug>
+    <MtouchDebug>True</MtouchDebug>
     <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
-    <CodesignProvision>2e954f7d-6a9e-4957-a206-b1ebbc13b61b</CodesignProvision>
+    <CodesignProvision>062f51bd-e5bd-4121-a551-0bab99b952a7</CodesignProvision>
+    <MtouchSdkVersion>10.0</MtouchSdkVersion>
+    <MtouchLink>SdkOnly</MtouchLink>
+    <MtouchProfiling>False</MtouchProfiling>
+    <MtouchFastDev>False</MtouchFastDev>
+    <MtouchExtraArgs>-v -v -v -v</MtouchExtraArgs>
+    <MtouchUseLlvm>False</MtouchUseLlvm>
+    <MtouchUseThumb>False</MtouchUseThumb>
+    <MtouchEnableBitcode>False</MtouchEnableBitcode>
+    <MtouchUseSGen>False</MtouchUseSGen>
+    <MtouchUseRefCounting>False</MtouchUseRefCounting>
+    <OptimizePNGs>True</OptimizePNGs>
+    <MtouchTlsProvider>Default</MtouchTlsProvider>
+    <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
+    <MtouchFloat32>False</MtouchFloat32>
+    <DeviceSpecificBuild>False</DeviceSpecificBuild>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
     <DebugType>none</DebugType>
@@ -159,130 +187,85 @@
     <Reference Include="Xamarin.iOS" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\Add.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\config.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\group.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\house.png" />
-  </ItemGroup>
-  <ItemGroup>
     <AndroidResource Include="Resources\icon.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\Lupa.png" />
+    <BundleResource Include="Resources\MenuB.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\MenuB.png" />
+    <BundleResource Include="Resources\SetaDireita%403x.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\SalvarB.png" />
+    <BundleResource Include="Resources\house%403x.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\SetaDireitaB.png" />
+    <BundleResource Include="Resources\house%402x.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\shoppingbag.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\shoppingcart.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\Home-60%402x.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\Home-60%403x.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\Home-76.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\Home-76%402x.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\Home-Small-40%402x.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\Home-Small-40%403x.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\menu-76.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\Salvar-60%402x.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\Salvar-60%403x.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\Salvar-76.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\Salvar-76%402x.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\Salvar-Small-40%402x.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\Salvar-Small-40%403x.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\Salvar.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\Salvar28x28.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\SetaDireita-Small40%403x.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\SetaDireita.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\shoppingbag-40%402x.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\shoppingbag-60%402x.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\shoppingbag-60%403x.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\shoppingbag-76.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\shoppingbag-76%402x.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\shoppingbag-Small-40%403x.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\shoppingcart-40%403x.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\shoppingcart-60%402x.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\shoppingcart-60%403x.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\shoppingcart-76.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\shoppingcart-76%402x.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\shoppingcart-Small-40%402x.png" />
+    <BundleResource Include="Resources\MenuB%403x.png" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\MenuB%402x.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\MenuB%403x.png" />
+    <BundleResource Include="Resources\SetaDireita%402x - Copy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\SetaDireita.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\house.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\shoppingbag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\shoppingbag%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\shoppingbag%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\shoppingcart%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\shoppingcart%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Add%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Add%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Config%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Config%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Config.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\group.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\group%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\group%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\SalvarB%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\SalvarB%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\SalvarB.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Import Project="..\..\packages\Xamarin.Forms.2.3.0.49\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets" Condition="Exists('..\..\packages\Xamarin.Forms.2.3.0.49\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets')" />
