@@ -365,3 +365,4 @@ C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\android\assets\Xam
 C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\android\assets\Xamarin.Forms.Platform.Android.dll.mdb
 C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\android\assets\Xamarin.Forms.Xaml.dll.mdb
 C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\obj\Debug\Hone.Droid.dll.mdb
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone.Droid\bin\Debug\Hone.Droid.dll.mdb

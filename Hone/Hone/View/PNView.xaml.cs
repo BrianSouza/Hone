@@ -23,6 +23,9 @@ namespace Hone.View
             base.OnAppearing();
             lstParceiro.SelectedItem = null;
             pnVM._SaveAndLoad.ExcludeFile("pn.txt");
+            pnVM.AtualizarLista();
         }
+
+       
     }
 }

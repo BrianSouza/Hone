@@ -188,6 +188,12 @@ namespace Hone.ViewModel
                 }
             }
         }
+
+        internal void AtualizarLista()
+        {
+            CarregarParceiros();
+            FiltrarPN();
+        }
         #endregion
 
     }
