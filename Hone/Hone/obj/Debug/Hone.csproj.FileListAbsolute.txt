@@ -159,3 +159,5 @@ C:\Users\Brian Souza\Documents\GitHub\Hone\Hone\Hone\obj\Debug\Hone.dll.mdb
 C:\Users\Brian Souza\Documents\GitHub\Hone\Hone\Hone\bin\Debug\Hone.dll.mdb
 C:\Users\poliview\Source\Repos\Hone\Hone\Hone\obj\Debug\Hone.dll.mdb
 C:\Users\poliview\Source\Repos\Hone\Hone\Hone\bin\Debug\Hone.dll.mdb
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone\obj\Debug\Hone.dll.mdb
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone\bin\Debug\Hone.dll.mdb

@@ -38,7 +38,12 @@ namespace Hone.Dados
 
         public void CriarTabelas()
         {
-           int retorno = _conexao.CreateTable<Parceiro>();
+          _conexao.CreateTable<Parceiro>();
+            _conexao.CreateTable<FormaPgto>();
+            //_conexao.CreateTable<Estados>();
+            _conexao.CreateTable<CondPagto>();
+            _conexao.CreateTable<Item>();
+            _conexao.CreateTable<Pedido>();
         }
 
         public void Dispose()

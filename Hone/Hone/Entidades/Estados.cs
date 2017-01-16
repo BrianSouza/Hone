@@ -8,7 +8,6 @@ namespace Hone.Entidades
 {
     public class Estados
     {
-
         public string Sigla { get; set; }
         public string Nome { get; set; }
 
