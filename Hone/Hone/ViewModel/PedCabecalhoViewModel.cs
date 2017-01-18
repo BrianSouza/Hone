@@ -77,8 +77,8 @@ namespace Hone.ViewModel
         private void PreencherParceiros()
         {
             Parceiros = new ObservableCollection<Parceiro>();
-            Parceiros.Add(new Parceiro { CardCode = "00001", CardName = "Parceiro 1" });
-            Parceiros.Add(new Parceiro { CardCode = "00002", CardName = "Parceiro 2" });
+            Dados.AcessarDados acessoDados = new Dados.AcessarDados();
+            Parceiros = acessoDados.ListarParceiros();
         }
 
         private bool Validacao()

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using Hone.Dados.Services;
 using Hone.Entidades;
@@ -7,13 +8,13 @@ using Xamarin.Forms;
 
 namespace Hone.Dados
 {
-    public class AcessarDados : IDisposable , IAcessarDados
+    public class AcessarDados : IDisposable, IAcessarDados
     {
         SQLite.Net.SQLiteConnection _conexao;
         public AcessarDados()
         {
             var config = DependencyService.Get<IConfigDados>();
-            _conexao = new SQLite.Net.SQLiteConnection(config.Plataforma, System.IO.Path.Combine(config.DiretorioDB,"HoneDB.db3"));
+            _conexao = new SQLite.Net.SQLiteConnection(config.Plataforma, System.IO.Path.Combine(config.DiretorioDB, "HoneDB.db3"));
         }
 
         public void Insert<T>(T tabela)
@@ -29,18 +30,18 @@ namespace Hone.Dados
         {
             _conexao.Delete(tabela);
         }
-       
 
-        public List<Parceiro> ListarParceiros()
+
+        public ObservableCollection<Parceiro> ListarParceiros()
         {
-            return _conexao.Table<Parceiro>().ToList();
+            ObservableCollection<Parceiro> pns = new ObservableCollection<Parceiro>(_conexao.Table<Parceiro>());
+            return pns;
         }
 
         public void CriarTabelas()
         {
-          _conexao.CreateTable<Parceiro>();
+            _conexao.CreateTable<Parceiro>();
             _conexao.CreateTable<FormaPgto>();
-            //_conexao.CreateTable<Estados>();
             _conexao.CreateTable<CondPagto>();
             _conexao.CreateTable<Item>();
             _conexao.CreateTable<Pedido>();
