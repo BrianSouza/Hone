@@ -15,16 +15,12 @@ namespace Hone.View
         {
             InitializeComponent();
             this.BindingContext = pedCab;
-            FillListParceiros();
         }
-        private void FillListParceiros()
-        {
-            pckParceiros.Items.Clear();
 
-            foreach (var item in pedCab.Parceiros)
-            {
-                pckParceiros.Items.Add(item.CardName);
-            }
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
+            pedCab.PreencherParceiros();
         }
     }
 }

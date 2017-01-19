@@ -12,7 +12,7 @@ namespace Hone.ViewModel
     {
 
         #region Variaveis
-        private int parceiroIndex;
+        //private int parceiroIndex;
         private Parceiro selectedParceiro;
         private ObservableCollection<Parceiro> parceiros;
         private Pedido _Ped;
@@ -34,19 +34,19 @@ namespace Hone.ViewModel
             }
         }
 
-        public int ParceiroIndex
-        {
-            get
-            {
-                return parceiroIndex;
-            }
-            set
-            {
-                parceiroIndex = value;
-                SelectedParceiro = parceiros[parceiroIndex];
-                this.Notify("ParceiroIndex");
-            }
-        }
+        //public int ParceiroIndex
+        //{
+        //    get
+        //    {
+        //        return parceiroIndex;
+        //    }
+        //    set
+        //    {
+        //        parceiroIndex = value;
+        //        SelectedParceiro = parceiros[parceiroIndex];
+        //        this.Notify("ParceiroIndex");
+        //    }
+        //}
         public Parceiro SelectedParceiro
         {
             get
@@ -74,7 +74,7 @@ namespace Hone.ViewModel
         #endregion
 
         #region Métodos
-        private void PreencherParceiros()
+        internal void PreencherParceiros()
         {
             Parceiros = new ObservableCollection<Parceiro>();
             Dados.AcessarDados acessoDados = new Dados.AcessarDados();

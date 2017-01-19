@@ -16,7 +16,7 @@ namespace Hone.ViewModel
     {
         #region Variaveis
         private string _PN;
-        private DateTime _DtEntrega;
+        private string _DtEntrega;
         private string _CP;
         private string _FP;
         private ObservableCollection<Item> lstItem;
@@ -38,7 +38,7 @@ namespace Hone.ViewModel
             }
         }
 
-        public DateTime DtEntrega
+        public string DtEntrega
         {
             get
             {
@@ -113,7 +113,7 @@ namespace Hone.ViewModel
         private void SetValues()
         {
             PN = string.Format("{0} - {1}",Ped.Parceiro.CardCode,Ped.Parceiro.CardName);
-            DtEntrega = Ped.DtEntrega;
+            DtEntrega = Ped.DtEntrega.ToString("dd/MM/yyyy");
             CP = Ped.CondPagto.PymntGroup;
             FP = Ped.FormaPgto.Descript;
             LstItem = Ped.Itens;

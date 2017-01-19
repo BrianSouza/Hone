@@ -17,12 +17,12 @@ namespace Hone.View {
     public partial class PedCabecalhoView : global::Xamarin.Forms.ContentPage {
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
-        private global::Xamarin.Forms.Picker pckParceiros;
+        private global::Hone.Controles.BindablePicker pckParceiros;
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
             this.LoadFromXaml(typeof(PedCabecalhoView));
-            pckParceiros = this.FindByName<global::Xamarin.Forms.Picker>("pckParceiros");
+            pckParceiros = this.FindByName<global::Hone.Controles.BindablePicker>("pckParceiros");
         }
     }
 }
