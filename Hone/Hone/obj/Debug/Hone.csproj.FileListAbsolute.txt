@@ -155,7 +155,10 @@ C:\Users\Brian Souza\Documents\GitHub\Hone\Hone\Hone\obj\Debug\Hone.View.PNView.
 C:\Users\Brian Souza\Documents\GitHub\Hone\Hone\Hone\obj\Debug\Hone.View.PedView.xaml.g.cs
 C:\Users\Brian Souza\Documents\GitHub\Hone\Hone\Hone\obj\Debug\Hone.dll
 C:\Users\Brian Souza\Documents\GitHub\Hone\Hone\Hone\obj\Debug\Hone.pdb
-C:\Users\Brian Souza\Documents\GitHub\Hone\Hone\Hone\obj\Debug\Hone.dll.mdb
-C:\Users\Brian Souza\Documents\GitHub\Hone\Hone\Hone\bin\Debug\Hone.dll.mdb
 C:\Users\poliview\Source\Repos\Hone\Hone\Hone\obj\Debug\Hone.dll.mdb
 C:\Users\poliview\Source\Repos\Hone\Hone\Hone\bin\Debug\Hone.dll.mdb
+C:\Users\Brian Souza\Documents\GitHub\Hone\Hone\Hone\obj\Debug\Hone.csprojResolveAssemblyReference.cache
+C:\Users\Brian Souza\Documents\GitHub\Hone\Hone\Hone\obj\Debug\Hone.dll.mdb
+C:\Users\Brian Souza\Documents\GitHub\Hone\Hone\Hone\bin\Debug\Hone.dll.mdb
+C:\Users\Brian Souza\Documents\GitHub\Hone\Hone\Hone\obj\Debug\Hone.dll.mdb
+C:\Users\Brian Souza\Documents\GitHub\Hone\Hone\Hone\bin\Debug\Hone.dll.mdb

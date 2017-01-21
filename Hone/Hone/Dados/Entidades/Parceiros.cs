@@ -10,7 +10,7 @@ namespace Hone.Dados.Entidades
     [Table("Parceiros")]
     public class Parceiros
     {
-        [PrimaryKey,AutoIncrement]
+        [PrimaryKey, AutoIncrement]
         public int IdMobile { get; set; }
         public string CardCode { get; set; }
 
@@ -32,7 +32,7 @@ namespace Hone.Dados.Entidades
         public string Cidade { get; set; }
 
         public string Estado { get; set; }
-
+        [NotNull]
         public string Cep { get; set; }
 
         public string Telefone { get; set; }

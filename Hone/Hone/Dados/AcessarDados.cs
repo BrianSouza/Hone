@@ -1,9 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
+using Hone.Dados.Entidades;
 using Hone.Dados.Services;
-using Hone.Entidades;
 using Xamarin.Forms;
 
 namespace Hone.Dados
@@ -32,19 +31,19 @@ namespace Hone.Dados
         }
 
 
-        public ObservableCollection<Parceiro> ListarParceiros()
+        public ObservableCollection<Parceiros> ListarParceiros()
         {
-            ObservableCollection<Parceiro> pns = new ObservableCollection<Parceiro>(_conexao.Table<Parceiro>());
+            ObservableCollection<Parceiros> pns = new ObservableCollection<Parceiros>(_conexao.Table<Parceiros>());
             return pns;
         }
 
         public void CriarTabelas()
         {
-            _conexao.CreateTable<Parceiro>();
+            _conexao.CreateTable<Parceiros>();
             _conexao.CreateTable<FormaPgto>();
             _conexao.CreateTable<CondPagto>();
-            _conexao.CreateTable<Item>();
-            _conexao.CreateTable<Pedido>();
+            _conexao.CreateTable<Items>();
+            _conexao.CreateTable<Pedidos>();
         }
 
         public void Dispose()

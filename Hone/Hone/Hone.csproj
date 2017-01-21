@@ -41,6 +41,9 @@
     <Compile Include="Controles\BindablePicker.cs" />
     <Compile Include="Controles\CustomImageCell.cs" />
     <Compile Include="Dados\AcessarDados.cs" />
+    <Compile Include="Dados\Entidades\Itens.cs" />
+    <Compile Include="Dados\Entidades\Parceiros.cs" />
+    <Compile Include="Dados\Entidades\Pedidos.cs" />
     <Compile Include="Dados\Services\IAcessarDados.cs" />
     <Compile Include="Entidades\Group.cs" />
     <Compile Include="Entidades\PropriedadesMenuPrincipal.cs" />
