@@ -78,7 +78,12 @@ namespace Hone.ViewModel
         {
             Parceiros = new ObservableCollection<Parceiro>();
             Dados.AcessarDados acessoDados = new Dados.AcessarDados();
-            Parceiros = acessoDados.ListarParceiros();
+            var pns = acessoDados.ListarParceiros();
+
+            foreach (var item in pns)
+            {
+
+            }
         }
 
         private bool Validacao()

@@ -5,12 +5,15 @@ using System.Text;
 using System.Threading.Tasks;
 using SQLite.Net.Attributes;
 
-namespace Hone.Entidades
+namespace Hone.Dados.Entidades
 {
-    public class FormaPgto
+    public class FormaPgtos
     {
+        [NotNull]
         public string PayMethCod { get; set; }
+        [NotNull]
         public string Descript { get; set; }
+        [NotNull]
         public string Type { get; set; }
     }
 }

@@ -40,9 +40,9 @@ namespace Hone.Dados
         public void CriarTabelas()
         {
             _conexao.CreateTable<Parceiros>();
-            _conexao.CreateTable<FormaPgto>();
-            _conexao.CreateTable<CondPagto>();
-            _conexao.CreateTable<Items>();
+            _conexao.CreateTable<FormaPgtos>();
+            _conexao.CreateTable<CondPagtos>();
+            _conexao.CreateTable<Itens>();
             _conexao.CreateTable<Pedidos>();
         }
 
