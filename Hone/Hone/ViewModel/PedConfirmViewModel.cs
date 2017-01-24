@@ -5,6 +5,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
+using Hone.Dados;
+using Hone.Dados.Entidades;
 using Hone.Entidades;
 using Hone.Services;
 using Newtonsoft.Json;
@@ -137,6 +139,36 @@ namespace Hone.ViewModel
 
         private void SalvarPedido()
         {
+            //TODO: verificar como fazer transaction
+            using (AcessarDados _Dados = new AcessarDados())
+            {
+                Pedidos pedidos = new Pedidos();
+                pedidos.CardCode = Ped.Parceiro.CardCode;
+                pedidos.CardName = Ped.Parceiro.CardName;
+                pedidos.CondPagto = Convert.ToString(Ped.CondPagto.GroupNum);
+                pedidos.DtCadastro = Ped.DtCadastro;
+                pedidos.DtEntrega = Ped.DtEntrega;
+                pedidos.FormaPgto = Ped.FormaPgto.PayMethCod;
+                pedidos.Id = Ped.Id;
+
+                if (Ped.Id == 0)
+                    _Dados.Insert<Pedidos>(pedidos);
+                else if (Ped.Id > 0)
+                    _Dados.Update<Pedidos>(pedidos);
+
+                foreach (var item in Ped.Itens)
+                {
+                    Itens itens = new Itens();
+                    itens.ItemCode = item.ItemCode;
+                    itens.ItemName = item.ItemName;
+                    itens.Quantidade = item.Quantidade;
+                    itens.ValorUnit = item.ValorUnit;
+
+                    _Dados.Insert<Itens>(itens);
+                }
+            }
+
+
             _Navigation.NavigationToBegin();
         }
         #endregion
@@ -155,6 +187,8 @@ namespace Hone.ViewModel
             SetValues();
             Salvar = new Command(SalvarPedido);
         }
+        
+
 
     }
 }

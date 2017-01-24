@@ -46,6 +46,12 @@
     <Compile Include="Dados\Entidades\Itens.cs" />
     <Compile Include="Dados\Entidades\Parceiros.cs" />
     <Compile Include="Dados\Entidades\Pedidos.cs" />
+    <Compile Include="Dados\Pedidos\CrudItens.cs" />
+    <Compile Include="Dados\Pedidos\CrudPedidos.cs" />
+    <Compile Include="Dados\Pedidos\SalvarPedido.cs" />
+    <Compile Include="Dados\Services\ICrudItens.cs" />
+    <Compile Include="Dados\Services\ICrudPedidos.cs" />
+    <Compile Include="Dados\Services\ISalvarPedido.cs" />
     <Compile Include="Dados\Services\IAcessarDados.cs" />
     <Compile Include="Entidades\Group.cs" />
     <Compile Include="Entidades\PropriedadesMenuPrincipal.cs" />

@@ -1,12 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Hone.Entidades;
+﻿using System.ComponentModel;
 using Hone.Services;
-using Newtonsoft.Json;
 using Xamarin.Forms;
 
 namespace Hone.ViewModel

@@ -82,7 +82,21 @@ namespace Hone.ViewModel
 
             foreach (var item in pns)
             {
-
+                Parceiro parceiro = new Parceiro();
+                parceiro.Bairro = item.Bairro;
+                parceiro.CardCode = item.CardCode;
+                parceiro.CardName = item.CardName;
+                parceiro.Cep = item.Cep;
+                parceiro.Cidade = item.Cidade;
+                parceiro.Estado = item.Estado;
+                parceiro.IdMobile = item.IdMobile;
+                parceiro.Logradouro = item.Logradouro;
+                parceiro.NumDocumento = item.NumDocumento;
+                parceiro.NumeroLog = item.NumeroLog;
+                parceiro.Telefone = item.Telefone;
+                parceiro.TipoDocumento = item.TipoDocumento;
+                parceiro.TipoParceiro = item.TipoParceiro;
+                Parceiros.Add(parceiro);
             }
         }
 

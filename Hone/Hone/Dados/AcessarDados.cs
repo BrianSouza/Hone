@@ -9,25 +9,25 @@ namespace Hone.Dados
 {
     public class AcessarDados : IDisposable, IAcessarDados
     {
-        SQLite.Net.SQLiteConnection _conexao;
+        public SQLite.Net.SQLiteConnection _conexao;
         public AcessarDados()
         {
             var config = DependencyService.Get<IConfigDados>();
             _conexao = new SQLite.Net.SQLiteConnection(config.Plataforma, System.IO.Path.Combine(config.DiretorioDB, "HoneDB.db3"));
         }
 
-        public void Insert<T>(T tabela)
+        public int Insert<T>(T tabela)
         {
-            _conexao.Insert(tabela);
+            return _conexao.Insert(tabela);
         }
 
-        public void Update<T>(T tabela)
+        public int Update<T>(T tabela)
         {
-            _conexao.Update(tabela);
+           return _conexao.Update(tabela);
         }
-        public void Delete<T>(T tabela)
+        public int Delete<T>(T tabela)
         {
-            _conexao.Delete(tabela);
+            return _conexao.Delete(tabela);
         }
 
 
@@ -43,8 +43,10 @@ namespace Hone.Dados
             _conexao.CreateTable<FormaPgtos>();
             _conexao.CreateTable<CondPagtos>();
             _conexao.CreateTable<Itens>();
-            _conexao.CreateTable<Pedidos>();
+            _conexao.CreateTable<Entidades.Pedidos>();
         }
+
+       
 
         public void Dispose()
         {

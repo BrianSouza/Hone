@@ -10,6 +10,8 @@ namespace Hone.Dados.Entidades
     public class Itens
     {
         [NotNull]
+        public int IdPedido { get; set; }
+        [NotNull]
         public string ItemName { get; set; }
         [NotNull]
         public string ItemCode { get; set; }

@@ -2,6 +2,7 @@
 using System.Linq;
 using System.Windows.Input;
 using Hone.Dados;
+using Hone.Dados.Entidades;
 using Hone.Entidades;
 using Hone.View;
 using Newtonsoft.Json;
@@ -423,7 +424,7 @@ namespace Hone.ViewModel
 
         private void SalvarParceiro()
         {
-            Parceiro _parceiro = new Parceiro();
+            Parceiros _parceiro = new Parceiros();
             _parceiro.IdMobile = this._idMobile;
             _parceiro.Bairro = this.Bairro;
             _parceiro.CardName = this.Descricao;
@@ -440,9 +441,9 @@ namespace Hone.ViewModel
             using (AcessarDados ad = new AcessarDados())
             {
                 if (_parceiro.IdMobile == 0)
-                    ad.Insert<Parceiro>(_parceiro);
+                    ad.Insert<Parceiros>(_parceiro);
                 else if (_parceiro.IdMobile > 0)
-                    ad.Update<Parceiro>(_parceiro);
+                    ad.Update<Parceiros>(_parceiro);
             }
         }
     }
