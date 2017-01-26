@@ -9,6 +9,8 @@ namespace Hone.Dados.Services
 {
     interface ICrudPedidos
     {
+        void SetDados(AcessarDados dados);
+
         int InsertPedido(Entidades.Pedidos pedido);
 
         int UpdatePedido(Entidades.Pedidos pedido);

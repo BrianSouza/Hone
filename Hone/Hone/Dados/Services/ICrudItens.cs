@@ -9,6 +9,7 @@ namespace Hone.Dados.Services
 {
     interface ICrudItens
     {
+        void SetDados(AcessarDados dados);
 
         int InsertItens(Entidades.Itens itens);
 

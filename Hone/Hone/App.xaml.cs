@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Hone.Dados;
+using Hone.Dados.Pedidos;
 using Hone.Dados.Services;
 using Hone.Services;
 using Xamarin.Forms;
@@ -16,10 +17,9 @@ namespace Hone
         {
             try
             {
-                DependencyService.Register<IMessageServices, MessageServices>();
-                DependencyService.Register<INavigationService, NavigationService>();
-
                 // The root page of your application
+                RegistrarDepencencias();
+
                 MainPage = new NavigationPage(new View.LoginView());
                 InitializeComponent();
             }
@@ -30,21 +30,35 @@ namespace Hone
 
         }
 
+        private static void RegistrarDepencencias()
+        {
+            DependencyService.Register<IMessageServices, MessageServices>();
+            DependencyService.Register<INavigationService, NavigationService>();
+            DependencyService.Register<ICrudItens, CrudItens>();
+            DependencyService.Register<ICrudPedidos, CrudPedidos>();
+            DependencyService.Register<ISalvarPedido, SalvarPedido>();
+        }
+
         protected override void OnStart()
         {
             // Handle when your app starts
             try
             {
-                using (AcessarDados dados = new AcessarDados())
-                {
-                    dados.CriarTabelas();
-                }
+                CriarBancoDeDados();
             }
             catch (Exception ex)
             {
                 //TODO: Criar Log
             }
             
+        }
+
+        private static void CriarBancoDeDados()
+        {
+            using (AcessarDados dados = new AcessarDados())
+            {
+                dados.CriarTabelas();
+            }
         }
 
         protected override void OnSleep()

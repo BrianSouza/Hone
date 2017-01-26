@@ -142,7 +142,6 @@ C:\Users\poliview\Source\Repos\Hone\Hone\Hone\bin\Debug\Xamarin.Forms.Core.xml
 C:\Users\poliview\Source\Repos\Hone\Hone\Hone\bin\Debug\Xamarin.Forms.Platform.pdb
 C:\Users\poliview\Source\Repos\Hone\Hone\Hone\bin\Debug\Xamarin.Forms.Xaml.pdb
 C:\Users\poliview\Source\Repos\Hone\Hone\Hone\bin\Debug\Xamarin.Forms.Xaml.xml
-C:\Users\poliview\Source\Repos\Hone\Hone\Hone\obj\Debug\Hone.csprojResolveAssemblyReference.cache
 C:\Users\poliview\Source\Repos\Hone\Hone\Hone\obj\Debug\Hone.View.PedItensView.xaml.g.cs
 C:\Users\poliview\Source\Repos\Hone\Hone\Hone\obj\Debug\Hone.View.CadPNView.xaml.g.cs
 C:\Users\poliview\Source\Repos\Hone\Hone\Hone\obj\Debug\Hone.View.LoginView.xaml.g.cs
@@ -158,5 +157,9 @@ C:\Users\poliview\Source\Repos\Hone\Hone\Hone\obj\Debug\Hone.View.PNView.xaml.g.
 C:\Users\poliview\Source\Repos\Hone\Hone\Hone\obj\Debug\Hone.View.PedView.xaml.g.cs
 C:\Users\poliview\Source\Repos\Hone\Hone\Hone\obj\Debug\Hone.dll
 C:\Users\poliview\Source\Repos\Hone\Hone\Hone\obj\Debug\Hone.pdb
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone\obj\Debug\Hone.dll.mdb
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone\bin\Debug\Hone.dll.mdb
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone\obj\Debug\Hone.dll.mdb
+C:\Users\poliview\Source\Repos\Hone\Hone\Hone\bin\Debug\Hone.dll.mdb
 C:\Users\poliview\Source\Repos\Hone\Hone\Hone\obj\Debug\Hone.dll.mdb
 C:\Users\poliview\Source\Repos\Hone\Hone\Hone\bin\Debug\Hone.dll.mdb

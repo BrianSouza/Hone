@@ -11,33 +11,35 @@ namespace Hone.Dados.Pedidos
 {
     public class CrudItens : ICrudItens
     {
+        AcessarDados _Dados;
+
+        public CrudItens()
+        {
+        }
+
+        public void SetDados(AcessarDados dados)
+        {
+            _Dados = dados;
+        }
+
         public int DeleteItens(Itens itens)
         {
             int id = 0;
-            using (AcessarDados _Dados = new AcessarDados())
-            {
-                id = _Dados.Delete<Entidades.Itens>(itens);
-            }
+            id = _Dados.Delete<Entidades.Itens>(itens);
             return id;
         }
 
         public int InsertItens(Itens itens)
         {
             int id = 0;
-            using (AcessarDados _Dados = new AcessarDados())
-            {
-                id = _Dados.Insert<Entidades.Itens>(itens);
-            }
+            id = _Dados.Insert<Entidades.Itens>(itens);
             return id;
         }
 
         public ObservableCollection<Itens> ListarItens()
         {
             ObservableCollection<Entidades.Itens> pns = new ObservableCollection<Entidades.Itens>();
-            using (AcessarDados _Dados = new AcessarDados())
-            {
-                pns = new ObservableCollection<Entidades.Itens>(_Dados._conexao.Table<Entidades.Itens>());
-            }
+            pns = new ObservableCollection<Entidades.Itens>(_Dados._conexao.Table<Entidades.Itens>());
             return pns;
         }
 
@@ -49,10 +51,7 @@ namespace Hone.Dados.Pedidos
         public int UpdateItens(Itens itens)
         {
             int id = 0;
-            using (AcessarDados _Dados = new AcessarDados())
-            {
-                id = _Dados.Update<Entidades.Itens>(itens);
-            }
+            id = _Dados.Update<Entidades.Itens>(itens);
             return id;
         }
     }

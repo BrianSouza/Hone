@@ -11,25 +11,22 @@ namespace Hone.Dados.Pedidos
 {
     public class CrudPedidos : ICrudPedidos
     {
-        
+        AcessarDados _Dados;
+        public CrudPedidos()
+        {
+        }
 
         public int DeletePedido(Entidades.Pedidos pedido)
         {
             int id = 0;
-            using (AcessarDados _Dados = new AcessarDados())
-            {
-                id = _Dados.Delete<Entidades.Pedidos>(pedido);
-            }
+            id = _Dados.Delete<Entidades.Pedidos>(pedido);
             return id;
         }
 
         public int InsertPedido(Entidades.Pedidos pedido)
         {
             int id = 0;
-            using (AcessarDados _Dados = new AcessarDados())
-            {
-                id = _Dados.Insert<Entidades.Pedidos>(pedido);
-            }
+            id = _Dados.Insert<Entidades.Pedidos>(pedido);
             return id;
         }
 
@@ -42,20 +39,20 @@ namespace Hone.Dados.Pedidos
         public ObservableCollection<Entidades.Pedidos> ListarPedidos()
         {
             ObservableCollection<Entidades.Pedidos> pns = new ObservableCollection<Entidades.Pedidos>();
-            using (AcessarDados _Dados = new AcessarDados())
-            {
-                pns = new ObservableCollection<Entidades.Pedidos>(_Dados._conexao.Table<Entidades.Pedidos>());
-            }
+
+            pns = new ObservableCollection<Entidades.Pedidos>(_Dados._conexao.Table<Entidades.Pedidos>());
             return pns;
         }
 
-        public int UpdatePedido(Entidades.Pedidos pedido)
+        public void SetDados(AcessarDados dados)
+        {
+            _Dados = dados;
+        }
+
+    public int UpdatePedido(Entidades.Pedidos pedido)
         {
             int id = 0;
-            using (AcessarDados _Dados = new AcessarDados())
-            {
-                id = _Dados.Update<Entidades.Pedidos>(pedido);
-            }
+            id = _Dados.Update<Entidades.Pedidos>(pedido);
             return id;
         }
     }

@@ -8,6 +8,6 @@ namespace Hone.Dados.Services
 {
     interface ISalvarPedido
     {
-        int Salvar(Entidades.Pedidos pedido, Entidades.Itens itens);
+        int Salvar(Entidades.Pedidos pedido, List<Entidades.Itens> itens);
     }
 }
