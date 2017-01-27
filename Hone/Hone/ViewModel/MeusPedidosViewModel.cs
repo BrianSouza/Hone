@@ -13,7 +13,7 @@ namespace Hone.ViewModel
     {
         public MeusPedidosViewModel()
         {
-            CarregarPedidos();
+            LoadPedidos();
 
         }
         public struct StatusPed
@@ -83,26 +83,11 @@ namespace Hone.ViewModel
             }
         }
 
-        private void CarregarPedidos()
+        private void LoadPedidos()
         {
-            LstPedidos = new List<Pedido>
-            {
-                new Pedido {CondPagto = new CondPagto {GroupNum = 1 , PymntGroup = "A vista" },
-                    DtEntrega = DateTime.Now,
-                    FormaPgto = new FormaPgto {PayMethCod = "01",Descript = "Dinheiro" },
-                    Id = 1 ,
-                Itens = new ObservableCollection<Item> { new Item { ItemCode = "001",ItemName = "ITEM 01",Quantidade = 10 ,ValorUnit =100} } ,
-                Parceiro = new Parceiro {CardCode = "C001",CardName = "Cliente Teste" }
-                },
-
-                new Pedido {CondPagto = new CondPagto {GroupNum = 1 , PymntGroup = "A vista" },
-                    DtEntrega = DateTime.Now.Date.AddDays(-1),
-                    FormaPgto = new FormaPgto {PayMethCod = "01",Descript = "Dinheiro" },
-                    Id = 2 ,
-                Itens = new ObservableCollection<Item> { new Item { ItemCode = "001",ItemName = "ITEM 01",Quantidade = 10 ,ValorUnit =100} } ,
-                Parceiro = new Parceiro {CardCode = "C0012",CardName = "Cliente Teste 12" } }
-
-            };
+            Dados.Pedidos.CarregarPedidos carregarPedidos = new Dados.Pedidos.CarregarPedidos();
+            
+            //LstPedidos =
 
             FiltrarPedido();
         }

@@ -19,6 +19,9 @@ namespace Hone.Dados.Services
 
         ObservableCollection<Entidades.Pedidos> ListarPedidos();
 
-        ObservableCollection<Entidades.Pedidos> ListarPedido(string cardCode);
+        ObservableCollection<Entidades.Pedidos> ListarPedidos(string cardCode);
+
+        Entidades.Pedidos ListarPedido(int idPedido);
+
     }
 }

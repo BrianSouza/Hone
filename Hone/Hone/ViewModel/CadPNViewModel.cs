@@ -319,6 +319,11 @@ namespace Hone.ViewModel
                 _Message.ShowAsync("Atenção", "Informe o CEP.");
                 bValido = false;
             }
+            else if(string.IsNullOrEmpty(SelectedEstado.Sigla))
+            {
+                _Message.ShowAsync("Atenção", "Informe o Estado.");
+                bValido = false;
+            }
             else if (!string.IsNullOrEmpty(CEP) && CEP.Length < 8)
             {
                 _Message.ShowAsync("Atenção", "O CEP deve ter 8 dígitos.");

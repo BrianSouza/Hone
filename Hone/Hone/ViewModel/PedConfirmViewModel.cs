@@ -170,7 +170,7 @@ namespace Hone.ViewModel
             pedidos.CardCode = Ped.Parceiro.CardCode;
             pedidos.CardName = Ped.Parceiro.CardName;
             pedidos.CondPagto = Convert.ToString(Ped.CondPagto.GroupNum);
-            pedidos.DtCadastro = Ped.DtCadastro;
+            pedidos.DtCadastro = DateTime.Now;
             pedidos.DtEntrega = Ped.DtEntrega;
             pedidos.FormaPgto = Ped.FormaPgto.PayMethCod;
             pedidos.Id = Ped.Id;

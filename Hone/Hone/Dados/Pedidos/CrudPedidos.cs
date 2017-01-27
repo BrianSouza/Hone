@@ -11,11 +11,14 @@ namespace Hone.Dados.Pedidos
 {
     public class CrudPedidos : ICrudPedidos
     {
-        AcessarDados _Dados;
         public CrudPedidos()
         {
         }
-
+        AcessarDados _Dados = null;
+        public void SetDados(AcessarDados dados)
+        {
+            _Dados = dados;
+        }
         public int DeletePedido(Entidades.Pedidos pedido)
         {
             int id = 0;
@@ -29,31 +32,32 @@ namespace Hone.Dados.Pedidos
             id = _Dados.Insert<Entidades.Pedidos>(pedido);
             return id;
         }
-
-        public ObservableCollection<Entidades.Pedidos> ListarPedido(string cardCode)
-        {
-            throw new NotImplementedException();
-
-        }
+        
 
         public ObservableCollection<Entidades.Pedidos> ListarPedidos()
         {
-            ObservableCollection<Entidades.Pedidos> pns = new ObservableCollection<Entidades.Pedidos>();
-
-            pns = new ObservableCollection<Entidades.Pedidos>(_Dados._conexao.Table<Entidades.Pedidos>());
-            return pns;
+            var pedidos = new ObservableCollection<Entidades.Pedidos>(_Dados._conexao.Table<Entidades.Pedidos>());
+            return pedidos;
         }
 
-        public void SetDados(AcessarDados dados)
-        {
-            _Dados = dados;
-        }
-
-    public int UpdatePedido(Entidades.Pedidos pedido)
+        public int UpdatePedido(Entidades.Pedidos pedido)
         {
             int id = 0;
             id = _Dados.Update<Entidades.Pedidos>(pedido);
             return id;
+        }
+
+        public ObservableCollection<Entidades.Pedidos> ListarPedidos(string cardCode)
+        {
+            var pedidos = new ObservableCollection<Entidades.Pedidos>(_Dados._conexao.Table<Entidades.Pedidos>());
+
+            return new ObservableCollection<Entidades.Pedidos>(pedidos.Where(T0 => T0.CardCode.Equals(cardCode)).ToList());
+        }
+
+        public Entidades.Pedidos ListarPedido(int idPedido)
+        {
+            var pedidos = new ObservableCollection<Entidades.Pedidos>(_Dados._conexao.Table<Entidades.Pedidos>());
+            return pedidos.Where(T0 => T0.Id.Equals(idPedido)).FirstOrDefault();
         }
     }
 }
