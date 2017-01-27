@@ -19,7 +19,7 @@ namespace Hone.Dados.Services
 
         ObservableCollection<Entidades.Itens> ListarItens();
 
-        ObservableCollection<Entidades.Itens> ListarItens(string pedido);
+        ObservableCollection<Entidades.Itens> ListarItens(int pedido);
 
     }
 }

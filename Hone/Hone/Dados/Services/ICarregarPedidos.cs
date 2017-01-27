@@ -8,8 +8,8 @@ namespace Hone.Dados.Services
     {
         ObservableCollection<Pedido> CarregarPedidos();
 
-        Pedido CarregarPedidos(int idPedido);
+        Pedido CarregarPedido(int idPedido);
 
-        ObservableCollection<Pedido> CarregarPedidos(string cardCode);
+        ObservableCollection<Pedido> CarregarPedidoPorCliente(string cardCode);
     }
 }

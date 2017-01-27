@@ -85,7 +85,6 @@ namespace Hone.ViewModel
 
         private void LoadPedidos()
         {
-            Dados.Pedidos.CarregarPedidos carregarPedidos = new Dados.Pedidos.CarregarPedidos();
             
             //LstPedidos =
 

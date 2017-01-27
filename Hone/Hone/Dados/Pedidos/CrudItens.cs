@@ -43,7 +43,7 @@ namespace Hone.Dados.Pedidos
             return pns;
         }
 
-        public ObservableCollection<Itens> ListarItens(string pedido)
+        public ObservableCollection<Itens> ListarItens(int pedido)
         {
             throw new NotImplementedException();
         }
