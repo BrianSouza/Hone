@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.ObjectModel;
-using System.Linq;
 using Hone.Dados.Entidades;
 using Hone.Dados.Services;
 using Xamarin.Forms;
@@ -30,16 +28,9 @@ namespace Hone.Dados
             return _conexao.Delete(tabela);
         }
 
-
-        public ObservableCollection<Parceiros> ListarParceiros()
-        {
-            ObservableCollection<Parceiros> pns = new ObservableCollection<Parceiros>(_conexao.Table<Parceiros>());
-            return pns;
-        }
-
         public void CriarTabelas()
         {
-            _conexao.CreateTable<Parceiros>();
+            _conexao.CreateTable<Entidades.Parceiros>();
             _conexao.CreateTable<FormaPgtos>();
             _conexao.CreateTable<CondPagtos>();
             _conexao.CreateTable<Itens>();

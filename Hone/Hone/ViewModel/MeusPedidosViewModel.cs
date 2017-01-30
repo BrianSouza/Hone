@@ -5,28 +5,30 @@ using System.Linq;
 using Hone.Entidades;
 using Newtonsoft.Json;
 using Hone.View;
-
+using Hone.Dados.Services;
+using Xamarin.Forms;
 
 namespace Hone.ViewModel
 {
     public class MeusPedidosViewModel : BaseViewModel
     {
+        ICarregarPedidos dadosLoadPedidos = null;
         public MeusPedidosViewModel()
         {
             LoadPedidos();
-
+            dadosLoadPedidos = DependencyService.Get<ICarregarPedidos>();
         }
         public struct StatusPed
         {
             public int StatusId { get; set; }
             public string StatusName { get; set; }
         }
-        private List<Pedido> lstPedidos;
+        private ObservableCollection<Pedido> lstPedidos;
         private IEnumerable<Group<char, Pedido>> listaFiltro;
         private string textoFiltro;
         private Pedido selectedPedido;
 
-        public List<Pedido> LstPedidos
+        public ObservableCollection<Pedido> LstPedidos
         {
             get
             {
@@ -85,8 +87,8 @@ namespace Hone.ViewModel
 
         private void LoadPedidos()
         {
-            
-            //LstPedidos =
+
+            LstPedidos = dadosLoadPedidos.CarregarTodosPedidos();
 
             FiltrarPedido();
         }

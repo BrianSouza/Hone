@@ -6,7 +6,7 @@ namespace Hone.Dados.Services
 {
     interface ICarregarPedidos
     {
-        ObservableCollection<Pedido> CarregarPedidos();
+        ObservableCollection<Pedido> CarregarTodosPedidos();
 
         Pedido CarregarPedido(int idPedido);
 

@@ -48,6 +48,7 @@
     <Compile Include="Dados\Entidades\Parceiros.cs" />
     <Compile Include="Dados\Entidades\Pedidos.cs" />
     <Compile Include="Dados\FormaPgto\CrudFormaPgto.cs" />
+    <Compile Include="Dados\Parceiros\CrudParceiros.cs" />
     <Compile Include="Dados\Pedidos\CarregarPedidos.cs" />
     <Compile Include="Dados\Pedidos\CrudItens.cs" />
     <Compile Include="Dados\Pedidos\CrudPedidos.cs" />
@@ -56,6 +57,7 @@
     <Compile Include="Dados\Services\ICondPgtos.cs" />
     <Compile Include="Dados\Services\ICrudFormaPgto.cs" />
     <Compile Include="Dados\Services\ICrudItens.cs" />
+    <Compile Include="Dados\Services\ICrudParceiros.cs" />
     <Compile Include="Dados\Services\ICrudPedidos.cs" />
     <Compile Include="Dados\Services\ISalvarPedido.cs" />
     <Compile Include="Dados\Services\IAcessarDados.cs" />

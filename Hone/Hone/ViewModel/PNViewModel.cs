@@ -1,8 +1,11 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Input;
 using Hone.Dados;
+using Hone.Dados.Services;
 using Hone.Entidades;
 using Newtonsoft.Json;
 using Xamarin.Forms;
@@ -13,7 +16,8 @@ namespace Hone.ViewModel
     {
         public PNViewModel()
         {
-            
+            _CrudParceiros = DependencyService.Get<ICrudParceiros>();
+
             CarregarParceiros();
             NovoParceiro = new Command(async () => await IrParaViewCadPN());
             ExcluirParceiro = new Command<object>(async (param) => 
@@ -27,14 +31,15 @@ namespace Hone.ViewModel
         }
 
         #region Variaveis
-        private List<Parceiro> listaParceiros;
+        ICrudParceiros _CrudParceiros = null;
+        private ObservableCollection<Parceiro> listaParceiros;
         private IEnumerable<Group<char, Parceiro>> listaFiltro;
         private string textoFiltro;
         private Parceiro selectedParceiro;
         #endregion
 
         #region Propriedades
-        public List<Parceiro> ListaParceiros
+        public ObservableCollection<Parceiro> ListaParceiros
         {
             get
             {
@@ -164,28 +169,36 @@ namespace Hone.ViewModel
 
         private void CarregarParceiros()
         {
-            ListaParceiros = new List<Parceiro>();
-            using (AcessarDados dados = new AcessarDados())
+            ListaParceiros = new ObservableCollection<Parceiro>();
+           
+            ObservableCollection<Dados.Entidades.Parceiros> dadosPns = null;
+            using (Dados.AcessarDados _Dados = new Dados.AcessarDados())
             {
-                var parceiros = dados.ListarParceiros();
-                foreach (var item in parceiros)
-                {
-                    Parceiro pn = new Parceiro();
-                    pn.IdMobile = item.IdMobile;
-                    pn.Bairro = item.Bairro;
-                    pn.CardCode = item.CardCode;
-                    pn.CardName = item.CardName;
-                    pn.Cep = item.Cep;
-                    pn.Cidade = item.Cidade;
-                    pn.Estado = item.Estado;
-                    pn.Logradouro = item.Logradouro;
-                    pn.NumDocumento = item.NumDocumento;
-                    pn.NumeroLog = item.NumeroLog;
-                    pn.Telefone = item.Telefone;
-                    pn.TipoDocumento = item.TipoDocumento;
-                    pn.TipoParceiro = item.TipoParceiro;
-                    ListaParceiros.Add(pn);
-                }
+                _CrudParceiros.SetDados(_Dados);
+                dadosPns = _CrudParceiros.ListarParceiros();
+            }
+
+            if (dadosPns == null || dadosPns.Count == 0)
+                throw new NullReferenceException("Não foi encontrado nenhum parceiro.");
+
+            foreach (var item in dadosPns)
+            {
+                Parceiro pn = new Parceiro();
+                pn.Bairro = item.Bairro;
+                pn.CardCode = item.CardCode;
+                pn.CardName = item.CardName;
+                pn.Cep = item.Cep;
+                pn.Cidade = item.Cidade;
+                pn.Estado = item.Estado;
+                pn.IdMobile = item.IdMobile;
+                pn.Logradouro = item.Logradouro;
+                pn.NumDocumento = item.NumDocumento;
+                pn.NumeroLog = item.NumeroLog;
+                pn.Telefone = item.Telefone;
+                pn.TipoDocumento = item.TipoDocumento;
+                pn.TipoParceiro = item.TipoParceiro;
+
+                ListaParceiros.Add(pn);
             }
         }
 

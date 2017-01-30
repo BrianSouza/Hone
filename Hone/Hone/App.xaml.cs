@@ -1,11 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Hone.Dados;
 using Hone.Dados.CondPgto;
 using Hone.Dados.FormaPgto;
+using Hone.Dados.Parceiros;
 using Hone.Dados.Pedidos;
 using Hone.Dados.Services;
 using Hone.Services;
@@ -42,6 +39,7 @@ namespace Hone
             DependencyService.Register<ICarregarPedidos, CarregarPedidos>();
             DependencyService.Register<ICondPgtos, CrudCondPgtos>();
             DependencyService.Register<ICrudFormaPgto, CrudFormaPgto>();
+            DependencyService.Register<ICrudParceiros, CrudParceiros>();
         }
 
         protected override void OnStart()

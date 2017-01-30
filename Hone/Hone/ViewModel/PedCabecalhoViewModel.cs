@@ -1,6 +1,8 @@
 ﻿
+using System;
 using System.Collections.ObjectModel;
 using System.Windows.Input;
+using Hone.Dados.Services;
 using Hone.Entidades;
 
 using Newtonsoft.Json;
@@ -16,6 +18,7 @@ namespace Hone.ViewModel
         private Parceiro selectedParceiro;
         private ObservableCollection<Parceiro> parceiros;
         private Pedido _Ped;
+        ICrudParceiros _CrudParceiros = null;
         #endregion
 
         #region Propriedades
@@ -77,28 +80,39 @@ namespace Hone.ViewModel
         internal void PreencherParceiros()
         {
             Parceiros = new ObservableCollection<Parceiro>();
-            Dados.AcessarDados acessoDados = new Dados.AcessarDados();
-            var pns = acessoDados.ListarParceiros();
 
-            foreach (var item in pns)
+            ObservableCollection<Dados.Entidades.Parceiros> dadosPns = null;
+            using (Dados.AcessarDados _Dados = new Dados.AcessarDados())
             {
-                Parceiro parceiro = new Parceiro();
-                parceiro.Bairro = item.Bairro;
-                parceiro.CardCode = item.CardCode;
-                parceiro.CardName = item.CardName;
-                parceiro.Cep = item.Cep;
-                parceiro.Cidade = item.Cidade;
-                parceiro.Estado = item.Estado;
-                parceiro.IdMobile = item.IdMobile;
-                parceiro.Logradouro = item.Logradouro;
-                parceiro.NumDocumento = item.NumDocumento;
-                parceiro.NumeroLog = item.NumeroLog;
-                parceiro.Telefone = item.Telefone;
-                parceiro.TipoDocumento = item.TipoDocumento;
-                parceiro.TipoParceiro = item.TipoParceiro;
-                Parceiros.Add(parceiro);
+                _CrudParceiros.SetDados(_Dados);
+                dadosPns = _CrudParceiros.ListarParceiros();
             }
+
+            if (dadosPns == null || dadosPns.Count == 0)
+                throw new NullReferenceException("Não foi encontrado nenhum parceiro.");
+
+            foreach (var item in dadosPns)
+            {
+                Parceiro pn = new Parceiro();
+                pn.Bairro = item.Bairro;
+                pn.CardCode = item.CardCode;
+                pn.CardName = item.CardName;
+                pn.Cep = item.Cep;
+                pn.Cidade = item.Cidade;
+                pn.Estado = item.Estado;
+                pn.IdMobile = item.IdMobile;
+                pn.Logradouro = item.Logradouro;
+                pn.NumDocumento = item.NumDocumento;
+                pn.NumeroLog = item.NumeroLog;
+                pn.Telefone = item.Telefone;
+                pn.TipoDocumento = item.TipoDocumento;
+                pn.TipoParceiro = item.TipoParceiro;
+
+                Parceiros.Add(pn);
+            }
+            
         }
+        
 
         private bool Validacao()
         {
@@ -150,8 +164,8 @@ namespace Hone.ViewModel
 
         public PedCabecalhoViewModel()
         {
+            _CrudParceiros = DependencyService.Get<ICrudParceiros>();
             PreencherParceiros();
-
             this.IrParaLinhas = new Command(IrParaViewLinhas);
         }
     }
